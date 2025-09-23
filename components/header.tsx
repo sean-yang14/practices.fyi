@@ -2,6 +2,8 @@
 
 import Link from "next/link"
 import * as Dialog from "@radix-ui/react-dialog"
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
+import { ChevronDown } from "lucide-react"
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -13,41 +15,84 @@ import {
 export function Header() {
   return (
     <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-4">
-      <nav className="backdrop-blur-md rounded-2xl px-6 py-4 flex items-center justify-between" style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
-        {/* Left Section - Navigation Links */}
-        <div className="hidden md:flex items-center space-x-8">
-          <Link
-            href="/"
-            className="text-white hover:opacity-70 transition-colors duration-200 font-medium"
-          >
-            Home
-          </Link>
-          <Link
-            href="/services"
-            className="text-white hover:opacity-70 transition-colors duration-200 font-medium"
-          >
-            Services
-          </Link>
-        </div>
-
-        {/* Center Section - Logo */}
-        <div className="absolute left-1/2 transform -translate-x-1/2">
-          <Link href="/" className="text-white text-xl font-bold">
+      <nav className="backdrop-blur-md rounded-2xl px-8 py-4 flex items-center" style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
+        {/* Left Section - Company Name */}
+        <div className="flex items-center">
+          <Link href="/" className="text-white text-xl font-bold whitespace-nowrap">
             Practices.fyi
           </Link>
         </div>
 
-        {/* Right Section - Navigation Links and Contact Button */}
-        <div className="hidden md:flex items-center space-x-4">
-          <Link
-            href="/templates"
-            className="text-white hover:opacity-70 transition-colors duration-200 font-medium"
-          >
-            Templates & Guides
-          </Link>
+        {/* Center Section - Navigation Links */}
+        <div className="hidden md:flex items-center justify-center flex-1 mx-16">
+          <div className="flex items-center space-x-8">
+            <Link
+              href="/"
+              className="text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap"
+            >
+              Home
+            </Link>
+
+            {/* Products Dropdown */}
+            <DropdownMenu.Root>
+              <DropdownMenu.Trigger className="flex items-center text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap group">
+                Products
+                <ChevronDown className="ml-1 h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
+              </DropdownMenu.Trigger>
+              <DropdownMenu.Portal>
+                <DropdownMenu.Content
+                  className="min-w-[220px] bg-white rounded-lg shadow-lg p-2 z-50"
+                  sideOffset={5}
+                >
+                  <DropdownMenu.Item className="outline-none">
+                    <Link
+                      href="/reputation-management"
+                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
+                    >
+                      Reputation Management
+                    </Link>
+                  </DropdownMenu.Item>
+                  <DropdownMenu.Item className="outline-none">
+                    <Link
+                      href="/practice-performance-report"
+                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
+                    >
+                      Practice Performance Report
+                    </Link>
+                  </DropdownMenu.Item>
+                  <DropdownMenu.Item className="outline-none">
+                    <Link
+                      href="/practice-health-checkup"
+                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
+                    >
+                      Practice Health Checkup
+                    </Link>
+                  </DropdownMenu.Item>
+                </DropdownMenu.Content>
+              </DropdownMenu.Portal>
+            </DropdownMenu.Root>
+
+            <Link
+              href="/templates"
+              className="text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap"
+            >
+              Templates & Guides
+            </Link>
+
+            <Link
+              href="/partners"
+              className="text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap"
+            >
+              Partners
+            </Link>
+          </div>
+        </div>
+
+        {/* Right Section - Contact Button */}
+        <div className="hidden md:flex items-center">
           <Link
             href="/contact"
-            className="btn-primary px-6 py-2 rounded-full transition-colors duration-200"
+            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium whitespace-nowrap"
           >
             Contact
           </Link>
@@ -93,18 +138,37 @@ export function Header() {
                       Home
                     </Link>
                   </Dialog.Close>
+
+                  {/* Products Section */}
+                  <div className="px-3 py-2 text-gray-900 font-medium">Products</div>
                   <Dialog.Close asChild>
-                    <Link href="/services" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                      Services
+                    <Link href="/reputation-management" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                      Reputation Management
                     </Link>
                   </Dialog.Close>
+                  <Dialog.Close asChild>
+                    <Link href="/practice-performance-report" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                      Practice Performance Report
+                    </Link>
+                  </Dialog.Close>
+                  <Dialog.Close asChild>
+                    <Link href="/practice-health-checkup" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                      Practice Health Checkup
+                    </Link>
+                  </Dialog.Close>
+
                   <Dialog.Close asChild>
                     <Link href="/templates" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                       Templates & Guides
                     </Link>
                   </Dialog.Close>
                   <Dialog.Close asChild>
-                    <Link href="/contact" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    <Link href="/partners" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                      Partners
+                    </Link>
+                  </Dialog.Close>
+                  <Dialog.Close asChild>
+                    <Link href="/contact" className="px-3 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600">
                       Contact
                     </Link>
                   </Dialog.Close>

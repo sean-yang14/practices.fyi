@@ -32,61 +32,41 @@ export default function Home() {
             </p>
           </div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Practice Health Checkup */}
             <Link
-              href="/tools/practice-health-checkup"
-              className="group block relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 p-6 text-white transition-all duration-300 hover:shadow-xl hover:scale-105"
+              href="/practice-health-checkup"
+              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-blue-100 h-48 flex items-center"
             >
-              <div className="flex items-center justify-between h-full">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2 text-left">Practice Health Checkup</h3>
-                  <p className="text-blue-100 text-sm text-left">
-                    Transform your data into powerful insights. Discover hidden growth opportunities and unlock your practice's full potential.
-                  </p>
-                </div>
-                <div className="ml-4 flex-shrink-0">
-                  <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-left text-blue-600">Practice Health Checkup</h3>
+                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                  Get an objective perspective on your practice. Sometimes you need someone to talk through the data and help you see what you might be missing.
+                </p>
+              </div>
+              <div className="ml-6 flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                   </svg>
                 </div>
               </div>
             </Link>
 
-            {/* Employee Engagement */}
+            {/* Practice Performance Report */}
             <Link
-              href="/tools/employee-engagement"
-              className="group block relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 p-6 text-white transition-all duration-300 hover:shadow-xl hover:scale-105"
+              href="/practice-performance-report"
+              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-100 h-48 flex items-center"
             >
-              <div className="flex items-center justify-between h-full">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2 text-left">Employee Engagement</h3>
-                  <p className="text-emerald-100 text-sm text-left">
-                    Affordable and effective strategies to keep your team engaged, motivated, and excited to show up every day.
-                  </p>
-                </div>
-                <div className="ml-4 flex-shrink-0">
-                  <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                  </svg>
-                </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-left text-emerald-600">Practice Performance Report</h3>
+                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                  A clear, recurring read on your practice performance. The more you know, the more you grow.
+                </p>
               </div>
-            </Link>
-
-            {/* Templates & Guides */}
-            <Link
-              href="/tools/templates-guides"
-              className="group block relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 p-6 text-white transition-all duration-300 hover:shadow-xl hover:scale-105"
-            >
-              <div className="flex items-center justify-between h-full">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2 text-left">Templates & Guides</h3>
-                  <p className="text-purple-100 text-sm text-left">
-                    Essential resources to guide your business decisions across finance, growth, and operations.
-                  </p>
-                </div>
-                <div className="ml-4 flex-shrink-0">
-                  <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
+              <div className="ml-6 flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center">
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                   </svg>
                 </div>
@@ -95,18 +75,38 @@ export default function Home() {
 
             {/* Reputation Management */}
             <Link
-              href="/tools/reputation-management"
-              className="group block relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 p-6 text-white transition-all duration-300 hover:shadow-xl hover:scale-105"
+              href="/reputation-management"
+              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-orange-100 h-48 flex items-center"
             >
-              <div className="flex items-center justify-between h-full">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2 text-left">Reputation Management</h3>
-                  <p className="text-orange-100 text-sm text-left">
-                    Get more 5-star Google reviews and build a reputation that attracts new patients.
-                  </p>
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-left text-orange-600">Reputation Management</h3>
+                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                  Get more 5-star Google reviews automatically. Build trust with prospective patients and rank higher in search results.
+                </p>
+              </div>
+              <div className="ml-6 flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center">
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                  </svg>
                 </div>
-                <div className="ml-4 flex-shrink-0">
-                  <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
+              </div>
+            </Link>
+
+            {/* Accountability Partner */}
+            <Link
+              href="/accountability-partner"
+              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-purple-100 h-48 flex items-center"
+            >
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-left text-purple-600">Accountability Partner</h3>
+                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                  Stay on track with your goals through regular check-ins and structured accountability sessions.
+                </p>
+              </div>
+              <div className="ml-6 flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center">
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                   </svg>
                 </div>
@@ -145,60 +145,57 @@ export default function Home() {
       <FounderLetter />
 
       {/* Free Consultation CTA */}
-      <section className="bg-indigo-100 dark:bg-indigo-950 rounded-xl">
-        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
-          <div className="max-w-2xl">
-            <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl dark:text-white mb-4">
-              Feeling stuck? You don't have to do it alone.
-            </h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300">
-              Sign up for a free consultation call -- available for a limited time. No BS, gatekeeping, or sales pitch. I'm just looking to offer a helping hand.
-            </p>
-          </div>
-          <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
-            <a
-              href="#"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500"
-            >
-              Book Free Consultation
-            </a>
-            {/* <a href="#" className="text-sm/6 font-semibold text-gray-900 dark:text-gray-100">
-              Learn more
-              <span aria-hidden="true">→</span>
-            </a> */}
+      <section className="px-6 w-full">
+        <div className="mx-auto max-w-7xl rounded-2xl bg-indigo-100 dark:bg-indigo-950">
+          <div className="px-6 py-16 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
+            <div className="max-w-2xl">
+              <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl dark:text-white mb-4">
+                Feeling stuck? You don't have to do it alone.
+              </h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300">
+                Sign up for a free consultation call -- available for a limited time. No BS, gatekeeping, or sales pitch. I'm just looking to offer a helping hand.
+              </p>
+            </div>
+            <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
+              <a
+                href="#"
+                className="rounded-md bg-indigo-600 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500 transition-colors"
+              >
+                Book Free Consultation
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Instagram CTA Section */}
-      <div className="box-border">
-        <section className="relative box-border z-50 -my-9 px-5 py-[100px] rounded-[40px] md:px-20">
-          <div className="backdrop-blur-lg bg-black/50 box-border flex flex-col max-w-none gap-y-6 overflow-hidden mx-auto py-12 px-6 rounded-[20px] md:max-w-[600px] text-center">
-            <h2 className="text-white text-4xl font-medium box-border tracking-[-0.72px] leading-9">
+      <section className="px-6 w-full">
+        <div className="mx-auto max-w-7xl rounded-2xl border border-slate-200 bg-slate-900 text-white">
+          <div className="p-8 md:p-12 flex flex-col items-center text-center gap-4">
+            <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
               Follow my Instagram for quick practice management tips
             </h2>
             <a
-              role="button"
-              type="button"
-              aria-label="Follow on Instagram"
               href="https://www.instagram.com/practices.fyi/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white mt-6 font-medium items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 box-border flex h-18 w-18 justify-center tracking-[-0.32px] text-nowrap mx-auto p-4 rounded-full gap-2 transition-colors duration-200"
+              aria-label="Follow @practices.fyi on Instagram (opens in new tab)"
+              className="h-12 px-6 inline-flex items-center justify-center rounded-md bg-white text-slate-900 hover:bg-slate-100 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
             >
               <svg
-                className="w-8 h-8"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="mr-2 h-5 w-5"
+                fill="currentColor"
               >
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.75a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 6.75z" />
               </svg>
-              {/* Follow on Instagram */}
+              Follow @practices.fyi
             </a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <FAQSection />
