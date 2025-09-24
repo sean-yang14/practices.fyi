@@ -5,7 +5,7 @@ export const FounderLetter: React.FC = () => {
     <section className="py-16 px-4 max-w-4xl mx-auto">
       <header className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-        Running a practice is hard.<br />
+          Building a practice is hard.<br />
           <span className="block">I want to make it easier.</span>
         </h1>
       </header>
@@ -13,22 +13,22 @@ export const FounderLetter: React.FC = () => {
       <article className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         <div className="space-y-6">
           <p className="text-lg text-gray-700 leading-relaxed">
-            Running a healthcare practice is one of the hardest things you can do. Unlike other industries, you’re juggling multiple full-time jobs being both the clinician and the CEO.
+            Building your own healthcare practice is one of the hardest things you can choose to do.
           </p>
 
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            The journey is lonely. There's a lack of accessible support, and there's an overwhelming number of vendors claiming they can help -- if you're willing to pay a lot.
+            The journey is lonely. There's a lack of accessible support, and there's an overwhelming number of vendors claiming they can help.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            The kicker... far too many of these vendors either overcharge or simply don’t deliver on what they promise. <strong>This is what I get frustrated by, and it’s exactly why I want to change things.</strong>
+            The kicker... far too many of these vendors either overcharge or simply don’t deliver on what they promise. <strong>I've seen too many owners</strong>, including my friends, <strong>get taken advantage of and that drives me crazy. It's why I want to change things.</strong>
           </p>
         </div>
 
         <div className="space-y-6">
           <p className="text-lg text-gray-700 leading-relaxed">
-            I started Practices.fyi because <strong>I believe that practice owners and their teams deserve a partner who is fair, transparent, and genuinely interested in their success.</strong> My goal is to take what I’ve learned helping owners build their dream practices and provide tools, knowledge, and support without hidden agendas, and at a fair price whenever it applies.
+            I started Practices.fyi because <strong>I believe that practice owners and their teams deserve a partner that genuinely cares about them and their success.</strong> My goal is to provide useful tools for practices at a fair price and give more back to owners and their teams than any other company.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">

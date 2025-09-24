@@ -5,56 +5,34 @@ export function FAQSection() {
     <section className="mx-auto max-w-6xl px-6 py-12">
       <h2 className="text-2xl md:text-3xl font-bold">Frequently asked questions</h2>
       <Accordion type="single" collapsible className="mt-6">
-        <AccordionItem value="what-to-expect">
-          <AccordionTrigger>What should I expect during the checkup?</AccordionTrigger>
+        <AccordionItem value="why-should-i-trust-you">
+          <AccordionTrigger>Why should I trust you?</AccordionTrigger>
           <AccordionContent>
-            It&apos;s a casual, friendly conversation about your practice. We&apos;ll review any data you&apos;re comfortable sharing,
-            talk through challenges you&apos;re facing, and explore opportunities you might not have considered.
-            Think of it like having coffee with a friend who understands practice management.
+            I started my career as a CPA, then worked in finance before helping practices grow and optimize operations. Each of those is its own skillset — and combining them means I bring a unique perspective on both the numbers and the realities of running a practice. That mix helps me build tools that are truly impactful and every bit as strong as anything on the market.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="data-required">
-          <AccordionTrigger>What data do I need to share?</AccordionTrigger>
+        <AccordionItem value="healthcare-practice-type">
+          <AccordionTrigger>Do I need to be a particular type of healthcare practice?</AccordionTrigger>
           <AccordionContent>
-            Only what you&apos;re comfortable with. Basic financial reports, patient volume metrics, or marketing data can be helpful,
-            but we can work with whatever you have. If you&apos;re not sure what would be useful, I can guide you after our initial conversation.
+            No. These tools are designed to help any healthcare practice — dental, therapy, medical, or otherwise — gain clarity, improve performance, and feel less alone in the journey.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="time-commitment">
-          <AccordionTrigger>How much time does this take?</AccordionTrigger>
+        <AccordionItem value="practice-consultant">
+          <AccordionTrigger>Are you a practice consultant?</AccordionTrigger>
           <AccordionContent>
-            The main conversation is 45-60 minutes. There&apos;s minimal prep work on your end—just gathering a few basic reports
-            if you have them. The goal is to make this as easy as possible for you.
+            No, I’m not selling professional services of any kind here. In fact, I hope to partner with other great vendors who provide those essential services because practices shouldn’t try to do everything themselves. There's a lot of power in delegation! My real goal with Practices.fyi is to support owners by creating amazing tools at fair prices — that’s where my passion lies.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="really-free">
-          <AccordionTrigger>Is this really completely free?</AccordionTrigger>
+        <AccordionItem value="difference-between">
+          <AccordionTrigger>How is the Practice Performance Report different from the free check-up?</AccordionTrigger>
           <AccordionContent>
-            Yes, absolutely. No hidden costs, no follow-up sales calls, no strings attached. I genuinely believe in supporting
-            practice owners and this is one way I can contribute to the community.
+            The free check-up is a one-time snapshot to help you see where you stand. The Practice Performance Report is an ongoing tool that provides regular visibility into your practice, so you can track progress and make better decisions over time.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="social-media">
-          <AccordionTrigger>What about the social media sharing?</AccordionTrigger>
+        <AccordionItem value="what-are-you-building">
+          <AccordionTrigger>What else are you building?</AccordionTrigger>
           <AccordionContent>
-            This is completely optional and you have full control. If you&apos;re open to it, I might share anonymized insights
-            or lessons from our conversation that could help other practice owners. You&apos;ll see and approve anything before it&apos;s published.
-            Many people find value in learning from others&apos; experiences.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="confidentiality">
-          <AccordionTrigger>How do you handle confidential information?</AccordionTrigger>
-          <AccordionContent>
-            Your information is kept strictly confidential. Even if you consent to social sharing, any published content
-            would be anonymized and focus on general insights rather than specific details about your practice.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="who-is-this-for">
-          <AccordionTrigger>Who is this best suited for?</AccordionTrigger>
-          <AccordionContent>
-            Any practice owner or manager who wants an outside perspective on their business. Whether you&apos;re struggling with
-            specific challenges, want to validate your thinking, or just need someone to talk through the data with,
-            this can be valuable at any stage of practice ownership.
+            This is just the start. I’m building tools to make practice ownership easier and more affordable—so if there’s a specific problem you’d like solved, let me know. I’ll work on creating it, or if someone else has already built something great, I’ll gladly recommend it. The goal is simple: give practice owners access to amazing tools at fair prices."
           </AccordionContent>
         </AccordionItem>
       </Accordion>

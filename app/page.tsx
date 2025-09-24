@@ -11,8 +11,8 @@ export default function Home() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-black">
           Tools to make <RotatingText /> easier.
         </h1>
-        <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto mb-10">
-          Helping you build your ideal practice by making tools and knowledge accessible.
+        <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto mb-10">
+          Our mission is be the most genuine partner in helping you build your dream practice.
         </p>
         {/* <Link
           href="#services-section"
@@ -33,46 +33,6 @@ export default function Home() {
           </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Practice Health Checkup */}
-            <Link
-              href="/practice-health-checkup"
-              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-blue-100 h-48 flex items-center"
-            >
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2 text-left text-blue-600">Practice Health Checkup</h3>
-                <p className="text-slate-600 text-sm text-left line-clamp-4">
-                  Get an objective perspective on your practice. Sometimes you need someone to talk through the data and help you see what you might be missing.
-                </p>
-              </div>
-              <div className="ml-6 flex-shrink-0">
-                <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
-                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            {/* Practice Performance Report */}
-            <Link
-              href="/practice-performance-report"
-              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-100 h-48 flex items-center"
-            >
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2 text-left text-emerald-600">Practice Performance Report</h3>
-                <p className="text-slate-600 text-sm text-left line-clamp-4">
-                  A clear, recurring read on your practice performance. The more you know, the more you grow.
-                </p>
-              </div>
-              <div className="ml-6 flex-shrink-0">
-                <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center">
-                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
             {/* Reputation Management */}
             <Link
               href="/reputation-management"
@@ -93,6 +53,47 @@ export default function Home() {
               </div>
             </Link>
 
+            {/* Practice Performance Report */}
+            <Link
+              href="/practice-performance-report"
+              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-100 h-48 flex items-center"
+            >
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-left text-emerald-600">Practice Performance Report</h3>
+                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                  Running a practice is too complex to run blind. Our reports provides clear visibility into your practice's performance — so you can lead with confidence.
+                </p>
+              </div>
+              <div className="ml-6 flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center">
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* Practice Health Checkup */}
+            <Link
+              href="/practice-health-checkup"
+              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-blue-100 h-48 flex items-center"
+            >
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-left text-blue-600">Practice Health Checkup</h3>
+                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                  For a limited time, we’ll provide a free check-up of your financial, operational, and marketing data — walking you through the results to give you a clear view of your practice’s health.
+                </p>
+              </div>
+              <div className="ml-6 flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+
             {/* Accountability Partner */}
             <Link
               href="/accountability-partner"
@@ -101,7 +102,7 @@ export default function Home() {
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-left text-purple-600">Accountability Partner</h3>
                 <p className="text-slate-600 text-sm text-left line-clamp-4">
-                  Stay on track with your goals through regular check-ins and structured accountability sessions.
+                  The ability to execute on what matters is the key to building your dream practice. You’re capable—but sometimes you need someone to help you stay on track. That’s where we come in.
                 </p>
               </div>
               <div className="ml-6 flex-shrink-0">
@@ -161,7 +162,7 @@ export default function Home() {
                 href="#"
                 className="rounded-md bg-indigo-600 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500 transition-colors"
               >
-                Book Free Consultation
+                Book Free Practice Checkup
               </a>
             </div>
           </div>

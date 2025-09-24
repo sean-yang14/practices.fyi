@@ -5,7 +5,7 @@ export function DetailedFooter() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="text-black border-2" style={{backgroundColor: 'var(--color-baba-ganoush)'}}>
+    <footer className="" style={{backgroundColor: 'var(--color-baba-ganoush)'}}>
       {/* Large name section spanning full width */}
         {/* <div className="mt-12 mb-8">
           <div className="w-full overflow-hidden">
@@ -20,11 +20,11 @@ export function DetailedFooter() {
             </h2>
           </div>
         </div> */}
-        <div className="max-w-screen-xl mx-auto px-4 py-8">
-        <h1 className="text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight text-blue-600">
-          practices.fyi
-        </h1>
-      </div>
+        {/* <div className="max-w-screen-xl mx-auto px-4 py-8">
+          <h1 className="text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight text-blue-600">
+            practices.fyi
+          </h1>
+        </div> */}
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {footerSections.map((section) => (
@@ -49,18 +49,18 @@ export function DetailedFooter() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-black">Follow Us</h3>
             <div className="flex space-x-4">
-              {socialLinks.map((social) => (
+              {socialLinks.filter(social => social.id === 'instagram').map((social) => (
                 <a
                   key={social.id}
                   href={social.href}
-                  className="hover:text-black transition-colors duration-200"
+                  className="border-black hover:text-black transition-colors duration-200"
                   style={{color: 'var(--color-ice)'}}
                   aria-label={social.alt}
                 >
                   <img
                     alt={social.alt}
                     src={social.src}
-                    className="w-5 h-5 filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-200"
+                    className="w-5 h-5 filter brightness-0 opacity-100 hover:opacity-70 transition-opacity duration-200"
                   />
                 </a>
               ))}
@@ -72,7 +72,7 @@ export function DetailedFooter() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p style={{color: 'var(--color-ice)'}}>
-                Sean © {currentYear}<br />
+                Practices.fyi © {currentYear}<br />
                 All Rights Reserved
               </p>
             </div>
