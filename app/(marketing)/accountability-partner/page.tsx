@@ -66,7 +66,7 @@ export default function AccountabilityPartnerPage() {
         <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl">
           Accountability Partner
         </h1>
-        <div className="mt-3 h-1 w-40 bg-orange-500 rounded" aria-hidden />
+        <div className="mt-3 h-1 w-72 bg-orange-500 rounded" aria-hidden />
         <p className="mt-6 text-lg text-slate-700 max-w-3xl">
           We help you prioritize by keeping you accountable. It's not easy, but it's simple: write it down, then follow through—with someone checking in.
         </p>

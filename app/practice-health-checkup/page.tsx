@@ -44,28 +44,10 @@ export default function PracticeHealthCheckupPage() {
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-14">
         <div className="max-w-3xl">
           <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100">Practice Support</Badge>
-          <div className="relative">
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-              Practice Health Checkup
-            </h1>
-            <svg
-              className="absolute -bottom-1 left-0 w-full h-4"
-              viewBox="0 0 100 12"
-              preserveAspectRatio="none"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M1 8c8-1.5 16-2 24-0.5 10 2 18-0.5 28 0.5 12 1.5 20-1 32 0 14 1.5 22-0.5 35 0.5 10 0.8 18-0.5 25 0"
-                stroke="#f97316"
-                strokeWidth="3"
-                strokeLinecap="round"
-                fill="none"
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+            Practice Health Checkup
+          </h1>
+          <div className="mt-3 h-1 w-80 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
             Get an objective perspective on your practice. Sometimes you need someone to talk through the data and help you see what you might be missing.
           </p>

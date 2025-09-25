@@ -43,29 +43,11 @@ export default function ReputationManagementPage() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-14">
         <div className="max-w-3xl">
-          <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100">Online Reputation</Badge>
-          <div className="relative">
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-              Reputation Management
-            </h1>
-            <svg
-              className="absolute -bottom-1 left-0 w-full h-4"
-              viewBox="0 0 100 12"
-              preserveAspectRatio="none"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M1 8c8-1.5 16-2 24-0.5 10 2 18-0.5 28 0.5 12 1.5 20-1 32 0 14 1.5 22-0.5 35 0.5 10 0.8 18-0.5 25 0"
-                stroke="#f97316"
-                strokeWidth="3"
-                strokeLinecap="round"
-                fill="none"
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
+          <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100">Online Reviews</Badge>
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+            Reputation Management
+          </h1>
+          <div className="mt-3 h-1 w-80 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
             Get more 5-star Google reviews automatically. Build trust with prospective patients and rank higher in search results.
           </p>
@@ -136,29 +118,14 @@ export default function ReputationManagementPage() {
               icon: MessageSquare,
             },
             {
-              title: "Smart timing",
-              desc: "Configure when and how often to send review requests based on your practice&apos;s preferences and patient flow.",
+              title: "Full playbook",
+              desc: "We share with you how to increase reviews. Texting is part of it, but it's only just a part of the complete strategy.",
               icon: Target,
             },
             {
-              title: "Team rewards program",
-              desc: "Set review targets and reward your team when they hit them, because great experiences drive great reviews.",
+              title: "Team rewards",
+              desc: "Set review targets and if your team hits them they become eligible to win rewards.",
               icon: Users,
-            },
-            {
-              title: "EHR integration",
-              desc: "Seamlessly connect with your existing EHR, PM, or CMS system to automatically trigger review requests.",
-              icon: Shield,
-            },
-            {
-              title: "Review monitoring",
-              desc: "Track your review performance and see which team members are driving the most positive feedback.",
-              icon: Star,
-            },
-            {
-              title: "Custom messaging",
-              desc: "Personalize review request messages to match your practice&apos;s voice and brand.",
-              icon: MessageSquare,
             },
           ].map((f, i) => (
             <Card key={i} className="border-slate-200">
@@ -179,16 +146,17 @@ export default function ReputationManagementPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold">Why trust us with this?</h2>
           <p className="mt-4 text-slate-700 text-lg">
-            I know how every other company selling this service operates. It&apos;s a straightforward product that&apos;s being sold
-            for too much. We&apos;re offering effectively the same product for half of what most other vendors charge.
+            We know exactly how other reputation management companies operate, which is why we're able to deliver the same results at about half the cost.
+            <br />
+            <br />
+            But cost isn’t our only differentiator — we also recognize and reward the people who make great patient reviews possible: your team. By tying incentives directly to the experiences they create, reputation management becomes more than a tool — it becomes a motivator that drives better outcomes.
           </p>
           <div className="mt-8 grid md:grid-cols-2 gap-6 text-left">
             <Card className="border-slate-200">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">Fair pricing</h3>
                 <p className="text-slate-700">
-                  Our mission isn&apos;t to be the cheapest, but to be fair. We understand the value this brings and price it accordingly,
-                  not based on what the market will bear.
+                  Our mission isn’t to be the cheapest — it’s to be fair. We understand the value this service brings and the work it takes, and we price it accordingly — not based on extracting the most from owners.
                 </p>
               </CardContent>
             </Card>
@@ -196,8 +164,7 @@ export default function ReputationManagementPage() {
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">Team-first approach</h3>
                 <p className="text-slate-700">
-                  We know great reviews come from great experiences. That&apos;s why we use a large portion of our earnings to reward
-                  your teams when they hit review targets.
+                  We know it’s your team that creates great patient experiences — and great reviews follow. Because incentives drive results, we reward teams that hit review targets. This comes directly out of our pocket, with no additional cost to you.
                 </p>
               </CardContent>
             </Card>
@@ -214,22 +181,22 @@ export default function ReputationManagementPage() {
             {
               step: "1",
               title: "Set your cadence",
-              desc: "We work with you to determine when and how often to send review requests based on your patient flow and preferences.",
+              desc: "We work with you to decide when and how often to send review requests, based on your preferences and what proves most effective.",
             },
             {
               step: "2",
               title: "Choose your messaging",
-              desc: "We explain the various text message options and their impact on your review goals, then customize them for your practice.",
+              desc: "We walk you through the different text message options—like gated vs. non-gated — and explain how each impacts your review goals. From there, you choose the approach, and we customize the message to fit your practice.",
             },
             {
               step: "3",
               title: "Connect your system",
-              desc: "We integrate with your EHR, PM, or CMS system to automatically trigger review requests when patients complete visits.",
+              desc: "We connect with your EHR, PM, or CMS system to automatically trigger review requests for patients that had a visit.",
             },
             {
               step: "4",
               title: "Start collecting reviews",
-              desc: "Patients receive automated, personalized text messages asking them to leave Google reviews at the perfect moment.",
+              desc: "Patients receive automated text messages asking them to leave Google reviews at the perfect moment.",
             },
             {
               step: "5",
@@ -269,7 +236,7 @@ export default function ReputationManagementPage() {
               </div>
               <div className="space-y-3 text-slate-700 mb-6">
                 <p>• Automated review request text messages</p>
-                <p>• EHR/PM system integration</p>
+                <p>• EHR/PM system connection</p>
                 <p>• Custom messaging and timing</p>
                 <p>• Review performance tracking</p>
                 <p>• Team rewards program</p>
@@ -289,10 +256,10 @@ export default function ReputationManagementPage() {
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Ready to get more reviews?</h2>
             <p className="mt-3 text-slate-700">
-              Tell us about your practice and we&apos;ll set up a quick call to get you started with automated review collection.
+              Tell us about your practice and we'll set up a quick call to get you started with automated review collection.
             </p>
             <p className="mt-2 text-sm text-slate-500">
-              All submissions are handled securely. We&apos;ll contact you within one business day.
+              All submissions are handled securely. We'll contact you within one business day.
             </p>
           </div>
           <Card className="border-slate-200">
@@ -302,13 +269,13 @@ export default function ReputationManagementPage() {
                 <Input name="email" type="email" placeholder="Work email" required />
                 <Input name="practice" placeholder="Practice name" required />
                 <Input name="locations" placeholder="Number of locations" type="number" min="1" />
-                <Input name="current_system" placeholder="Current EHR/PM system (if known)" />
+                <Input name="current_system" placeholder="Current EHR/PM system" />
                 <Textarea
                   name="message"
-                  placeholder="Tell us about your current review situation and goals"
+                  placeholder="Optional message"
                   rows={4}
                 />
-                <div className="flex items-center gap-2 text-sm text-slate-600">
+                {/* <div className="flex items-center gap-2 text-sm text-slate-600">
                   <input
                     id="consent"
                     name="consent"
@@ -319,14 +286,14 @@ export default function ReputationManagementPage() {
                   <label htmlFor="consent">
                     I consent to being contacted about this reputation management service.
                   </label>
-                </div>
+                </div> */}
 
                 <Button type="submit" className="w-full h-11" disabled={status === "loading"}>
                   {status === "loading" ? "Submitting…" : "Get started"}
                 </Button>
 
                 {status === "success" && (
-                  <p className="text-green-700 text-sm">Thanks! We&apos;ll be in touch within 1 business day to set up your reputation management system.</p>
+                  <p className="text-green-700 text-sm">Thanks! We'll be in touch within 1 business day to set up your reputation management system.</p>
                 )}
                 {status === "error" && (
                   <p className="text-red-700 text-sm">{error}</p>
@@ -345,32 +312,26 @@ export default function ReputationManagementPage() {
             <AccordionTrigger>How does the automated review system work?</AccordionTrigger>
             <AccordionContent>
               We integrate with your EHR/PM system to automatically detect when patients complete appointments. Based on your
-              configured timing (e.g., 2 hours or 1 day post-visit), we send personalized text messages asking patients to
+              configured timing, we send personalized text messages asking patients to
               leave Google reviews. The messages include direct links to your Google Business Profile.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="integration">
             <AccordionTrigger>Which EHR/PM systems do you integrate with?</AccordionTrigger>
             <AccordionContent>
-              We work with most major EHR and practice management systems including Epic, Cerner, athenahealth, NextGen,
-              eClinicalWorks, and many others. If you have a custom system or API, we can usually create a custom integration.
-              We&apos;ll assess your specific setup during our initial consultation.
+             We work with most major EHR and practice management systems and will review your specific setup during the initial consultation. We’ll need a non-clinical account created.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="compliance">
             <AccordionTrigger>Is this HIPAA compliant?</AccordionTrigger>
             <AccordionContent>
-              Yes, our system is designed to be HIPAA compliant. We only access the minimum necessary information (patient
-              contact details and appointment completion status) and all data is encrypted in transit and at rest. We&apos;ll
-              work with you to ensure all integrations meet your compliance requirements.
+              Yes, our system is designed to be HIPAA compliant. We only access the minimum necessary information (patient contact details and appointment completion status), and all data is encrypted in transit and at rest. In addition, our messages avoid protected health information (PHI), so they do not trigger HIPAA issues. We’ll work with you to ensure all integrations meet your compliance requirements.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="team-rewards">
             <AccordionTrigger>How does the team rewards program work?</AccordionTrigger>
             <AccordionContent>
-              We help you set monthly review targets based on your patient volume and goals. When your team hits these targets,
-              we provide rewards (gift cards, bonuses, etc.) funded by a portion of your subscription fee. This creates positive
-              incentives for your team to focus on patient experience, which naturally leads to better reviews.
+              We work with you to set review targets tailored to your patient volume and goals. When your team reaches these targets, they become eligible for our rewards programs. This creates positive incentives that keep the focus on delivering great patient experiences — which naturally leads to better reviews.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="setup-time">
@@ -389,19 +350,19 @@ export default function ReputationManagementPage() {
               on what drives the best response rates.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="results">
+          {/* <AccordionItem value="results">
             <AccordionTrigger>What kind of results can we expect?</AccordionTrigger>
             <AccordionContent>
               Most practices see a 300-500% increase in Google reviews within the first 3 months. The exact results depend on
               your patient volume, current review rate, and patient satisfaction levels. We&apos;ll help you set realistic targets
               and track progress toward your goals.
             </AccordionContent>
-          </AccordionItem>
+          </AccordionItem> */}
           <AccordionItem value="contract">
             <AccordionTrigger>Are there long-term contracts?</AccordionTrigger>
             <AccordionContent>
               No long-term contracts required. We offer month-to-month service because we&apos;re confident in the value we provide.
-              You can cancel anytime with 30 days notice. We believe in earning your business every month through results,
+              You can cancel anytime. We believe in earning your business every month through results,
               not locking you into lengthy agreements.
             </AccordionContent>
           </AccordionItem>

@@ -68,6 +68,14 @@ export function Header() {
                       Practice Health Checkup
                     </Link>
                   </DropdownMenu.Item>
+                  <DropdownMenu.Item className="outline-none">
+                    <Link
+                      href="/accountability-partner"
+                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
+                    >
+                      Accountability Partner
+                    </Link>
+                  </DropdownMenu.Item>
                 </DropdownMenu.Content>
               </DropdownMenu.Portal>
             </DropdownMenu.Root>
@@ -154,6 +162,11 @@ export function Header() {
                   <Dialog.Close asChild>
                     <Link href="/practice-health-checkup" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
                       Practice Health Checkup
+                    </Link>
+                  </Dialog.Close>
+                  <Dialog.Close asChild>
+                    <Link href="/accountability-partner" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                      Accountability Partner
                     </Link>
                   </Dialog.Close>
 
