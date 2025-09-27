@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, BarChart3, Users, AlertTriangle, FileText, Shield, Target } from "lucide-react";
 
 // If you use Next.js App Router, export default this component from app/(marketing)/practice-health-checkup/page.tsx
 // Tailwind required. shadcn/ui components assumed to be installed.
@@ -114,14 +114,17 @@ export default function PracticeHealthCheckupPage() {
             {
               title: "Complete practice snapshot",
               desc: "Financial, marketing, and operational data in one overview so you see the full picture.",
+              icon: BarChart3,
             },
             {
               title: "Vendor impact review",
-              desc: "Get an objective view of how your vendors affect your practice—so you can see what’s delivering value, what’s not, and make smarter decisions about where to invest.",
+              desc: "Get an objective view of how your vendors affect your practice—so you can see what's delivering value, what's not, and make smarter decisions about where to invest.",
+              icon: Target,
             },
             {
               title: "Provider performance review",
-              desc: "Know how each provider is performing and whether they’re contributing to your bottom line. Get clear visibility into productivity, profitability, and opportunities for improvement.",
+              desc: "Know how each provider is performing and whether they're contributing to your bottom line. Get clear visibility into productivity, profitability, and opportunities for improvement.",
+              icon: Users,
             },
             // {
             //   title: "Benchmarks & targets",
@@ -129,21 +132,27 @@ export default function PracticeHealthCheckupPage() {
             // },
             {
               title: "Monthly summary",
-              desc: "A clear, data-driven report that shows what’s working and what’s not — like having a data analyst on your team.",
+              desc: "A clear, data-driven report that shows what's working and what's not — like having a data analyst on your team.",
+              icon: FileText,
             },
             {
               title: "Risk detection",
               desc: "Spot problems before they become costly — like slowing growth, payment delays, and other issues that can hold your practice back.",
+              icon: AlertTriangle,
             },
             {
               title: "Owner‑ready insights",
               desc: "Plain‑english takeaways and charts you can share with your team.",
+              icon: Shield,
             },
           ].map((f, i) => (
             <Card key={i} className="border-slate-200">
               <CardContent className="p-6">
-                <h3 className="font-semibold text-lg">{f.title}</h3>
-                <p className="mt-2 text-slate-700">{f.desc}</p>
+                <div className="flex items-center gap-3 mb-3">
+                  <f.icon className="w-5 h-5 text-orange-500" />
+                  <h3 className="font-semibold text-lg">{f.title}</h3>
+                </div>
+                <p className="text-slate-700">{f.desc}</p>
               </CardContent>
             </Card>
           ))}

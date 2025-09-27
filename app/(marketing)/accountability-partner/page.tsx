@@ -12,6 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { CheckCircle, Target, MessageSquare, BarChart3, Users, DollarSign } from "lucide-react";
 
 export default function AccountabilityPartnerPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -87,21 +88,74 @@ export default function AccountabilityPartnerPage() {
           <div className="md:col-span-5">
             <Card className="border-slate-200">
               <CardContent className="p-6">
-                <ul className="space-y-2 text-slate-800 list-disc pl-5">
-                  <li>Weekly momentum through lightweight check‑ins.</li>
-                  <li>Progress you can see, track, and celebrate.</li>
-                  <li>Optional financial "stake" to sharpen commitment.</li>
-                </ul>
+                <div className="space-y-3 text-slate-800">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Weekly momentum through lightweight check‑ins.</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Progress you can see, track, and celebrate.</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Optional financial "stake" to sharpen commitment.</span>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* HOW IT WORKS - VERTICAL FORMAT */}
-      <section id="how-it-works" className="mx-auto max-w-6xl px-6 py-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">How it works</h2>
-        <div className="space-y-6">
+      {/* KEY FEATURES */}
+      <section className="mx-auto max-w-6xl px-6 py-8">
+        <h2 className="text-2xl md:text-3xl font-bold">What you get</h2>
+        <div className="mt-6 grid md:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Prioritization, simplified",
+              desc: "Success comes from focus. Decide on the 3 – 5 most important actions for the week or month. No more laundry lists.",
+              icon: Target,
+            },
+            {
+              title: "Weekly check‑ins",
+              desc: "We check in mid‑week and end‑week to keep things moving.",
+              icon: MessageSquare,
+            },
+            {
+              title: "Progress tracking",
+              desc: "See week‑over‑week momentum and celebrate wins; adjust quickly when you miss.",
+              icon: BarChart3,
+            },
+            {
+              title: "Sounding board",
+              desc: "Gut‑check goals and trade‑offs with someone who's unemotional and on your side.",
+              icon: Users,
+            },
+            {
+              title: "Commitment boost (optional)",
+              desc: "Stake an amount you choose; hit your goals and keep it — miss, and we take it.",
+              icon: DollarSign,
+            },
+          ].map((f, i) => (
+            <Card key={i} className="border-slate-200">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <f.icon className="w-5 h-5 text-orange-500" />
+                  <h3 className="font-semibold text-lg">{f.title}</h3>
+                </div>
+                <p className="text-slate-700">{f.desc}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* HOW IT WORKS */}
+      <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
+        <div className="mt-8 space-y-6">
           {[
             {
               step: "1",
@@ -124,57 +178,15 @@ export default function AccountabilityPartnerPage() {
               desc: "We track progress week‑over‑week, highlight wins, and reset for the next sprint.",
             },
           ].map((s) => (
-            <div key={s.step} className="flex gap-4">
-              <div className="flex-shrink-0">
-                <div className="h-10 w-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-lg">
-                  {s.step}
-                </div>
+            <div key={s.step} className="flex items-start gap-4 text-left max-w-2xl mx-auto">
+              <div className="h-8 w-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold flex-shrink-0">
+                {s.step}
               </div>
-              <div className="flex-1">
-                <h3 className="font-semibold text-xl text-slate-900 mb-2">{s.title}</h3>
-                <p className="text-slate-700 leading-relaxed">{s.desc}</p>
+              <div>
+                <h3 className="font-semibold text-lg">{s.title}</h3>
+                <p className="mt-1 text-slate-700">{s.desc}</p>
               </div>
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* KEY FEATURES */}
-      <section className="mx-auto max-w-6xl px-6 py-8">
-        <h2 className="text-2xl md:text-3xl font-bold">What you get</h2>
-        <div className="mt-6 grid md:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Prioritization, simplified",
-              desc: "Success comes from focus. Decide on the 3 – 5 most important actions for the week or month. No more laundry lists.", 
-            },
-            {
-              title: "Weekly check‑ins",
-              desc: "We check in mid‑week and end‑week to keep things moving.",
-            },
-            {
-              title: "Progress tracking",
-              desc: "See week‑over‑week momentum and celebrate wins; adjust quickly when you miss.",
-            },
-            {
-              title: "Sounding board",
-              desc: "Gut‑check goals and trade‑offs with someone who's unemotional and on your side.",
-            },
-            // {
-            //   title: "Templates & prompts",
-            //   desc: "Simple prompts to write goals that are specific, owned, and time‑bound.",
-            // },
-            {
-              title: "Commitment boost (optional)",
-              desc: "Stake an amount you choose; hit your goals and keep it — miss, and we take it.",
-            },
-          ].map((f, i) => (
-            <Card key={i} className="border-slate-200">
-              <CardContent className="p-6">
-                <h3 className="font-semibold text-lg">{f.title}</h3>
-                <p className="mt-2 text-slate-700">{f.desc}</p>
-              </CardContent>
-            </Card>
           ))}
         </div>
       </section>
@@ -234,7 +246,7 @@ export default function AccountabilityPartnerPage() {
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Start your accountability sprint</h2>
             <p className="mt-3 text-slate-700">
-              Tell us your timeframe and non‑negotiables. We'll help you lock them in and get moving.
+            Share your priorities and timeframe. We’ll help lock them in and keep you moving toward your   goals with the accountability you need to achieve them.
             </p>
             {/* <p className="mt-2 text-sm text-slate-500">Submissions are handled by a server‑side route you control. No credentials in the browser.</p> */}
           </div>
@@ -244,28 +256,17 @@ export default function AccountabilityPartnerPage() {
                 {/* Honeypot */}
                 <input type="text" name="context" className="hidden" tabIndex={-1} autoComplete="off" />
 
-                <div className="grid gap-4 md:grid-cols-2">
-                  <Input name="name" placeholder="Full name" required />
-                  <Input name="email" type="email" placeholder="Email" required />
-                </div>
-                <div className="grid gap-4 md:grid-cols-2">
-                  <Input name="practice" placeholder="Practice name" required />
-                  <Input name="role" placeholder="Your role" required />
-                </div>
+                <Input name="name" placeholder="Full name" required />
+                <Input name="email" type="email" placeholder="Email" required />
+                <Input name="practice" placeholder="Practice name" required />
 
-                <div className="grid gap-4 md:grid-cols-2">
-                  <div>
-                    <label htmlFor="timeframe" className="block text-sm font-medium text-slate-700 mb-1">Timeframe</label>
-                    <select id="timeframe" name="timeframe" required className="block w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 shadow-sm focus:border-slate-400 focus:ring-slate-400">
-                      <option value="weekly">Weekly</option>
-                      <option value="monthly">Monthly</option>
-                      <option value="quarterly">Quarterly</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label htmlFor="priorities" className="block text-sm font-medium text-slate-700 mb-1">Top 3–5 priorities</label>
-                    <Textarea id="priorities" name="priorities" rows={4} placeholder="List your non‑negotiables for this timeframe" required />
-                  </div>
+                <div>
+                  <label htmlFor="package" className="block text-sm font-medium text-slate-700 mb-1">Partner package</label>
+                  <select id="package" name="package" required className="block w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 shadow-sm focus:border-slate-400 focus:ring-slate-400">
+                    <option value="">Select package</option>
+                    <option value="accountability-only">Accountability partner only</option>
+                    <option value="commitment-boost">Commitment boost</option>
+                  </select>
                 </div>
 
                 {/* <div className="flex items-center gap-2 text-sm text-slate-600">

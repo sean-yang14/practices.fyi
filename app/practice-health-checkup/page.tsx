@@ -275,17 +275,17 @@ export default function PracticeHealthCheckupPage() {
             <p className="mt-3 text-slate-700">
               Fill out the form and I&apos;ll reach out to schedule our conversation. No commitment, no sales - just a helpful discussion about your practice.
             </p>
-            <p className="mt-2 text-sm text-slate-500">
+            {/* <p className="mt-2 text-sm text-slate-500">
               All submissions are handled securely and privately. I&apos;ll only use your information to contact you about the checkup.
-            </p>
+            </p> */}
           </div>
           <Card className="border-slate-200">
             <CardContent className="p-6">
               <form onSubmit={onSubmit} className="space-y-4">
                 <Input name="name" placeholder="Your name" required />
-                <Input name="email" type="email" placeholder="Email address" required />
+                <Input name="email" type="email" placeholder="Email" required />
                 <Input name="practice" placeholder="Practice name" required />
-                <Input name="role" placeholder="Your role" />
+                {/* <Input name="role" placeholder="Your role" /> */}
                 <Textarea
                   name="message"
                   placeholder="What would you like to discuss? Any specific challenges or questions on your mind?"

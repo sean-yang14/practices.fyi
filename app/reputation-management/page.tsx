@@ -270,18 +270,19 @@ export default function ReputationManagementPage() {
             <p className="mt-3 text-slate-700">
               Tell us about your practice and we'll set up a quick call to get you started with automated review collection.
             </p>
-            <p className="mt-2 text-sm text-slate-500">
+            {/* <p className="mt-2 text-sm text-slate-500">
               All submissions are handled securely. We'll contact you within one business day.
-            </p>
+            </p> */}
           </div>
           <Card className="border-slate-200">
             <CardContent className="p-6">
               <form onSubmit={onSubmit} className="space-y-4">
                 <Input name="name" placeholder="Your name" required />
-                <Input name="email" type="email" placeholder="Work email" required />
+                {/* <Input name="role" placeholder="Your role" /> */}
+                <Input name="email" type="email" placeholder="Email" required />
                 <Input name="practice" placeholder="Practice name" required />
                 <Input name="locations" placeholder="Number of locations" type="number" min="1" />
-                <Input name="current_system" placeholder="Current EHR/PM system" />
+                {/* <Input name="current_system" placeholder="Current EHR/PM system" /> */}
                 <Textarea
                   name="message"
                   placeholder="Optional message"
