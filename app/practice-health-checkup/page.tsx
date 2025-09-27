@@ -190,7 +190,7 @@ export default function PracticeHealthCheckupPage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center">
+      <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center scroll-mt-12">
         <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
         <p className="mt-3 text-slate-700">Simple, straightforward process focused on having a helpful conversation.</p>
         <div className="mt-8 space-y-6">
@@ -230,45 +230,61 @@ export default function PracticeHealthCheckupPage() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10">
+      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-12">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold">Completely free</h2>
-          <p className="mt-3 text-slate-700">
+          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Completely free</h2>
+          <p className="mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600">
             I want to make the ownership journey a little less lonely, and this is one way I&apos;m hoping to do so.
           </p>
         </div>
 
-        <div className="mt-8 max-w-2xl mx-auto">
-          <Card className="border-slate-200">
-            <CardContent className="p-8 text-center">
-              <h3 className="font-semibold text-xl mb-2">Practice Health Checkup</h3>
-              <div className="mb-4">
-                <span className="text-4xl font-extrabold tracking-tight text-green-600">Free</span>
-              </div>
-              <div className="space-y-3 text-slate-700 mb-6">
-                <p>• 30 - 60 minute video conversation</p>
-                <p>• Review your practice data together</p>
-                <p>• Talk through challenges and opportunities</p>
-                <p>• Get an outside perspective on your business</p>
-                <p>• No sales pitch, just helpful conversation</p>
-              </div>
-              <div className="bg-orange-50 p-4 rounded-lg mb-6">
-                <p className="text-sm text-slate-700">
-                  <strong>Optional:</strong> With your permission, I&apos;d love to share parts of our conversation on social media.
-                  I believe there&apos;s huge value in learning from others and knowing you&apos;re not alone in these challenges.
-                  You have final say on anything that gets published.
-                </p>
-              </div>
-              <a href="#signup" className="inline-flex">
-                <Button className="h-11 px-8">Book your checkup</Button>
-              </a>
-            </CardContent>
-          </Card>
+        <div className="mt-16 max-w-lg mx-auto">
+          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-900">Practice Health Checkup</h3>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-green-600">Free</span>
+            </p>
+            <a href="#signup" className="mt-6 block w-full">
+              <Button className="w-full h-11 px-8">Book your checkup</Button>
+            </a>
+            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                30 - 60 minute video conversation
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Review your practice data together
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Talk through challenges and opportunities
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Get an outside perspective on your business
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                No sales pitch, just helpful conversation
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Optional social media sharing section */}
+        <div className="mt-12 max-w-3xl mx-auto rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
+          <h3 className="text-lg font-semibold text-gray-900">Optional: Help others learn</h3>
+          <p className="mt-4 text-sm text-gray-600">
+            With your permission, I&apos;d love to share parts of our conversation on social media.
+            I believe there&apos;s huge value in learning from others and knowing you&apos;re not alone in these challenges.
+            You have final say on anything that gets published.
+          </p>
         </div>
       </section>
 
       {/* CTA / SIGNUP */}
-      <section id="signup" className="mx-auto max-w-6xl px-6 py-10">
+      <section id="signup" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-12">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Ready for your practice checkup?</h2>

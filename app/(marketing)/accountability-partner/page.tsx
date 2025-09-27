@@ -153,7 +153,7 @@ export default function AccountabilityPartnerPage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center">
+      <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center scroll-mt-20">
         <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
         <div className="mt-8 space-y-6">
           {[
@@ -192,56 +192,79 @@ export default function AccountabilityPartnerPage() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10">
-        <div className="flex items-baseline justify-between gap-4">
-          <h2 className="text-2xl md:text-3xl font-bold">Pricing</h2>
-          {/* <Badge className="bg-orange-100 text-orange-900 hover:bg-orange-100">Simple & flexible</Badge> */}
+      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Pricing</h2>
         </div>
-        <div className="mt-6 grid md:grid-cols-2 gap-6">
+
+        <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Free plan */}
-          <Card className="border-slate-200">
-            <CardContent className="p-6">
-              <h3 className="font-semibold text-lg">Starter</h3>
-              <div className="mt-2 flex items-end gap-2">
-                <span className="text-4xl font-extrabold tracking-tight">Free</span>
-              </div>
-              <ul className="mt-4 space-y-2 text-slate-700 list-disc pl-5">
-                <li>Define weekly or monthly non‑negotiables</li>
-                <li>Mid‑week & end‑week check‑ins</li>
-                <li>Progress tracking & summary</li>
-              </ul>
-            </CardContent>
-          </Card>
-          {/* Commitment boost (stake) */}
-          <Card className="border-slate-200">
-            <CardContent className="p-6">
-              <h3 className="font-semibold text-lg">Commitment Boost (optional)</h3>
-              <div className="mt-2 flex items-end gap-2">
-                <span className="text-4xl font-extrabold tracking-tight">You choose</span>
-                <span className="text-slate-600">stake amount</span>
-              </div>
-              <ul className="mt-4 space-y-2 text-slate-700 list-disc pl-5">
-                <li>Put money behind your goals</li>
-                <li>Hit targets → keep your stake</li>
-                <li>Miss targets → forfeit your stake</li>
-              </ul>
-            </CardContent>
-          </Card>
+          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-900">Starter</h3>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">Free</span>
+            </p>
+            <a href="#signup" className="mt-6 block w-full">
+              <Button className="w-full h-11 px-6">Get started</Button>
+            </a>
+            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Define weekly or monthly non‑negotiables
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Mid‑week & end‑week check‑ins
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Progress tracking & summary
+              </li>
+            </ul>
+          </div>
+
+          {/* Commitment boost (stake) - Featured */}
+          <div className="rounded-3xl p-8 ring-2 ring-orange-500 xl:p-10 hover:ring-orange-600 transition-all duration-300 relative">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+              <span className="bg-orange-500 text-white px-3 py-1 text-xs font-semibold rounded-full">Most Popular</span>
+            </div>
+            <h3 className="text-lg font-semibold text-gray-900">Commitment Boost</h3>
+            <p className="mt-4 text-sm text-gray-600">Optional add-on</p>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">You choose</span>
+              <span className="text-sm font-semibold text-gray-600">stake amount</span>
+            </p>
+            <a href="#signup" className="mt-6 block w-full">
+              <Button className="w-full h-11 px-6 bg-orange-500 hover:bg-orange-600">Get started</Button>
+            </a>
+            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Put money behind your goals
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Hit targets → keep your stake
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Miss targets → forfeit your stake
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Loss aversion explainer */}
-        <Card className="mt-6 border-slate-200">
-          <CardContent className="p-6">
-            <h3 className="font-semibold text-lg">Why the stake works: loss aversion</h3>
-            <p className="mt-2 text-slate-700">
-              Behavioral science shows people are often more motivated to <strong>avoid losing something</strong> than to gain the same amount — his is called <em>loss aversion</em>. Studies suggest losses can feel about twice as powerful as gains. Putting money down toward a task makes the potential loss feel real, which sharpens commitment and follow‑through.
-            </p>
-          </CardContent>
-        </Card>
+        <div className="mt-12 max-w-3xl mx-auto rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
+          <h3 className="text-lg font-semibold text-gray-900">Why the stake works: loss aversion</h3>
+          <p className="mt-4 text-sm text-gray-600">
+            Behavioral science shows people are often more motivated to <strong>avoid losing something</strong> than to gain the same amount — this is called <em>loss aversion</em>. Studies suggest losses can feel about twice as powerful as gains. Putting money down toward a task makes the potential loss feel real, which sharpens commitment and follow‑through.
+          </p>
+        </div>
       </section>
 
       {/* SIGN UP CTA */}
-      <section id="signup" className="mx-auto max-w-6xl px-6 py-10">
+      <section id="signup" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Start your accountability sprint</h2>

@@ -5,10 +5,8 @@ const schema = z.object({
   name: z.string().min(1),
   email: z.string().email(),
   practice: z.string().min(1),
-  role: z.string().optional().default(""),
-  message: z.string().optional().default(""),
-  consent: z.string().optional(), // checkbox returns "on" when checked
-  social_consent: z.string().optional(), // checkbox returns "on" when checked
+  package: z.enum(["accountability-only", "commitment-boost"]),
+  context: z.string().optional().default(""), // honeypot
 });
 
 const TO = "seanhyang1@gmail.com";
@@ -21,23 +19,29 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid form" }, { status: 400 });
     }
 
-    const { name, email, practice, role, message, social_consent } = parsed.data;
+    const { name, email, practice, package: packageType, context } = parsed.data;
+
+    // Honeypot check
+    if (context && context.length > 0) {
+      return NextResponse.json({ ok: true }); // Return success to fool bots
+    }
+
+    const packageLabel = packageType === "accountability-only"
+      ? "Accountability Partner Only"
+      : "Commitment Boost";
 
     // Log the submission
-    console.log("New Practice Health Checkup lead submission:");
+    console.log("New Accountability Partner lead submission:");
     console.log({
       name,
       email,
       practice,
-      role,
-      message: message || "(none)",
-      socialConsent: social_consent === "on" ? "Yes" : "No",
-      source: "Practice Health Checkup Page",
+      package: packageLabel,
+      source: "Accountability Partner Page",
       timestamp: new Date().toISOString()
     });
 
-    // In development/demo mode, we'll just log the submission
-    // To send actual emails, set up RESEND_API_KEY in .env.local
+    // Send email if RESEND_API_KEY is configured
     if (process.env.RESEND_API_KEY) {
       const { Resend } = await import("resend");
       const resend = new Resend(process.env.RESEND_API_KEY);
@@ -45,20 +49,16 @@ export async function POST(req: Request) {
       await resend.emails.send({
         from: "Practices.fyi <no-reply@yourdomain.com>",
         to: [TO],
-        subject: "🩺 New Practice Health Checkup Request",
+        subject: "🎯 New Accountability Partner Request",
         replyTo: email,
         text: [
-          `NEW PRACTICE HEALTH CHECKUP REQUEST`,
-          `Source: Practice Health Checkup Page`,
+          `NEW ACCOUNTABILITY PARTNER REQUEST`,
+          `Source: Accountability Partner Page`,
           ``,
           `Name: ${name}`,
           `Email: ${email}`,
           `Practice: ${practice}`,
-          `Role: ${role}`,
-          `Social Media Consent: ${social_consent === "on" ? "Yes" : "No"}`,
-          ``,
-          `Message:`,
-          message || "(none)",
+          `Package: ${packageLabel}`,
           ``,
           `---`,
           `Submitted: ${new Date().toLocaleString()}`
@@ -68,7 +68,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true });
   } catch (e) {
-    console.error(e);
+    console.error("Accountability lead submission error:", e);
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }

@@ -19,6 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { CheckCircle } from "lucide-react";
 
 type PartnerType = "financial" | "consultant" | "recruiting" | "other";
 
@@ -85,81 +86,117 @@ export default function PartnersPage() {
 
       {/* HOW PARTNERSHIP WORKS / GOAL */}
       <section className="mx-auto max-w-6xl px-6 pb-10">
-        <div className="grid gap-6 md:grid-cols-12 items-start">
-          <div className="md:col-span-7">
+        <div className="grid gap-8 md:grid-cols-2 items-start">
+          <div>
             <h2 className="text-2xl md:text-3xl font-bold">How we work with partners</h2>
             <p className="mt-4 text-slate-700">
               We build tools for practices and we invite you to share your data so we can build together. By combining your expertise with insights from other trusted partners, we create a collective resource more powerful than any one group alone. That makes your data more valuable to practices, strengthens the impact you deliver to your clients, and opens a new customer acquisition channel through our tools.
               <br />
               <br />
-              And we don’t stop there. Our product development can also support your team directly, from custom dashboards for your clients to automations that save time and reduce manual work.
+              And we don't stop there. Our product development can also support your team directly, from custom dashboards for your clients to automations that save time and reduce manual work.
             </p>
           </div>
-          <div className="md:col-span-5">
-            <Card className="border-slate-200">
-              <CardContent className="p-6">
-                <h3 className="font-semibold text-lg">What we bring to your team</h3>
-                <ul className="mt-3 space-y-2 list-disc pl-5 text-slate-800">
-                  <li>A new customer acquisition channel.</li>
-                  <li>Stronger insights through access to more and better data.</li>
-                  <li>Custom dashboards tailored to your needs</li>
-                  <li>Automations that save time and reduce manual work</li>
-                </ul>
-              </CardContent>
-            </Card>
+
+          {/* What we bring to your team - unified box */}
+          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-900 mb-8">What we bring to your team</h3>
+
+            {/* Growth & Insights Section */}
+            <div className="mb-8">
+              <h4 className="text-base font-semibold text-gray-900 mb-4">Growth & Insights</h4>
+              <ul role="list" className="space-y-3 text-sm text-gray-600">
+                <li className="flex gap-x-3">
+                  <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                  A new customer acquisition channel
+                </li>
+                <li className="flex gap-x-3">
+                  <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                  Stronger insights through access to more and better data
+                </li>
+              </ul>
+            </div>
+
+            {/* Custom Solutions Section */}
+            <div>
+              <h4 className="text-base font-semibold text-gray-900 mb-4">Custom Solutions</h4>
+              <ul role="list" className="space-y-3 text-sm text-gray-600">
+                <li className="flex gap-x-3">
+                  <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                  Custom dashboards tailored to your needs
+                </li>
+                <li className="flex gap-x-3">
+                  <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                  Automations that save time and reduce manual work
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* EXPERTS WHO PARTNER WITH US */}
-      <section className="mx-auto max-w-6xl px-6 py-4">
+      {/* <section className="mx-auto max-w-6xl px-6 py-4">
         <h2 className="text-2xl md:text-3xl font-bold">Experts we're looking to partner with</h2>
         <p className="mt-3 text-slate-500">We're actively expanding to include more partner types as we grow.</p>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
-          {/* Financial Partners */}
           <Card className="border-slate-200">
             <CardContent className="p-6">
               <h3 className="font-semibold text-lg">Financial Partners</h3>
               <p className="text-slate-600 text-sm mb-3">CPAs, CFOs, Bookkeepers</p>
             </CardContent>
           </Card>
-          {/* Practice Consultants */}
           <Card className="border-slate-200">
             <CardContent className="p-6">
               <h3 className="font-semibold text-lg">Practice Consultants</h3>
             </CardContent>
           </Card>
         </div>
-      </section>
+      </section> */}
 
       {/* PRICING */}
-      <section className="mx-auto max-w-6xl px-6 py-8">
-        <h2 className="text-2xl md:text-3xl font-bold">Pricing</h2>
-        <div className="mt-6 space-y-6">
-          <Card className="border-slate-200">
-            <CardContent className="p-6">
-              <h3 className="font-semibold text-lg mb-3">General Partnership Tools</h3>
-              <p className="text-slate-900 font-medium mb-2">Free</p>
-              <p className="text-slate-700">
+      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Pricing</h2>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* General Partnership Tools */}
+          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-900">General Partnership Tools</h3>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">Free</span>
+            </p>
+            <a href="#signup" className="mt-6 block w-full">
+              <Button className="w-full h-11 px-6">Get started</Button>
+            </a>
+            <div className="mt-8 xl:mt-10">
+              <p className="text-sm text-gray-600">
                 Our mission is to provide insane value to practices. I believe strongly that we can build amazing tools that truly help practices thrive. I'm removing all hurdles in pursuit of this goal—there's no cost for partnering on tools for the general public.
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
 
-          <Card className="border-slate-200">
-            <CardContent className="p-6">
-              <h3 className="font-semibold text-lg mb-3">Custom Partner Solutions</h3>
-              <p className="text-slate-900 font-medium mb-2">Custom pricing</p>
-              <p className="text-slate-700">
+          {/* Custom Partner Solutions */}
+          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-900">Custom Partner Solutions</h3>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">Custom</span>
+              <span className="text-sm font-semibold text-gray-600">pricing</span>
+            </p>
+            <a href="#signup" className="mt-6 block w-full">
+              <Button variant="outline" className="w-full h-11 px-6">Contact us</Button>
+            </a>
+            <div className="mt-8 xl:mt-10">
+              <p className="text-sm text-gray-600">
                 Need custom dashboards, automations, or integrations specific to your firm? Let's discuss pricing based on your exact needs and the value we'll create together.
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* SIGN UP CTA */}
-      <section id="signup" className="mx-auto max-w-6xl px-6 py-10">
+      <section id="signup" className="mx-auto max-w-6xl px-6 pt-5 pb-10 scroll-mt-20">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Become a partner</h2>
@@ -176,40 +213,10 @@ export default function PartnersPage() {
                 {/* Honeypot */}
                 <input type="text" name="context" className="hidden" tabIndex={-1} autoComplete="off" />
 
-                <div className="grid gap-4 md:grid-cols-2">
-                  <Input name="name" placeholder="Full name" required />
-                  <Input name="email" type="email" placeholder="Work email" required />
-                </div>
-                <div className="grid gap-4 md:grid-cols-2">
-                  <Input name="company" placeholder="Company" required />
-                  <Input name="role" placeholder="Your role" required />
-                </div>
-                <Input name="website" type="url" placeholder="Company website (https://)" />
-
-                <div className="grid gap-4 md:grid-cols-2">
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-1">Partner type</label>
-                    <Select name="partnerType" defaultValue="financial">
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="financial">Financial (CPA/CFO/Bookkeeper)</SelectItem>
-                        <SelectItem value="consultant">Consultant</SelectItem>
-                        <SelectItem value="recruiting">Recruiting firm</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <Input name="region" placeholder="Region (City/State or Country)" />
-                </div>
-
-                <Textarea name="message" placeholder="Tell us about your clients and how you currently help them" rows={4} required />
-
-                <div className="flex items-center gap-2 text-sm text-slate-600">
-                  <input id="consent" name="consent" type="checkbox" required className="h-4 w-4 rounded border-slate-300" />
-                  <label htmlFor="consent">I consent to being contacted about this partnership.</label>
-                </div>
+                <Input name="name" placeholder="Full name" required />
+                <Input name="email" type="email" placeholder="Email" required />
+                <Input name="website" type="url" placeholder="Company website" />
+                <Textarea name="message" placeholder="Tell us more about yourself and what you're looking for" rows={4} required />
 
                 <Button type="submit" className="w-full h-11" disabled={status === "loading"}>
                   {status === "loading" ? "Submitting…" : "Request partnership intro"}
@@ -242,12 +249,12 @@ export default function PartnersPage() {
             <AccordionContent>
               You gain amplified reach for your data, access to broader insights, and a new customer acquisition channel through our tools. We also explore ways to support your team directly with dashboards and automations.
             </AccordionContent>
+          </AccordionItem>
           <AccordionItem value="fit">
             <AccordionTrigger>Who is a good fit for partnership?</AccordionTrigger>
             <AccordionContent>
               Companies that help practices succeed in any capacity — especially those that value transparency, prioritize data, and genuinely care about practice owners.
             </AccordionContent>
-          </AccordionItem>
           </AccordionItem>
           <AccordionItem value="team-build">
             <AccordionTrigger>Can you build something just for our team?</AccordionTrigger>

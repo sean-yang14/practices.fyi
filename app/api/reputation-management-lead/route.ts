@@ -6,9 +6,7 @@ const schema = z.object({
   email: z.string().email(),
   practice: z.string().min(1),
   locations: z.string().optional().default("1"),
-  current_system: z.string().optional().default(""),
   message: z.string().optional().default(""),
-  consent: z.string().optional(), // checkbox returns "on" when checked
 });
 
 const TO = "seanhyang1@gmail.com";
@@ -21,17 +19,17 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid form" }, { status: 400 });
     }
 
-    const { name, email, practice, locations, current_system, message } = parsed.data;
+    const { name, email, practice, locations, message } = parsed.data;
 
-    // Log the submission (in production, you'd want to send an actual email)
+    // Log the submission
     console.log("New Reputation Management lead submission:");
     console.log({
       name,
       email,
       practice,
       locations,
-      currentSystem: current_system,
       message: message || "(none)",
+      source: "Reputation Management Page",
       timestamp: new Date().toISOString()
     });
 
@@ -44,17 +42,22 @@ export async function POST(req: Request) {
       await resend.emails.send({
         from: "Practices.fyi <no-reply@yourdomain.com>",
         to: [TO],
-        subject: "New Reputation Management lead",
+        subject: "⭐ New Reputation Management Request",
         replyTo: email,
         text: [
+          `NEW REPUTATION MANAGEMENT REQUEST`,
+          `Source: Reputation Management Page`,
+          ``,
           `Name: ${name}`,
           `Email: ${email}`,
           `Practice: ${practice}`,
           `Number of Locations: ${locations}`,
-          `Current System: ${current_system || "(not specified)"}`,
           ``,
           `Message:`,
-          message || "(none)"
+          message || "(none)",
+          ``,
+          `---`,
+          `Submitted: ${new Date().toLocaleString()}`
         ].join("\n"),
       });
     }

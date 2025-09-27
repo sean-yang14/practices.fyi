@@ -185,7 +185,7 @@ export default function ReputationManagementPage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center">
+      <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center scroll-mt-20">
         <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
         <p className="mt-3 text-slate-700">Simple setup, automatic results.</p>
         <div className="mt-8 space-y-6">
@@ -230,40 +230,56 @@ export default function ReputationManagementPage() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10">
+      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold">Simple, fair pricing</h2>
-          <p className="mt-3 text-slate-700">
+          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Simple, fair pricing</h2>
+          <p className="mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600">
             Half the price of other reputation management services. No hidden fees or long-term contracts.
           </p>
         </div>
 
-        <div className="mt-8 max-w-lg mx-auto">
-          <Card className="border-slate-200">
-            <CardContent className="p-8 text-center">
-              <h3 className="font-semibold text-xl mb-2">Reputation Management</h3>
-              <div className="mb-4">
-                <span className="text-4xl font-extrabold tracking-tight">$250</span>
-                <span className="text-slate-600 ml-2">per month per location</span>
-              </div>
-              <div className="space-y-3 text-slate-700 mb-6">
-                <p>• Automated review request text messages</p>
-                <p>• EHR/PM system connection</p>
-                <p>• Custom messaging and timing</p>
-                <p>• Review performance tracking</p>
-                <p>• Team rewards program</p>
-                <p>• No implementation fee!</p>
-              </div>
-              <a href="#signup" className="inline-flex">
-                <Button className="h-11 px-8">Get started</Button>
-              </a>
-            </CardContent>
-          </Card>
+        <div className="mt-16 max-w-lg mx-auto">
+          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-900">Reputation Management</h3>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">$250</span>
+              <span className="text-sm font-semibold text-gray-600">per month per location</span>
+            </p>
+            <a href="#signup" className="mt-6 block w-full">
+              <Button className="w-full h-11 px-8">Get started</Button>
+            </a>
+            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Automated review request text messages
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                EHR/PM system connection
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Custom messaging and timing
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Review performance tracking
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Team rewards program
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                No implementation fee!
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* CTA / SIGNUP */}
-      <section id="signup" className="mx-auto max-w-6xl px-6 py-10">
+      <section id="signup" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Ready to get more reviews?</h2>

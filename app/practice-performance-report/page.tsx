@@ -235,59 +235,66 @@ export default function PracticeHealthCheckupPage() {
       </section> */}
 
       {/* PRICING */}
-      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10">
-        <div className="flex items-baseline justify-between gap-4">
-          <h2 className="text-2xl md:text-3xl font-bold">Straightforward pricing</h2>
+      <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Straightforward pricing</h2>
+          <p className="mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600">
+            Pay per report. Choose monthly or quarterly. No long contracts.
+          </p>
         </div>
-        <p className="mt-3 text-slate-700">Pay per report. Choose monthly or quarterly. No long contracts.</p>
 
-        <div className="mt-6 grid md:grid-cols-2 gap-6">
+        <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Offering 1 */}
-          <Card className="border-slate-200">
-            <CardContent className="p-6">
-              <h3 className="font-semibold text-lg">Practice Performance Report</h3>
-              <div className="mt-2 flex items-end gap-2">
-                <span className="text-4xl font-extrabold tracking-tight">$50</span>
-                <span className="text-slate-600">per report</span>
-              </div>
-              <ul className="mt-4 space-y-2 text-slate-700 list-disc pl-5">
-                <li>One easy price, straightforward structure</li>
-                <li>Monthly or quarterly cadence</li>
-                <li>Not locked into long contracts</li>
-                <li>Ad hoc reporting available — custom pricing based on complexity</li>
-              </ul>
-              <div className="mt-6">
-                <a href="#signup" className="inline-flex">
-                  <Button className="h-11 px-6">Get started</Button>
-                </a>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-900">Practice Performance Report</h3>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">$50</span>
+              <span className="text-sm font-semibold text-gray-600">per report</span>
+            </p>
+            <a href="#signup" className="mt-6 block w-full">
+              <Button className="w-full h-11 px-6">Get started</Button>
+            </a>
+            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                One easy price, straightforward structure
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Monthly or quarterly cadence
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Not locked into long contracts
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Ad hoc reporting available — custom pricing based on complexity
+              </li>
+            </ul>
+          </div>
 
           {/* Offering 2 */}
-          <Card className="border-slate-200">
-            <CardContent className="p-6">
-              <h3 className="font-semibold text-lg">One‑time Data Review</h3>
-              <div className="mt-2 flex items-end gap-2">
-                <span className="text-4xl font-extrabold tracking-tight">Free</span>
-              </div>
-              <p className="mt-4 text-slate-700">
+          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-900">One‑time Data Review</h3>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">Free</span>
+            </p>
+            <div className="mt-6 xl:mt-8">
+              <p className="text-sm text-gray-600">
                 Not sure how impactful data can be for your practice? We'll review your data with you and talk through any
                 problems you're working on.
               </p>
-              <p className="mt-3 text-slate-700">
-                Want to sign up and learn more? {""}
-                <a href="/practice-health-checkup" className="underline underline-offset-4 text-slate-900">
-                  click here
-                </a>.
-              </p>
-            </CardContent>
-          </Card>
+            <a href="/practice-health-checkup" className="mt-6 block w-full">
+              <Button variant="outline" className="w-full h-11 px-6">Learn more</Button>
+            </a>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CTA / SIGNUP */}
-      <section id="signup" className="mx-auto max-w-6xl px-6 py-10">
+      <section id="signup" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Get your monthly performance report</h2>
