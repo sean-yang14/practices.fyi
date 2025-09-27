@@ -68,7 +68,7 @@ export default function AccountabilityPartnerPage() {
         </h1>
         <div className="mt-3 h-1 w-72 bg-orange-500 rounded" aria-hidden />
         <p className="mt-6 text-lg text-slate-700 max-w-3xl">
-          We help you prioritize by keeping you accountable. It's not easy, but it's simple: write it down, then follow through—with someone checking in.
+          We help you make real progress by keeping you accountable for executing on the few things that matter most. It’s not easy but it is simple, and it works.
         </p>
       </section>
 
@@ -78,17 +78,16 @@ export default function AccountabilityPartnerPage() {
           <div className="md:col-span-7">
             <h2 className="text-2xl md:text-3xl font-bold">Why this matters</h2>
             <p className="mt-4 text-slate-700">
-              The success of your practice comes down to your ability to execute. As an owner‑clinician, the list will always be long. That's okay—success is about prioritizing the few things that truly move the mission forward.
+              It’s hard to juggle everything as a practice owner — you’re pulled in a hundred directions, and some days it feels like nothing is really getting done. You’re stuck on a hamster wheel, always moving but not moving forward.
             </p>
             <p className="mt-3 text-slate-700">
-              Your job as CEO is to identify the 3–4 non‑negotiables that must get done. Everything else is noise—distractions dressed up as opportunities. We help you focus, commit, and ship.
+              The key to breaking out of that cycle is simple: prioritize what matters most and follow through. That’s where we come in—we’re your accountability partner, helping you stay focused and execute on the goals that move your practice forward.
             </p>
           </div>
           <div className="md:col-span-5">
             <Card className="border-slate-200">
               <CardContent className="p-6">
                 <ul className="space-y-2 text-slate-800 list-disc pl-5">
-                  <li>Clarity on priorities (no more decision paralysis).</li>
                   <li>Weekly momentum through lightweight check‑ins.</li>
                   <li>Progress you can see, track, and celebrate.</li>
                   <li>Optional financial "stake" to sharpen commitment.</li>
@@ -107,17 +106,17 @@ export default function AccountabilityPartnerPage() {
             {
               step: "1",
               title: "Pick your timeframe",
-              desc: "Weekly, monthly, and quarterly goals should ladder—weekly feeds monthly; monthly feeds quarterly.",
+              desc: "Weekly, monthly, and quarterly goals should ladder — weekly feeds monthly; monthly feeds quarterly.",
             },
             {
               step: "2",
               title: "List your non‑negotiables",
-              desc: "Share the 3–5 actions that must get done. We'll help pressure‑test and refine them.",
+              desc: "Share the 3 – 5 actions (it should never be more) that must get done. We'll help pressure‑test and refine them.",
             },
             {
               step: "3",
               title: "Check‑ins",
-              desc: "We nudge mid‑week and end‑week, remove blockers, and hold you to what you committed.",
+              desc: "We check in during the week and hold you to what you committed.",
             },
             {
               step: "4",
@@ -147,11 +146,11 @@ export default function AccountabilityPartnerPage() {
           {[
             {
               title: "Prioritization, simplified",
-              desc: "Decide on the 3–5 most important actions for the week or month—no more laundry lists.",
+              desc: "Success comes from focus. Decide on the 3 – 5 most important actions for the week or month. No more laundry lists.", 
             },
             {
               title: "Weekly check‑ins",
-              desc: "We check in mid‑week and end‑week to keep things moving and unblock what's stuck.",
+              desc: "We check in mid‑week and end‑week to keep things moving.",
             },
             {
               title: "Progress tracking",
@@ -161,13 +160,13 @@ export default function AccountabilityPartnerPage() {
               title: "Sounding board",
               desc: "Gut‑check goals and trade‑offs with someone who's unemotional and on your side.",
             },
-            {
-              title: "Templates & prompts",
-              desc: "Simple prompts to write goals that are specific, owned, and time‑bound.",
-            },
+            // {
+            //   title: "Templates & prompts",
+            //   desc: "Simple prompts to write goals that are specific, owned, and time‑bound.",
+            // },
             {
               title: "Commitment boost (optional)",
-              desc: "Stake an amount you choose; hit your goals and keep it—miss, and you forfeit per your rules.",
+              desc: "Stake an amount you choose; hit your goals and keep it — miss, and we take it.",
             },
           ].map((f, i) => (
             <Card key={i} className="border-slate-200">
@@ -184,7 +183,7 @@ export default function AccountabilityPartnerPage() {
       <section id="pricing" className="mx-auto max-w-6xl px-6 py-10">
         <div className="flex items-baseline justify-between gap-4">
           <h2 className="text-2xl md:text-3xl font-bold">Pricing</h2>
-          <Badge className="bg-orange-100 text-orange-900 hover:bg-orange-100">Simple & flexible</Badge>
+          {/* <Badge className="bg-orange-100 text-orange-900 hover:bg-orange-100">Simple & flexible</Badge> */}
         </div>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
           {/* Free plan */}
@@ -212,7 +211,7 @@ export default function AccountabilityPartnerPage() {
               <ul className="mt-4 space-y-2 text-slate-700 list-disc pl-5">
                 <li>Put money behind your goals</li>
                 <li>Hit targets → keep your stake</li>
-                <li>Miss targets → forfeit per agreed rules (e.g., charity)</li>
+                <li>Miss targets → forfeit your stake</li>
               </ul>
             </CardContent>
           </Card>
@@ -223,7 +222,7 @@ export default function AccountabilityPartnerPage() {
           <CardContent className="p-6">
             <h3 className="font-semibold text-lg">Why the stake works: loss aversion</h3>
             <p className="mt-2 text-slate-700">
-              Behavioral science shows people are often more motivated to <strong>avoid losing something</strong> than to gain the same amount—this is called <em>loss aversion</em>. Studies suggest losses can feel about twice as powerful as gains. Putting money down toward a task makes the potential loss feel real, which sharpens commitment and follow‑through.
+              Behavioral science shows people are often more motivated to <strong>avoid losing something</strong> than to gain the same amount — his is called <em>loss aversion</em>. Studies suggest losses can feel about twice as powerful as gains. Putting money down toward a task makes the potential loss feel real, which sharpens commitment and follow‑through.
             </p>
           </CardContent>
         </Card>
@@ -237,7 +236,7 @@ export default function AccountabilityPartnerPage() {
             <p className="mt-3 text-slate-700">
               Tell us your timeframe and non‑negotiables. We'll help you lock them in and get moving.
             </p>
-            <p className="mt-2 text-sm text-slate-500">Submissions are handled by a server‑side route you control. No credentials in the browser.</p>
+            {/* <p className="mt-2 text-sm text-slate-500">Submissions are handled by a server‑side route you control. No credentials in the browser.</p> */}
           </div>
           <Card className="border-slate-200">
             <CardContent className="p-6">
@@ -247,11 +246,11 @@ export default function AccountabilityPartnerPage() {
 
                 <div className="grid gap-4 md:grid-cols-2">
                   <Input name="name" placeholder="Full name" required />
-                  <Input name="email" type="email" placeholder="Work email" required />
+                  <Input name="email" type="email" placeholder="Email" required />
                 </div>
                 <div className="grid gap-4 md:grid-cols-2">
                   <Input name="practice" placeholder="Practice name" required />
-                  <Input name="role" placeholder="Your role (Owner, Clinician, Manager)" required />
+                  <Input name="role" placeholder="Your role" required />
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-2">
@@ -269,10 +268,10 @@ export default function AccountabilityPartnerPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 text-sm text-slate-600">
+                {/* <div className="flex items-center gap-2 text-sm text-slate-600">
                   <input id="consent" name="consent" type="checkbox" required className="h-4 w-4 rounded border-slate-300" />
                   <label htmlFor="consent">I consent to being contacted about this service.</label>
-                </div>
+                </div> */}
 
                 <Button type="submit" className="w-full h-11" disabled={status === "loading"}>
                   {status === "loading" ? "Submitting…" : "Request my accountability partner"}
@@ -297,37 +296,31 @@ export default function AccountabilityPartnerPage() {
           <AccordionItem value="what">
             <AccordionTrigger>What exactly does an accountability partner do?</AccordionTrigger>
             <AccordionContent>
-              We help you set clear non‑negotiables, check in during the week, remove blockers, and keep you focused on what moves the mission forward.
+              We help you set clear priorities with tasks and timelines, then check in during the week to keep you on track. It’s simple and it works, because having someone alongside you makes the journey easier and more empowering.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="timeframe">
             <AccordionTrigger>How often are check‑ins?</AccordionTrigger>
             <AccordionContent>
-              Typically mid‑week and end‑week for weekly sprints. Monthly/quarterly rhythms include milestone check‑ins.
+              Typically mid‑week and end‑week for weekly sprints. Monthly / quarterly rhythms include milestone check‑ins.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="stake">
             <AccordionTrigger>Do I have to put up money?</AccordionTrigger>
             <AccordionContent>
-              No. The stake is optional. If you choose it, you set the amount and the rules (e.g., charity if you miss). Many owners find it increases follow‑through.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="data">
-            <AccordionTrigger>What do you track?</AccordionTrigger>
-            <AccordionContent>
-              We track your stated actions and outcomes, not PHI. We'll never sell or share your data, and access can be revoked at any time.
+              No. The stake is optional. If you choose it, you set the amount. Many owners find it increases follow‑through.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="changes">
             <AccordionTrigger>What if priorities change mid‑sprint?</AccordionTrigger>
             <AccordionContent>
-              That happens. We'll reset scope intentionally—trading off, not piling on—so you keep momentum.
+              That happens. We'll reset scope intentionally—trading off, not piling on — so you keep momentum.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="cancel">
             <AccordionTrigger>Can I pause or cancel?</AccordionTrigger>
             <AccordionContent>
-              Yes. You can pause or stop at any time. We'll share a quick wrap‑up so you keep your notes and progress.
+              Yes — you can pause or stop at any time. This is about helping make your life easier, we're not looking to trap you in anything.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

@@ -127,6 +127,12 @@
 html {
   font-size: var(--font-size);
   scroll-behavior: smooth;
+  scroll-padding-top: 140px; /* Account for fixed header */
+}
+
+/* Ensure anchor targets have proper spacing */
+section[id] {
+  scroll-margin-top: 140px;
 }
 
 @layer base {

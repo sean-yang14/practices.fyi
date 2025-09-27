@@ -45,18 +45,18 @@ export default function PracticeHealthCheckupPage() {
     <main className="bg-white text-slate-900">
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-14">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100">Practice Analytics</Badge>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
             Practice Performance Report
           </h1>
           <div className="mt-3 h-1 w-96 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
-            A clear, recurring read on your practice performance. The more you know, the more you grow.
+            Unlock the power of your data with reports that turn complexity into clear, useful insights.
           </p>
           <div className="mt-8 flex gap-3">
             <a href="#signup" className="inline-flex">
-              <Button size="lg" className="h-12 px-6">Get a monthly report</Button>
+              <Button size="lg" className="h-12 px-6">Get a report</Button>
             </a>
             <a href="#how-it-works" className="inline-flex">
               <Button size="lg" variant="outline" className="h-12 px-6">How it works</Button>
@@ -72,7 +72,7 @@ export default function PracticeHealthCheckupPage() {
             <h2 className="text-2xl md:text-3xl font-bold">Why this matters</h2>
             <p className="mt-4 text-slate-700">
               Running a healthcare practice is too complex to operate on instinct alone. Our checkup shows what's working,
-              what needs to change, and where to focus next—so you can spot problems early and compound wins.
+              what needs to change, and where to focus next — so you can spot problems early and compound wins.
             </p>
           </div>
           <div className="md:col-span-6">
@@ -93,7 +93,7 @@ export default function PracticeHealthCheckupPage() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Simple, owner‑friendly insights—not jargon.</span>
+                    <span>Simple, owner‑friendly insights — not jargon.</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
@@ -112,28 +112,32 @@ export default function PracticeHealthCheckupPage() {
         <div className="mt-6 grid md:grid-cols-3 gap-6">
           {[
             {
-              title: "Unified dashboard",
+              title: "Complete practice snapshot",
               desc: "Financial, marketing, and operational data in one overview so you see the full picture.",
             },
             {
-              title: "Benchmarks & targets",
-              desc: "Compare to peers and track toward practice‑specific goals we define together.",
+              title: "Vendor impact review",
+              desc: "Get an objective view of how your vendors affect your practice—so you can see what’s delivering value, what’s not, and make smarter decisions about where to invest.",
             },
             {
+              title: "Provider performance review",
+              desc: "Know how each provider is performing and whether they’re contributing to your bottom line. Get clear visibility into productivity, profitability, and opportunities for improvement.",
+            },
+            // {
+            //   title: "Benchmarks & targets",
+            //   desc: "Compare to peers and track toward practice ‑ specific goals we define together.",
+            // },
+            {
               title: "Monthly summary",
-              desc: "A concise report of what's working, what's not, and recommended next actions.",
+              desc: "A clear, data-driven report that shows what’s working and what’s not — like having a data analyst on your team.",
             },
             {
               title: "Risk detection",
-              desc: "Spot cancellations, utilization dips, and claim delays before they become costly.",
+              desc: "Spot problems before they become costly — like slowing growth, payment delays, and other issues that can hold your practice back.",
             },
             {
               title: "Owner‑ready insights",
-              desc: "Plain‑English takeaways and charts you can share with your team.",
-            },
-            {
-              title: "Privacy first",
-              desc: "Secure connections and least‑privilege data access. You stay in control.",
+              desc: "Plain‑english takeaways and charts you can share with your team.",
             },
           ].map((f, i) => (
             <Card key={i} className="border-slate-200">
@@ -154,22 +158,17 @@ export default function PracticeHealthCheckupPage() {
             {
               step: "1",
               title: "Goal setting",
-              desc: "We learn your priorities and define the metrics that matter for your practice.",
+              desc: "We learn your priorities and define the metrics that matter for your practice over a call or email.",
             },
             {
               step: "2",
               title: "Connect data",
-              desc: "We connect to your financial, marketing, and operational systems with secure, read‑only access.",
+              desc: "We securily connect to your financial, marketing, and operational systems.",
             },
             {
               step: "3",
-              title: "Dashboard build",
-              desc: "We configure your practice health dashboard and benchmarks—owner‑friendly and shareable.",
-            },
-            {
-              step: "4",
               title: "Monthly report",
-              desc: "Every month, you get a concise summary of wins, risks, and recommended next actions.",
+              desc: "Every month, you get a concise summary of how your practice is performing.",
             },
           ].map((s) => (
             <div key={s.step} className="flex items-start gap-4 text-left max-w-2xl mx-auto">
@@ -230,7 +229,6 @@ export default function PracticeHealthCheckupPage() {
       <section id="pricing" className="mx-auto max-w-6xl px-6 py-10">
         <div className="flex items-baseline justify-between gap-4">
           <h2 className="text-2xl md:text-3xl font-bold">Straightforward pricing</h2>
-          <Badge className="bg-orange-100 text-orange-900 hover:bg-orange-100">One easy price</Badge>
         </div>
         <p className="mt-3 text-slate-700">Pay per report. Choose monthly or quarterly. No long contracts.</p>
 
@@ -270,7 +268,7 @@ export default function PracticeHealthCheckupPage() {
               </p>
               <p className="mt-3 text-slate-700">
                 Want to sign up and learn more? {""}
-                <a href="/practice-health-checkup/free-review" className="underline underline-offset-4 text-slate-900">
+                <a href="/practice-health-checkup" className="underline underline-offset-4 text-slate-900">
                   click here
                 </a>.
               </p>
@@ -287,9 +285,9 @@ export default function PracticeHealthCheckupPage() {
             <p className="mt-3 text-slate-700">
               Tell us a bit about your practice and we'll follow up to get you set up.
             </p>
-            <p className="mt-2 text-sm text-slate-500">
+            {/* <p className="mt-2 text-sm text-slate-500">
               Submissions are encrypted in transit and handled by a server‑side route you control.
-            </p>
+            </p> */}
           </div>
           <Card className="border-slate-200">
             <CardContent className="p-6">
@@ -297,12 +295,12 @@ export default function PracticeHealthCheckupPage() {
                 <Input name="name" placeholder="Full name" required />
                 <Input name="email" type="email" placeholder="Work email" required />
                 <Input name="practice" placeholder="Practice name" required />
-                <Input name="role" placeholder="Your role (Owner, Manager, etc.)" />
-                <Textarea name="message" placeholder="What goals or challenges should we know about?" rows={4} />
-                <div className="flex items-center gap-2 text-sm text-slate-600">
+                <Input name="role" placeholder="Your role" />
+                <Textarea name="message" placeholder="Optional message" rows={4} />
+                {/* <div className="flex items-center gap-2 text-sm text-slate-600">
                   <input id="consent" name="consent" type="checkbox" required className="h-4 w-4 rounded border-slate-300" />
                   <label htmlFor="consent">I consent to being contacted about this service.</label>
-                </div>
+                </div> */}
 
                 <Button type="submit" className="w-full h-11" disabled={status === "loading"}>
                   {status === "loading" ? "Submitting…" : "Request my report"}
@@ -327,40 +325,37 @@ export default function PracticeHealthCheckupPage() {
           <AccordionItem value="what-is-included">
             <AccordionTrigger>What's included in the monthly performance report?</AccordionTrigger>
             <AccordionContent>
-              A unified dashboard, benchmark comparison, and a monthly summary highlighting wins, risks, and recommended next
-              steps. We'll tailor metrics to your practice.
+              The metrics are tailored to your practice, but we generally focus on the key performance indicators that matter most
+              across finance, operations, and marketing. There’s a strong emphasis on return-on-investment (ROI) calculations, so
+              you can clearly see what’s working, what’s not, and what actions to take next.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="data-security">
             <AccordionTrigger>How do you handle data security and privacy?</AccordionTrigger>
             <AccordionContent>
-              We use read‑only access, least‑privilege credentials, and encrypted transit. You can revoke access at any time.
-              We don't resell or share data. PHI/PII handling follows best practices.
+              Where possible we use read‑only access and least‑privilege credentials. You can revoke access at any time. PHI/PII handling follows best practices.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="systems">
             <AccordionTrigger>Which systems can you connect to?</AccordionTrigger>
             <AccordionContent>
-              Financial (e.g., accounting), marketing (e.g., ad platforms, GBP), and operational sources (EHR/PMS exports or APIs)
-              depending on your stack.
+              We can work with virtually any system. In most cases, we either pull reports directly from you or access your
+              reporting platforms through a non-clinical account. The account is only used to securely retrieve reports or data.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="timelines">
             <AccordionTrigger>How long does setup take?</AccordionTrigger>
             <AccordionContent>
-              Typical onboarding is 1–2 weeks depending on data access and the complexity of your stack.
+              Typical onboarding is 2–3 weeks depending on data access and the complexity of your stack.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="pricing">
-            <AccordionTrigger>What does it cost?</AccordionTrigger>
+            <AccordionTrigger>What’s your philosophy on pricing?</AccordionTrigger>
             <AccordionContent>
-              Pricing depends on scope and data connections. After a short discovery, we'll propose a flat monthly rate.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="ownership">
-            <AccordionTrigger>Do I own my data and reports?</AccordionTrigger>
-            <AccordionContent>
-              Yes. You retain ownership of your data and exported reports at all times.
+              The truth is, my team and I spend more time on these reports than the cost really covers but we believe data is simply too valuable for a practice not to have.
+              <br />
+              
+              You can only improve what you measure. Tracking data isn’t just about hitting goals — it’s about building systems that actually work. Our pricing reflects that belief: fair, accessible, and designed to give every practice the clarity it needs to grow.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

@@ -55,9 +55,21 @@ export default function ReputationManagementPage() {
             <a href="#signup" className="inline-flex">
               <Button size="lg" className="h-12 px-6">Start getting reviews</Button>
             </a>
-            <a href="#how-it-works" className="inline-flex">
-              <Button size="lg" variant="outline" className="h-12 px-6">How it works</Button>
-            </a>
+            <div className="inline-flex">
+              <Button
+                size="lg"
+                variant="outline"
+                className="h-12 px-6"
+                onClick={() => {
+                  const element = document.getElementById('how-it-works');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+              >
+                How it works
+              </Button>
+            </div>
           </div>
         </div>
       </section>

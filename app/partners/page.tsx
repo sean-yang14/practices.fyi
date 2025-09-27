@@ -79,7 +79,7 @@ export default function PartnersPage() {
         </h1>
         <div className="mt-3 h-1 w-40 bg-orange-500 rounded" aria-hidden />
         <p className="mt-6 text-lg text-slate-700 max-w-3xl">
-          We build tools for practices—not bill-by-the-hour consulting. Let's combine your relationships and domain expertise with our product development to help practices win together.
+          We build tools — not services — but practices still need help executing. That’s where experts like you, who truly care about practices, come in. By combining your expertise with our product development, we can help practices win together.
         </p>
       </section>
 
@@ -89,22 +89,21 @@ export default function PartnersPage() {
           <div className="md:col-span-7">
             <h2 className="text-2xl md:text-3xl font-bold">How we work with partners</h2>
             <p className="mt-4 text-slate-700">
-              Our goal is simple: create high‑leverage tools for practices while elevating the work you already do. Practices shouldn't carry everything alone—they need trusted partners who care and deliver quality.
+              We build tools for practices and we invite you to share your data so we can build together. By combining your expertise with insights from other trusted partners, we create a collective resource more powerful than any one group alone. That makes your data more valuable to practices, strengthens the impact you deliver to your clients, and opens a new customer acquisition channel through our tools.
+              <br />
+              <br />
+              And we don’t stop there. Our product development can also support your team directly, from custom dashboards for your clients to automations that save time and reduce manual work.
             </p>
-            <ul className="mt-4 space-y-2 list-disc pl-5 text-slate-800">
-              <li>Co‑create dashboards, automations, and messaging that compound your impact.</li>
-              <li>Use your access to accurate data to pinpoint opportunities and risks.</li>
-              <li>Unlock a new **patient acquisition** channel through better operations and reputation.</li>
-            </ul>
           </div>
           <div className="md:col-span-5">
             <Card className="border-slate-200">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg">What we bring to your team</h3>
                 <ul className="mt-3 space-y-2 list-disc pl-5 text-slate-800">
-                  <li>Custom operational automations that kill admin drag.</li>
-                  <li>Owner‑ready dashboards: financial, marketing, and ops.</li>
-                  <li>Automated messaging to drive reviews, re‑care, and recall.</li>
+                  <li>A new customer acquisition channel.</li>
+                  <li>Stronger insights through access to more and better data.</li>
+                  <li>Custom dashboards tailored to your needs</li>
+                  <li>Automations that save time and reduce manual work</li>
                 </ul>
               </CardContent>
             </Card>
@@ -112,41 +111,22 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* FEATURES BY PARTNER TYPE */}
+      {/* EXPERTS WHO PARTNER WITH US */}
       <section className="mx-auto max-w-6xl px-6 py-4">
-        <h2 className="text-2xl md:text-3xl font-bold">Why partner with us</h2>
-        <div className="mt-6 grid md:grid-cols-3 gap-6">
+        <h2 className="text-2xl md:text-3xl font-bold">Experts we're looking to partner with</h2>
+        <p className="mt-3 text-slate-500">We're actively expanding to include more partner types as we grow.</p>
+        <div className="mt-6 grid md:grid-cols-2 gap-6">
           {/* Financial Partners */}
           <Card className="border-slate-200">
             <CardContent className="p-6">
-              <h3 className="font-semibold text-lg">Financial Partners (CPAs, CFOs, Bookkeepers)</h3>
-              <ul className="mt-3 space-y-2 list-disc pl-5 text-slate-800">
-                <li>Translate ledgers into actionable KPI dashboards.</li>
-                <li>Spot revenue leakage & cost creep early with alerts.</li>
-                <li>Deliver board‑ready monthly summaries in minutes.</li>
-              </ul>
+              <h3 className="font-semibold text-lg">Financial Partners</h3>
+              <p className="text-slate-600 text-sm mb-3">CPAs, CFOs, Bookkeepers</p>
             </CardContent>
           </Card>
-          {/* Consultants */}
+          {/* Practice Consultants */}
           <Card className="border-slate-200">
             <CardContent className="p-6">
-              <h3 className="font-semibold text-lg">Practice Consultants (data‑forward)</h3>
-              <ul className="mt-3 space-y-2 list-disc pl-5 text-slate-800">
-                <li>Automate recurring audits and action plans.</li>
-                <li>Benchmark clients and showcase wins transparently.</li>
-                <li>Scale your impact without scaling admin hours.</li>
-              </ul>
-            </CardContent>
-          </Card>
-          {/* Recruiting Firms */}
-          <Card className="border-slate-200">
-            <CardContent className="p-6">
-              <h3 className="font-semibold text-lg">Recruiting Firms</h3>
-              <ul className="mt-3 space-y-2 list-disc pl-5 text-slate-800">
-                <li>Automate job distribution & candidate tracking.</li>
-                <li>Free your team to focus on relationships, not admin.</li>
-                <li>Share performance dashboards with clients to prove ROI.</li>
-              </ul>
+              <h3 className="font-semibold text-lg">Practice Consultants</h3>
             </CardContent>
           </Card>
         </div>
@@ -154,17 +134,28 @@ export default function PartnersPage() {
 
       {/* PRICING */}
       <section className="mx-auto max-w-6xl px-6 py-8">
-        <div className="flex items-baseline justify-between gap-4">
-          <h2 className="text-2xl md:text-3xl font-bold">Pricing</h2>
-          <Badge className="bg-orange-100 text-orange-900 hover:bg-orange-100">Custom</Badge>
+        <h2 className="text-2xl md:text-3xl font-bold">Pricing</h2>
+        <div className="mt-6 space-y-6">
+          <Card className="border-slate-200">
+            <CardContent className="p-6">
+              <h3 className="font-semibold text-lg mb-3">General Partnership Tools</h3>
+              <p className="text-slate-900 font-medium mb-2">Free</p>
+              <p className="text-slate-700">
+                Our mission is to provide insane value to practices. I believe strongly that we can build amazing tools that truly help practices thrive. I'm removing all hurdles in pursuit of this goal—there's no cost for partnering on tools for the general public.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-slate-200">
+            <CardContent className="p-6">
+              <h3 className="font-semibold text-lg mb-3">Custom Partner Solutions</h3>
+              <p className="text-slate-900 font-medium mb-2">Custom pricing</p>
+              <p className="text-slate-700">
+                Need custom dashboards, automations, or integrations specific to your firm? Let's discuss pricing based on your exact needs and the value we'll create together.
+              </p>
+            </CardContent>
+          </Card>
         </div>
-        <Card className="mt-4 border-slate-200">
-          <CardContent className="p-6">
-            <p className="text-slate-700">
-              Custom → connect to find out more. Our goal for partners mirrors our goal for practices: provide as much value as possible at a fair price.
-            </p>
-          </CardContent>
-        </Card>
       </section>
 
       {/* SIGN UP CTA */}
@@ -240,40 +231,34 @@ export default function PartnersPage() {
       <section className="mx-auto max-w-6xl px-6 pb-14">
         <h2 className="text-2xl md:text-3xl font-bold">FAQ</h2>
         <Accordion type="single" collapsible className="mt-6">
+          <AccordionItem value="data">
+            <AccordionTrigger>Why do you need our data?</AccordionTrigger>
+            <AccordionContent>
+              Your data helps power the tools we build for practices. By combining it with insights from other trusted partners, we create a collective resource that’s more valuable for practices and more impactful for your own clients.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="return">
+            <AccordionTrigger>What do we get in return?</AccordionTrigger>
+            <AccordionContent>
+              You gain amplified reach for your data, access to broader insights, and a new customer acquisition channel through our tools. We also explore ways to support your team directly with dashboards and automations.
+            </AccordionContent>
           <AccordionItem value="fit">
             <AccordionTrigger>Who is a good fit for partnership?</AccordionTrigger>
             <AccordionContent>
-              Firms that value data, transparency, and long‑term relationships with practices—especially CPAs/CFOs, data‑forward consultants, and recruiting teams that want to automate admin.
+              Companies that help practices succeed in any capacity — especially those that value transparency, prioritize data, and genuinely care about practice owners.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="model">
-            <AccordionTrigger>How do we work together day‑to‑day?</AccordionTrigger>
+          </AccordionItem>
+          <AccordionItem value="team-build">
+            <AccordionTrigger>Can you build something just for our team?</AccordionTrigger>
             <AccordionContent>
-              We co‑design metrics and workflows, connect to read‑only data where possible, and ship dashboards/automations your team can use with clients. You keep the relationship—we amplify it with product.
+              Yes. Beyond partnerships, we also develop custom tools—such as dashboards, automations, or other web apps — to help your team save time and serve clients more effectively.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="revenue">
-            <AccordionTrigger>Is there a referral or revenue‑share model?</AccordionTrigger>
+          <AccordionItem value="getting-started">
+            <AccordionTrigger>How do we get started?</AccordionTrigger>
             <AccordionContent>
-              We'll propose a simple, transparent model based on scope and outcomes. The goal is aligned incentives and clear value for the practice and your firm.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="privacy">
-            <AccordionTrigger>How do you handle data security and privacy?</AccordionTrigger>
-            <AccordionContent>
-              We prefer read‑only access, least‑privilege credentials, and encrypted transit. Access can be revoked at any time. We do not resell client data.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="timelines">
-            <AccordionTrigger>How long does onboarding take?</AccordionTrigger>
-            <AccordionContent>
-              Typical onboarding is 1–2 weeks depending on data access and scope. Pilot first, then scale.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="pricing">
-            <AccordionTrigger>What does it cost?</AccordionTrigger>
-            <AccordionContent>
-              Pricing is custom to your scope. Our goal mirrors our work with practices: provide the most value possible at a fair price.
+              Reach out to us with a quick introduction. We’ll schedule a conversation to learn about your expertise and data, explore opportunities for collaboration, and map out how a tool could be built together.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

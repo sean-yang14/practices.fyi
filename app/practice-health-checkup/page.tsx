@@ -49,7 +49,7 @@ export default function PracticeHealthCheckupPage() {
           </h1>
           <div className="mt-3 h-1 w-80 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
-            Get an objective perspective on your practice. Sometimes you need someone to talk through the data and help you see what you might be missing.
+            Get an objective perspective on your practice. Think of it as a second opinion — someone to walk through the numbers with you, highlight opportunities, and help you move forward with confidence.
           </p>
           <div className="mt-8 flex gap-3">
             <a href="#signup" className="inline-flex">
@@ -68,11 +68,11 @@ export default function PracticeHealthCheckupPage() {
           <div className="md:col-span-6">
             <h2 className="text-2xl md:text-3xl font-bold">Why this matters</h2>
             <p className="mt-4 text-slate-700">
-              Running a practice can feel isolating. When you&apos;re stuck or need a fresh perspective, data can be intimidating to parse alone.
-              Sometimes you just need someone to take an objective look and help you see what&apos;s really going on.
+              Running a practice can feel isolating. When you're stuck or need a fresh perspective, data can be intimidating to parse alone.
+              Sometimes you just need someone to take an objective look and help you see what's really going on.
             </p>
             <p className="mt-4 text-slate-700">
-              Think of this like a health checkup for your business—checking in on the key vitals so you can level set and know things are headed in the right direction.
+              Think of this like a health checkup for your business — checking in on the key vitals so you can level set and know things are headed in the right direction.
             </p>
           </div>
           <div className="md:col-span-6">
@@ -118,7 +118,7 @@ export default function PracticeHealthCheckupPage() {
             },
             {
               title: "Fresh perspective",
-              desc: "Sometimes you&apos;re too close to see clearly. An outside view can reveal patterns and opportunities.",
+              desc: "Sometimes you're too close to see clearly. An outside view can reveal patterns and opportunities.",
               icon: Users,
             },
             {
@@ -160,11 +160,13 @@ export default function PracticeHealthCheckupPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold">Why trust me with this?</h2>
           <p className="mt-4 text-slate-700 text-lg">
-            I&apos;ve been where you are. I understand the challenges of running a practice because I&apos;ve helped dozens of practice owners
-            navigate similar situations. I&apos;m not here to sell you anything—I genuinely want to help make the ownership journey
-            a little less lonely.
+            I understand the challenges of running a practice because I’ve helped dozens of practice owners navigate similar situations. I’m not here to sell you anything — I genuinely want to make the ownership journey a little less lonely.
+            <br />
+            <br />
+            My background is in finance and business operations, which gives me a holistic perspective you won’t get from a consultant focused only on management or an accountant focused only on your finances. That mix helps me see the full picture and share insights that actually move the needle for your practice.
           </p>
-          <div className="mt-8 grid md:grid-cols-3 gap-6 text-left">
+          {/* Cards highlighting why trust me */}
+          {/* <div className="mt-8 grid md:grid-cols-3 gap-6 text-left">
             <Card className="border-slate-200">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">Real experience</h3>
@@ -183,7 +185,7 @@ export default function PracticeHealthCheckupPage() {
                 <p className="text-slate-700">I believe in learning from each other. Your challenges and solutions can help other practice owners too.</p>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -201,17 +203,17 @@ export default function PracticeHealthCheckupPage() {
             {
               step: "2",
               title: "Quick intro",
-              desc: "We&apos;ll connect over email or a brief phone call to understand what you&apos;re hoping to get out of our conversation.",
+              desc: "We'll connect over email or a brief phone call to understand what you're hoping to get out of our conversation.",
             },
             {
               step: "3",
               title: "Share some data",
-              desc: "Send over some basic reports—financial statements, key metrics, or whatever you think would be helpful to review.",
+              desc: "We'll request various data sources - financial statements, operational reports and marketing data. You send whatever you're comfortable sharing.",
             },
             {
               step: "4",
               title: "Video call discussion",
-              desc: "We&apos;ll have a friendly 45-60 minute conversation walking through your data and talking through any challenges or questions.",
+              desc: "We'll have a friendly 30 - 60 minute conversation walking through your data and talking through any challenges or questions.",
             },
           ].map((s) => (
             <div key={s.step} className="flex items-start gap-4 text-left max-w-2xl mx-auto">
@@ -244,7 +246,7 @@ export default function PracticeHealthCheckupPage() {
                 <span className="text-4xl font-extrabold tracking-tight text-green-600">Free</span>
               </div>
               <div className="space-y-3 text-slate-700 mb-6">
-                <p>• 45-60 minute video conversation</p>
+                <p>• 30 - 60 minute video conversation</p>
                 <p>• Review your practice data together</p>
                 <p>• Talk through challenges and opportunities</p>
                 <p>• Get an outside perspective on your business</p>
@@ -271,7 +273,7 @@ export default function PracticeHealthCheckupPage() {
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Ready for your practice checkup?</h2>
             <p className="mt-3 text-slate-700">
-              Fill out the form and I&apos;ll reach out to schedule our conversation. No commitment, no sales pitch—just a helpful discussion about your practice.
+              Fill out the form and I&apos;ll reach out to schedule our conversation. No commitment, no sales - just a helpful discussion about your practice.
             </p>
             <p className="mt-2 text-sm text-slate-500">
               All submissions are handled securely and privately. I&apos;ll only use your information to contact you about the checkup.
@@ -283,13 +285,13 @@ export default function PracticeHealthCheckupPage() {
                 <Input name="name" placeholder="Your name" required />
                 <Input name="email" type="email" placeholder="Email address" required />
                 <Input name="practice" placeholder="Practice name" required />
-                <Input name="role" placeholder="Your role (Owner, Manager, etc.)" />
+                <Input name="role" placeholder="Your role" />
                 <Textarea
                   name="message"
                   placeholder="What would you like to discuss? Any specific challenges or questions on your mind?"
                   rows={4}
                 />
-                <div className="flex items-start gap-2 text-sm text-slate-600">
+                {/* <div className="flex items-start gap-2 text-sm text-slate-600">
                   <input
                     id="consent"
                     name="consent"
@@ -311,7 +313,7 @@ export default function PracticeHealthCheckupPage() {
                   <label htmlFor="social_consent">
                     I&apos;m open to having parts of our conversation shared on social media (with my final approval on any content).
                   </label>
-                </div>
+                </div> */}
 
                 <Button type="submit" className="w-full h-11" disabled={status === "loading"}>
                   {status === "loading" ? "Submitting…" : "Request my checkup"}
@@ -351,7 +353,7 @@ export default function PracticeHealthCheckupPage() {
           <AccordionItem value="time-commitment">
             <AccordionTrigger>How much time does this take?</AccordionTrigger>
             <AccordionContent>
-              The main conversation is 45-60 minutes. There&apos;s minimal prep work on your end—just gathering a few basic reports
+              The main conversation is 30 - 60 minutes. There&apos;s minimal prep work on your end — just gathering a few basic reports
               if you have them. The goal is to make this as easy as possible for you.
             </AccordionContent>
           </AccordionItem>
@@ -365,16 +367,13 @@ export default function PracticeHealthCheckupPage() {
           <AccordionItem value="social-media">
             <AccordionTrigger>What about the social media sharing?</AccordionTrigger>
             <AccordionContent>
-              This is completely optional and you have full control. If you&apos;re open to it, I might share anonymized insights
-              or lessons from our conversation that could help other practice owners. You&apos;ll see and approve anything before it&apos;s published.
-              Many people find value in learning from others&apos; experiences.
+              This is completely optional and you have full control. If you’re open to it, I’d love to share lessons or anonymized insights from our conversation with the broader community. Other practice owners often find tremendous value in learning from one another’s experiences and your story could help someone else on their journey.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="confidentiality">
             <AccordionTrigger>How do you handle confidential information?</AccordionTrigger>
             <AccordionContent>
-              Your information is kept strictly confidential. Even if you consent to social sharing, any published content
-              would be anonymized and focus on general insights rather than specific details about your practice.
+              Any information you want kept confidential won't be shared publicly.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="who-is-this-for">
