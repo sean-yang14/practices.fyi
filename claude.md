@@ -23,6 +23,21 @@ All agents must 1) **Explain** what/why/tradeoffs, and 2) propose **2–3 Next S
 - Extract patterns into components; keep class chains < ~8 utilities.
 - Use shadcn primitives (Button, Card, Input, Dialog/Sheet, Tabs, Tooltip) before custom CSS.
 
+## Typography
+- **Font family:**  
+  `--font-sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;`
+- **Base size (fluid):**  
+  `clamp(16px, 0.9rem + 0.2vw, 18px)`
+- **Line height:**  
+  - Body: `1.6`  
+  - Headings: `1.2–1.25` (never below `1.15`)
+- **Measure:** 
+  Limit long text blocks to `max-w-[65ch]`
+- **Spacing rhythm:**  
+  Use an 8px grid. Vertical spacing = multiples of 8.
+- **Contrast:**  
+  Body text ≥ 7:1 if possible, never < 4.5:1
+
 ## Forms & Tools
 - **RHF + Zod**, inline errors + helper text, persisted last inputs (namespaced `localStorage`).
 - Long tasks: progress, cancellable, optimistic where safe.

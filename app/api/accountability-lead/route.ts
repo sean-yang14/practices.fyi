@@ -9,7 +9,7 @@ const schema = z.object({
   context: z.string().optional().default(""), // honeypot
 });
 
-const TO = "sean@practices.fyi";
+import { EMAIL_FROM, EMAIL_TO } from "@/lib/email";
 
 export async function POST(req: Request) {
   try {
@@ -47,8 +47,8 @@ export async function POST(req: Request) {
       const resend = new Resend(process.env.RESEND_API_KEY);
 
       await resend.emails.send({
-        from: "Practices.fyi <no-reply@yourdomain.com>",
-        to: [TO],
+        from: EMAIL_FROM,
+        to: [EMAIL_TO],
         subject: "🎯 New Accountability Partner Request",
         replyTo: email,
         text: [

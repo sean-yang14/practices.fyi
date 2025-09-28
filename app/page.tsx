@@ -11,7 +11,7 @@ export default function Home() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-black">
           Tools to make <RotatingText /> easier.
         </h1>
-        <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto mb-10">
+        <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-10">
           Our mission is be the most genuine partner in helping you build your dream practice.
         </p>
         {/* <Link
@@ -40,7 +40,7 @@ export default function Home() {
             >
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-left text-orange-600">Reputation Management</h3>
-                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                <p className="text-grey-700 text-base text-left line-clamp-4">
                   Get more 5-star Google reviews automatically. Build trust with prospective patients and rank higher in search results.
                 </p>
               </div>
@@ -60,7 +60,7 @@ export default function Home() {
             >
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-left text-emerald-600">Practice Performance Report</h3>
-                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                <p className="text-grey-700 text-base text-left line-clamp-4">
                   Running a practice is too complex to run blind. Our reports provides clear visibility into your practice's performance — so you can lead with confidence.
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
             >
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-left text-blue-600">Practice Health Checkup</h3>
-                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                <p className="text-grey-700 text-base text-left line-clamp-4">
                   For a limited time, we’ll provide a free check-up of your financial, operational, and marketing data — walking you through the results to give you a clear view of your practice’s health.
                 </p>
               </div>
@@ -101,7 +101,7 @@ export default function Home() {
             >
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-left text-purple-600">Accountability Partner</h3>
-                <p className="text-slate-600 text-sm text-left line-clamp-4">
+                <p className="text-grey-700 text-base text-left line-clamp-4">
                   The ability to execute on what matters is the key to building your dream practice. You’re capable—but sometimes you need someone to help you stay on track. That’s where we come in.
                 </p>
               </div>
@@ -147,20 +147,20 @@ export default function Home() {
 
       {/* Free Consultation CTA */}
       <section className="px-6 w-full">
-        <div className="mx-auto max-w-7xl rounded-2xl bg-indigo-100 dark:bg-indigo-950">
+        <div className="mx-auto max-w-7xl rounded-2xl bg-white border-1 border-black">
           <div className="px-6 py-16 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
             <div className="max-w-2xl">
-              <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl dark:text-white mb-4">
+              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl mb-4">
                 Feeling stuck? You don't have to do it alone.
               </h2>
-              <p className="text-lg text-gray-700 dark:text-gray-300">
+              <p className="text-lg text-gray-700">
                 Sign up for a free consultation call -- available for a limited time. No BS, gatekeeping, or sales pitch. I'm just looking to offer a helping hand.
               </p>
             </div>
             <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500 transition-colors"
+                className="rounded-4xl bg-orange-500 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
               >
                 Book Free Practice Checkup
               </a>
@@ -173,7 +173,7 @@ export default function Home() {
       <section className="px-6 w-full">
         <div className="mx-auto max-w-7xl rounded-2xl border border-slate-200 bg-slate-900 text-white">
           <div className="p-8 md:p-12 flex flex-col items-center text-center gap-4">
-            <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
               Follow my Instagram for quick practice management tips
             </h2>
             <a
@@ -181,7 +181,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow @practices.fyi on Instagram (opens in new tab)"
-              className="h-12 px-6 inline-flex items-center justify-center rounded-md bg-white text-slate-900 hover:bg-slate-100 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+              className="text-lg mt-4 md:mt-8 h-12 px-6 inline-flex items-center justify-center rounded-md bg-white text-slate-900 hover:bg-slate-100 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
             >
               <svg
                 aria-hidden="true"

@@ -1,14 +1,15 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
+// Validate expected contact form fields
 const schema = z.object({
   name: z.string().min(1),
   email: z.string().email(),
   practice: z.string().min(1),
-  role: z.string().optional().default(""),
-  message: z.string().optional().default(""),
-  consent: z.string().optional(), // checkbox returns "on" when checked
-  social_consent: z.string().optional(), // checkbox returns "on" when checked
+  position: z.string().min(1),
+  city: z.string().min(1),
+  state: z.string().min(2).max(2),
+  message: z.string().min(1),
 });
 
 import { EMAIL_FROM, EMAIL_TO } from "@/lib/email";
@@ -21,54 +22,54 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid form" }, { status: 400 });
     }
 
-    const { name, email, practice, role, message, social_consent } = parsed.data;
+    const { name, email, practice, position, city, state, message } = parsed.data;
 
-    // Log the submission
-    console.log("New Practice Health Checkup lead submission:");
-    console.log({
+    // Log the submission for observability
+    console.log("New Contact submission:", {
       name,
       email,
       practice,
-      role,
+      position,
+      city,
+      state,
       message: message || "(none)",
-      socialConsent: social_consent === "on" ? "Yes" : "No",
-      source: "Practice Health Checkup Page",
-      timestamp: new Date().toISOString()
+      source: "Contact Page",
+      timestamp: new Date().toISOString(),
     });
 
-    // In development/demo mode, we'll just log the submission
-    // To send actual emails, set up RESEND_API_KEY in .env.local
+    // Send email if RESEND_API_KEY is configured
     if (process.env.RESEND_API_KEY) {
       const { Resend } = await import("resend");
       const resend = new Resend(process.env.RESEND_API_KEY);
 
       await resend.emails.send({
+        // Use verified sender (configure EMAIL_FROM / domain in Resend)
         from: EMAIL_FROM,
         to: [EMAIL_TO],
-        subject: "🩺 New Practice Health Checkup Request",
+        subject: "📬 New Contact Form Submission",
         replyTo: email,
         text: [
-          `NEW PRACTICE HEALTH CHECKUP REQUEST`,
-          `Source: Practice Health Checkup Page`,
+          `NEW CONTACT FORM SUBMISSION`,
+          `Source: Contact Page`,
           ``,
           `Name: ${name}`,
           `Email: ${email}`,
           `Practice: ${practice}`,
-          `Role: ${role}`,
-          `Social Media Consent: ${social_consent === "on" ? "Yes" : "No"}`,
+          `Position: ${position}`,
+          `City/State: ${city}, ${state}`,
           ``,
           `Message:`,
-          message || "(none)",
+          message,
           ``,
           `---`,
-          `Submitted: ${new Date().toLocaleString()}`
+          `Submitted: ${new Date().toLocaleString()}`,
         ].join("\n"),
       });
     }
 
     return NextResponse.json({ ok: true });
   } catch (e) {
-    console.error(e);
+    console.error("Contact submission error:", e);
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }

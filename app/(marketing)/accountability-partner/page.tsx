@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import {
   Accordion,
   AccordionContent,
@@ -51,9 +50,9 @@ export default function AccountabilityPartnerPage() {
       if (!res.ok) throw new Error("Failed to submit. Please try again.");
       setStatus("success");
       form.reset();
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus("error");
-      setError(err?.message || "Something went wrong. Please try again.");
+      setError((err as Error)?.message || "Something went wrong. Please try again.");
     }
   }
 
@@ -71,7 +70,7 @@ export default function AccountabilityPartnerPage() {
         </p>
       </section>
 
-      {/* WHY IT'S IMPORTANT */}
+      {/* WHY IT&apos;S IMPORTANT */}
       <section className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-7">
@@ -128,7 +127,7 @@ export default function AccountabilityPartnerPage() {
             },
             {
               title: "Sounding board",
-              desc: "Gut‑check goals and trade‑offs with someone who's unemotional and on your side.",
+              desc: "Gut‑check goals and trade‑offs with someone who&apos;s unemotional and on your side.",
               icon: Users,
             },
             {
@@ -163,7 +162,7 @@ export default function AccountabilityPartnerPage() {
             {
               step: "2",
               title: "List your non‑negotiables",
-              desc: "Share the 3 – 5 actions (it should never be more) that must get done. We'll help pressure‑test and refine them.",
+              desc: "Share the 3 – 5 actions (it should never be more) that must get done. We&apos;ll help pressure‑test and refine them.",
             },
             {
               step: "3",
@@ -300,7 +299,7 @@ export default function AccountabilityPartnerPage() {
                 </Button>
 
                 {status === "success" && (
-                  <p className="text-green-700 text-sm">Thanks! We'll be in touch within 1–2 business days.</p>
+                  <p className="text-green-700 text-sm">Thanks! We&apos;ll be in touch within 1–2 business days.</p>
                 )}
                 {status === "error" && (
                   <p className="text-red-700 text-sm">{error}</p>
@@ -336,13 +335,13 @@ export default function AccountabilityPartnerPage() {
           <AccordionItem value="changes">
             <AccordionTrigger>What if priorities change mid‑sprint?</AccordionTrigger>
             <AccordionContent>
-              That happens. We'll reset scope intentionally—trading off, not piling on — so you keep momentum.
+              That happens. We&apos;ll reset scope intentionally—trading off, not piling on — so you keep momentum.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="cancel">
             <AccordionTrigger>Can I pause or cancel?</AccordionTrigger>
             <AccordionContent>
-              Yes — you can pause or stop at any time. This is about helping make your life easier, we're not looking to trap you in anything.
+              Yes — you can pause or stop at any time. This is about helping make your life easier, we&apos;re not looking to trap you in anything.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

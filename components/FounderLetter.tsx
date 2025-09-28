@@ -4,7 +4,7 @@ export const FounderLetter: React.FC = () => {
   return (
     <section className="py-16 px-4 max-w-4xl mx-auto">
       <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-black tracking-tight leading-tight">
           Building a practice is hard.<br />
           <span className="block">I want to make it easier.</span>
         </h1>
@@ -12,7 +12,7 @@ export const FounderLetter: React.FC = () => {
 
       <article className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         <div className="space-y-6">
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700">
             Building your own healthcare practice is one of the hardest things you can choose to do.
           </p>
 

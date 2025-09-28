@@ -43,23 +43,23 @@ export default function ReputationManagementPage() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-14">
         <div className="max-w-3xl">
-          <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100">Online Reviews</Badge>
+          <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100 text-base">Online Reviews</Badge>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
             Reputation Management
           </h1>
-          <div className="mt-3 h-1 w-80 bg-orange-500 rounded" aria-hidden />
+          <div className="mt-3 h-1 w-100 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
             Get more 5-star Google reviews automatically. Build trust with prospective patients and rank higher in search results.
           </p>
           <div className="mt-8 flex gap-3">
             <a href="#signup" className="inline-flex">
-              <Button size="lg" className="h-12 px-6">Start getting reviews</Button>
+              <Button size="lg" className="h-12 px-6 text-base cursor-pointer">Start getting reviews</Button>
             </a>
             <div className="inline-flex">
               <Button
                 size="lg"
                 variant="outline"
-                className="h-12 px-6"
+                className="h-12 px-6 text-base cursor-pointer"
                 onClick={() => {
                   const element = document.getElementById('how-it-works');
                   if (element) {
@@ -74,16 +74,16 @@ export default function ReputationManagementPage() {
         </div>
       </section>
 
-      {/* WHY IT'S IMPORTANT */}
+      {/* WHY IT&apos;S IMPORTANT */}
       <section className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-6">
-            <h2 className="text-2xl md:text-3xl font-bold">Why this matters</h2>
-            <p className="mt-4 text-slate-700">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Why this matters</h2>
+            <p className="mt-4 text-grey-700 text-lg">
               Google reviews are critical for your practice&apos;s success. They help you rank higher in Google Maps results and
               build trust with prospective patients who use reviews to decide whether to book an appointment.
             </p>
-            <p className="mt-4 text-slate-700">
+            <p className="mt-4 text-grey-700 text-lg">
               We help you get more 5-star Google reviews automatically, so you can focus on providing great care while we
               handle building your online reputation.
             </p>
@@ -91,7 +91,7 @@ export default function ReputationManagementPage() {
           <div className="md:col-span-6">
             <Card className="border-slate-200">
               <CardContent className="p-6">
-                <div className="space-y-3 text-slate-800">
+                <div className="space-y-3 text-grey-700 text-lg">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Rank higher in Google Maps search results</span>
@@ -121,7 +121,7 @@ export default function ReputationManagementPage() {
 
       {/* KEY FEATURES */}
       <section className="mx-auto max-w-6xl px-6 py-10">
-        <h2 className="text-2xl md:text-3xl font-bold">Key features</h2>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Key features</h2>
         <div className="mt-6 grid md:grid-cols-3 gap-6">
           {[
             {
@@ -131,7 +131,7 @@ export default function ReputationManagementPage() {
             },
             {
               title: "Full playbook",
-              desc: "We share with you how to increase reviews. Texting is part of it, but it's only just a part of the complete strategy.",
+              desc: "We share with you how to increase reviews. Texting is part of it, but it&apos;s only just a part of the complete strategy.",
               icon: Target,
             },
             {
@@ -146,7 +146,7 @@ export default function ReputationManagementPage() {
                   <f.icon className="w-5 h-5 text-orange-500" />
                   <h3 className="font-semibold text-lg">{f.title}</h3>
                 </div>
-                <p className="text-slate-700">{f.desc}</p>
+                <p className="text-grey-700 text-base">{f.desc}</p>
               </CardContent>
             </Card>
           ))}
@@ -154,29 +154,29 @@ export default function ReputationManagementPage() {
       </section>
 
       {/* WHY TRUST ME */}
-      <section className="mx-auto max-w-6xl px-6 py-10 bg-slate-50">
+      <section className="mx-auto max-w-7xl rounded-2xl bg-white border-1 border-black py-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold">Why trust us with this?</h2>
-          <p className="mt-4 text-slate-700 text-lg">
-            We know exactly how other reputation management companies operate, which is why we're able to deliver the same results at about half the cost.
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Why trust us with this?</h2>
+          <p className="mt-4 text-grey-700 text-lg">
+            We know exactly how other reputation management companies operate, which is why we&apos;re able to deliver the same results at about half the cost.
             <br />
             <br />
             But cost isn’t our only differentiator — we also recognize and reward the people who make great patient reviews possible: your team. By tying incentives directly to the experiences they create, reputation management becomes more than a tool — it becomes a motivator that drives better outcomes.
           </p>
           <div className="mt-8 grid md:grid-cols-2 gap-6 text-left">
-            <Card className="border-slate-200">
-              <CardContent className="p-6">
+            <Card className="border-2 border-orange-400 shadow-lg shadow-orange-100">
+              <CardContent className="py-2 px-3">
                 <h3 className="font-semibold text-lg mb-2">Fair pricing</h3>
-                <p className="text-slate-700">
+                <p className="text-grey-700">
                   Our mission isn’t to be the cheapest — it’s to be fair. We understand the value this service brings and the work it takes, and we price it accordingly — not based on extracting the most from owners.
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-slate-200">
-              <CardContent className="p-6">
+            <Card className="border-2 border-emerald-400 shadow-lg shadow-emerald-100">
+              <CardContent className="py-2 px-3">
                 <h3 className="font-semibold text-lg mb-2">Team-first approach</h3>
-                <p className="text-slate-700">
-                  We know it’s your team that creates great patient experiences — and great reviews follow. Because incentives drive results, we reward teams that hit review targets. This comes directly out of our pocket, with no additional cost to you.
+                <p className="text-grey-700">
+                We know it’s your team that creates great patient experiences — and great reviews follow. To make those reviews happen faster, we reward teams that hit review targets. The rewards come directly from us, at no extra cost to you.
                 </p>
               </CardContent>
             </Card>
@@ -186,8 +186,8 @@ export default function ReputationManagementPage() {
 
       {/* HOW IT WORKS */}
       <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center scroll-mt-20">
-        <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
-        <p className="mt-3 text-slate-700">Simple setup, automatic results.</p>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">How it works</h2>
+        <p className="mt-3 text-lg text-grey-700">Simple setup, automatic results.</p>
         <div className="mt-8 space-y-6">
           {[
             {
@@ -217,12 +217,12 @@ export default function ReputationManagementPage() {
             },
           ].map((s) => (
             <div key={s.step} className="flex items-start gap-4 text-left max-w-2xl mx-auto">
-              <div className="h-8 w-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold flex-shrink-0">
+              <div className="h-8 w-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold flex-shrink-0 text-lg">
                 {s.step}
               </div>
               <div>
                 <h3 className="font-semibold text-lg">{s.title}</h3>
-                <p className="mt-1 text-slate-700">{s.desc}</p>
+                <p className="mt-1 text-grey-700">{s.desc}</p>
               </div>
             </div>
           ))}
@@ -232,23 +232,23 @@ export default function ReputationManagementPage() {
       {/* PRICING */}
       <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Simple, fair pricing</h2>
-          <p className="mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-grey-900">Simple, fair pricing</h2>
+          <p className="mt-6 max-w-xl text-pretty text-center text-lg font-medium text-grey-600 mx-auto">
             Half the price of other reputation management services. No hidden fees or long-term contracts.
           </p>
         </div>
 
         <div className="mt-16 max-w-lg mx-auto">
-          <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
-            <h3 className="text-lg font-semibold text-gray-900">Reputation Management</h3>
+          <div className="rounded-3xl p-8 ring-1 ring-grey-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-xl font-semibold text-grey-900">Reputation Management</h3>
             <p className="mt-6 flex items-baseline gap-x-1">
-              <span className="text-4xl font-semibold tracking-tight text-gray-900">$250</span>
-              <span className="text-sm font-semibold text-gray-600">per month per location</span>
+              <span className="text-4xl font-semibold tracking-tight text-grey-900">$250</span>
+              <span className="text-base font-semibold text-grey-600">per month per location</span>
             </p>
             <a href="#signup" className="mt-6 block w-full">
-              <Button className="w-full h-11 px-8">Get started</Button>
+              <Button className="w-full h-11 px-8 text-base">Get started</Button>
             </a>
-            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+            <ul role="list" className="mt-8 space-y-3 text-base text-grey-600 xl:mt-10">
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
                 Automated review request text messages
@@ -283,17 +283,17 @@ export default function ReputationManagementPage() {
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Ready to get more reviews?</h2>
-            <p className="mt-3 text-slate-700">
-              Tell us about your practice and we'll set up a quick call to get you started with automated review collection.
+            <p className="mt-3 text-grey-700 text-lg">
+              Tell us about your practice and we&apos;ll set up a quick call to get you started with automated review collection.
             </p>
             {/* <p className="mt-2 text-sm text-slate-500">
-              All submissions are handled securely. We'll contact you within one business day.
+              All submissions are handled securely. We&apos;ll contact you within one business day.
             </p> */}
           </div>
           <Card className="border-slate-200">
             <CardContent className="p-6">
               <form onSubmit={onSubmit} className="space-y-4">
-                <Input name="name" placeholder="Your name" required />
+                <Input name="name" placeholder="Your name"required />
                 {/* <Input name="role" placeholder="Your role" /> */}
                 <Input name="email" type="email" placeholder="Email" required />
                 <Input name="practice" placeholder="Practice name" required />
@@ -322,7 +322,7 @@ export default function ReputationManagementPage() {
                 </Button>
 
                 {status === "success" && (
-                  <p className="text-green-700 text-sm">Thanks! We'll be in touch within 1 business day to set up your reputation management system.</p>
+                  <p className="text-green-700 text-sm">Thanks! We&apos;ll be in touch within 1 business day to set up your reputation management system.</p>
                 )}
                 {status === "error" && (
                   <p className="text-red-700 text-sm">{error}</p>
