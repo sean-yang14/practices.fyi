@@ -30,9 +30,7 @@ export default function AccountabilityPartnerPage() {
       name: data.get("name"),
       email: data.get("email"),
       practice: data.get("practice"),
-      role: data.get("role"),
-      timeframe: data.get("timeframe"),
-      priorities: data.get("priorities"),
+      package: data.get("package"),
       // honeypot
       context: data.get("context"),
     } as Record<string, FormDataEntryValue | null>;

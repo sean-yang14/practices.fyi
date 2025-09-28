@@ -9,7 +9,7 @@ const schema = z.object({
   message: z.string().optional().default(""),
 });
 
-const TO = "seanhyang1@gmail.com";
+const TO = "sean@practices.fyi";
 
 export async function POST(req: Request) {
   try {

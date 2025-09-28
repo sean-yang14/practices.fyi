@@ -11,7 +11,7 @@ const schema = z.object({
   social_consent: z.string().optional(), // checkbox returns "on" when checked
 });
 
-const TO = "seanhyang1@gmail.com";
+const TO = "sean@practices.fyi";
 
 export async function POST(req: Request) {
   try {

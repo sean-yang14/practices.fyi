@@ -9,7 +9,7 @@ const schema = z.object({
   context: z.string().optional().default(""), // honeypot
 });
 
-const TO = "seanhyang1@gmail.com";
+const TO = "sean@practices.fyi";
 
 export async function POST(req: Request) {
   try {
