@@ -32,13 +32,13 @@ export const FounderLetter: React.FC = () => {
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-           I invite you to explore our tools and join me on this mission to make practice ownership easier and less lonely. We’re honored to have you here and excited to be part of your journey.
+           I invite you to explore our tools and join me on this mission to make practice ownership easier and less lonely. We&apos;re honored to have you here and excited to be part of your journey.
           </p>
 
           <div className="mt-6">
             <img
               src="/signature_1.png"
-              alt="Sean's signature"
+              alt="Sean&apos;s signature"
               className="h-28 w-60 -ml-8 -mt-2 -mb-10"
             />
           </div>
