@@ -12,16 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { CheckCircle } from "lucide-react";
-
-type PartnerType = "financial" | "consultant" | "recruiting" | "other";
 
 export default function PartnersPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -64,9 +55,9 @@ export default function PartnersPage() {
       if (!res.ok) throw new Error("Failed to submit. Please try again.");
       setStatus("success");
       form.reset();
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus("error");
-      setError(err?.message || "Something went wrong. Please try again.");
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
     }
   }
 

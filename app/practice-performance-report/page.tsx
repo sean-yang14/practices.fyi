@@ -35,9 +35,9 @@ export default function PracticeHealthCheckupPage() {
       if (!res.ok) throw new Error("Failed to submit. Please try again.");
       setStatus("success");
       form.reset();
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus("error");
-      setError(err?.message || "Something went wrong. Please try again.");
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
     }
   }
 

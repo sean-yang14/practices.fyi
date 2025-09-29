@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, Star, MessageSquare, Target, Users, Shield } from "lucide-react";
+import { CheckCircle, MessageSquare, Target, Users } from "lucide-react";
 
 export default function ReputationManagementPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");

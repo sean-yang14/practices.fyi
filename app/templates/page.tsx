@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 // Header & Footer are handled globally; omitted here per request.
 
 // Types
- type CtaType = "download" | "access";
+ type CtaType = "download" | "access" | "coming-soon";
  interface ResourceItem {
   title: string;
   description: string;

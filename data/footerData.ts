@@ -53,7 +53,7 @@ export const socialLinks = [
   // }
 ];
 
-export const legalLinks = [
+export const legalLinks: { id: string; text: string; href: string }[] = [
   // { id: 'privacy', text: 'Privacy Policy', href: '/privacy' },
   // { id: 'terms', text: 'Terms of Service', href: '/terms' },
   // { id: 'cookies', text: 'Cookie Policy', href: '/cookies' }

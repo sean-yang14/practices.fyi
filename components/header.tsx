@@ -4,13 +4,6 @@ import Link from "next/link"
 import * as Dialog from "@radix-ui/react-dialog"
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
 import { ChevronDown } from "lucide-react"
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuLinkClassName,
-} from "@/components/ui/navigation-menu"
 
 export function Header() {
   return (

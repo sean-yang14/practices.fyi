@@ -76,17 +76,19 @@ export function DetailedFooter() {
                 All Rights Reserved
               </p>
             </div>
-            <div className="flex flex-wrap gap-4">
-              {legalLinks.map((link) => (
-                <a
-                  key={link.id}
-                  href={link.href}
-                  className="hover:text-black transition-colors duration-200 text-sm" style={{color: 'var(--color-ice)'}}
-                >
-                  {link.text}
-                </a>
-              ))}
-            </div>
+            {legalLinks.length > 0 && (
+              <div className="flex flex-wrap gap-4">
+                {legalLinks.map((link) => (
+                  <a
+                    key={link.id}
+                    href={link.href}
+                    className="hover:text-black transition-colors duration-200 text-sm" style={{color: 'var(--color-ice)'}}
+                  >
+                    {link.text}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
