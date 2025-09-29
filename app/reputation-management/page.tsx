@@ -154,7 +154,7 @@ export default function ReputationManagementPage() {
       </section>
 
       {/* WHY TRUST ME */}
-      <section className="mx-auto max-w-7xl rounded-2xl bg-white border-1 border-black py-10">
+      <section className="mx-auto max-w-6xl rounded-2xl bg-white border-1 border-black py-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Why trust us with this?</h2>
           <p className="mt-4 text-grey-700 text-lg">
@@ -243,7 +243,7 @@ export default function ReputationManagementPage() {
             <h3 className="text-xl font-semibold text-grey-900">Reputation Management</h3>
             <p className="mt-6 flex items-baseline gap-x-1">
               <span className="text-4xl font-semibold tracking-tight text-grey-900">$250</span>
-              <span className="text-base font-semibold text-grey-600">per month per location</span>
+              <span className="text-base font-semibold text-gray-600">per month per location</span>
             </p>
             <a href="#signup" className="mt-6 block w-full">
               <Button className="w-full h-11 px-8 text-base">Get started</Button>

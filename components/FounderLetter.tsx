@@ -18,11 +18,11 @@ export const FounderLetter: React.FC = () => {
 
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            The journey is lonely. There's a lack of accessible support, and there's an overwhelming number of vendors claiming they can help.
+            The journey is lonely. There&apos;s a lack of accessible support, and there&apos;s an overwhelming number of vendors claiming they can help.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            The kicker... far too many of these vendors either overcharge or simply don’t deliver on what they promise. <strong>I've seen too many owners</strong>, including my friends, <strong>get taken advantage of and that drives me crazy. It's why I want to change things.</strong>
+            The kicker... far too many of these vendors either overcharge or simply don&apos;t deliver on what they promise. <strong>I&apos;ve seen too many owners</strong>, including my friends, <strong>get taken advantage of and that drives me crazy. It&apos;s why I want to change things.</strong>
           </p>
         </div>
 

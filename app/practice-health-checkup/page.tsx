@@ -43,7 +43,7 @@ export default function PracticeHealthCheckupPage() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-14">
         <div className="max-w-3xl">
-          <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100">Practice Support</Badge>
+          <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100 text-base">Practice Support</Badge>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
             Practice Health Checkup
           </h1>
@@ -53,10 +53,10 @@ export default function PracticeHealthCheckupPage() {
           </p>
           <div className="mt-8 flex gap-3">
             <a href="#signup" className="inline-flex">
-              <Button size="lg" className="h-12 px-6">Book your checkup</Button>
+              <Button size="lg" className="h-12 px-6 text-base cursor-pointer">Book your checkup</Button>
             </a>
             <a href="#how-it-works" className="inline-flex">
-              <Button size="lg" variant="outline" className="h-12 px-6">How it works</Button>
+              <Button size="lg" variant="outline" className="h-12 px-6 text-base cursor-pointer">How it works</Button>
             </a>
           </div>
         </div>
@@ -66,19 +66,19 @@ export default function PracticeHealthCheckupPage() {
       <section className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-6">
-            <h2 className="text-2xl md:text-3xl font-bold">Why this matters</h2>
-            <p className="mt-4 text-slate-700">
-              Running a practice can feel isolating. When you're stuck or need a fresh perspective, data can be intimidating to parse alone.
-              Sometimes you just need someone to take an objective look and help you see what's really going on.
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Why this matters</h2>
+            <p className="mt-4 text-grey-700 text-lg">
+              Running a practice can feel isolating. When you&apos;re stuck or need a fresh perspective, data can be intimidating to parse alone.
+              Sometimes you just need someone to take an objective look and help you see what&apos;s really going on.
             </p>
-            <p className="mt-4 text-slate-700">
+            <p className="mt-4 text-grey-700 text-lg">
               Think of this like a health checkup for your business — checking in on the key vitals so you can level set and know things are headed in the right direction.
             </p>
           </div>
           <div className="md:col-span-6">
             <Card className="border-slate-200">
               <CardContent className="p-6">
-                <div className="space-y-3 text-slate-800">
+                <div className="space-y-3 text-grey-700 text-lg">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Get an outside perspective on your practice performance</span>
@@ -108,7 +108,7 @@ export default function PracticeHealthCheckupPage() {
 
       {/* KEY FEATURES / REASONS */}
       <section className="mx-auto max-w-6xl px-6 py-10">
-        <h2 className="text-2xl md:text-3xl font-bold">What makes this valuable</h2>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">What makes this valuable</h2>
         <div className="mt-6 grid md:grid-cols-3 gap-6">
           {[
             {
@@ -148,7 +148,7 @@ export default function PracticeHealthCheckupPage() {
                   <f.icon className="w-5 h-5 text-orange-500" />
                   <h3 className="font-semibold text-lg">{f.title}</h3>
                 </div>
-                <p className="text-slate-700">{f.desc}</p>
+                <p className="text-grey-700 text-base">{f.desc}</p>
               </CardContent>
             </Card>
           ))}
@@ -156,10 +156,10 @@ export default function PracticeHealthCheckupPage() {
       </section>
 
       {/* WHY TRUST ME */}
-      <section className="mx-auto max-w-6xl px-6 py-10 bg-slate-50">
+      <section className="mx-auto max-w-6xl rounded-2xl bg-white border-1 border-black px-6 py-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold">Why trust me with this?</h2>
-          <p className="mt-4 text-slate-700 text-lg">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Why trust me with this?</h2>
+          <p className="mt-4 text-grey-700 text-lg">
             I understand the challenges of running a practice because I’ve helped dozens of practice owners navigate similar situations. I’m not here to sell you anything — I genuinely want to make the ownership journey a little less lonely.
             <br />
             <br />
@@ -191,8 +191,8 @@ export default function PracticeHealthCheckupPage() {
 
       {/* HOW IT WORKS */}
       <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center scroll-mt-12">
-        <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
-        <p className="mt-3 text-slate-700">Simple, straightforward process focused on having a helpful conversation.</p>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">How it works</h2>
+        <p className="mt-3 text-grey-700 text-lg">Simple, straightforward process focused on having a helpful conversation.</p>
         <div className="mt-8 space-y-6">
           {[
             {
@@ -217,12 +217,12 @@ export default function PracticeHealthCheckupPage() {
             },
           ].map((s) => (
             <div key={s.step} className="flex items-start gap-4 text-left max-w-2xl mx-auto">
-              <div className="h-8 w-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold flex-shrink-0">
+              <div className="h-8 w-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold flex-shrink-0 text-lg">
                 {s.step}
               </div>
               <div>
                 <h3 className="font-semibold text-lg">{s.title}</h3>
-                <p className="mt-1 text-slate-700">{s.desc}</p>
+                <p className="mt-1 text-grey-700">{s.desc}</p>
               </div>
             </div>
           ))}
@@ -232,8 +232,8 @@ export default function PracticeHealthCheckupPage() {
       {/* PRICING */}
       <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-12">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Completely free</h2>
-          <p className="mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-grey-900">Completely free</h2>
+          <p className="mt-6 max-w-xl text-pretty text-center text-lg font-medium text-grey-600 mx-auto">
             I want to make the ownership journey a little less lonely, and this is one way I&apos;m hoping to do so.
           </p>
         </div>
@@ -245,9 +245,9 @@ export default function PracticeHealthCheckupPage() {
               <span className="text-4xl font-semibold tracking-tight text-green-600">Free</span>
             </p>
             <a href="#signup" className="mt-6 block w-full">
-              <Button className="w-full h-11 px-8">Book your checkup</Button>
+              <Button className="w-full h-11 px-8 text-base cursor-pointer">Book your checkup</Button>
             </a>
-            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+            <ul role="list" className="mt-8 space-y-3 text-base text-gray-600 xl:mt-10">
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
                 30 - 60 minute video conversation
@@ -275,7 +275,7 @@ export default function PracticeHealthCheckupPage() {
         {/* Optional social media sharing section */}
         <div className="mt-12 max-w-3xl mx-auto rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
           <h3 className="text-lg font-semibold text-gray-900">Optional: Help others learn</h3>
-          <p className="mt-4 text-sm text-gray-600">
+          <p className="mt-4 text-base text-gray-600">
             With your permission, I&apos;d love to share parts of our conversation on social media.
             I believe there&apos;s huge value in learning from others and knowing you&apos;re not alone in these challenges.
             You have final say on anything that gets published.
@@ -287,8 +287,8 @@ export default function PracticeHealthCheckupPage() {
       <section id="signup" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-12">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold">Ready for your practice checkup?</h2>
-            <p className="mt-3 text-slate-700">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Ready for your practice checkup?</h2>
+            <p className="mt-3 text-grey-700 text-lg">
               Fill out the form and I&apos;ll reach out to schedule our conversation. No commitment, no sales - just a helpful discussion about your practice.
             </p>
             {/* <p className="mt-2 text-sm text-slate-500">
@@ -331,7 +331,7 @@ export default function PracticeHealthCheckupPage() {
                   </label>
                 </div> */}
 
-                <Button type="submit" className="w-full h-11" disabled={status === "loading"}>
+                <Button type="submit" className="w-full h-11 text-base cursor-pointer" disabled={status === "loading"}>
                   {status === "loading" ? "Submitting…" : "Request my checkup"}
                 </Button>
 
@@ -349,7 +349,7 @@ export default function PracticeHealthCheckupPage() {
 
       {/* FAQ */}
       <section className="mx-auto max-w-6xl px-6 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold">Frequently asked questions</h2>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Frequently asked questions</h2>
         <Accordion type="single" collapsible className="mt-6">
           <AccordionItem value="what-to-expect">
             <AccordionTrigger>What should I expect during the checkup?</AccordionTrigger>
@@ -389,7 +389,7 @@ export default function PracticeHealthCheckupPage() {
           <AccordionItem value="confidentiality">
             <AccordionTrigger>How do you handle confidential information?</AccordionTrigger>
             <AccordionContent>
-              Any information you want kept confidential won't be shared publicly.
+              Any information you want kept confidential won&apos;t be shared publicly.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="who-is-this-for">

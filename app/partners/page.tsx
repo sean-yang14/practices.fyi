@@ -74,12 +74,12 @@ export default function PartnersPage() {
     <main className="bg-white text-slate-900">
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
-        <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50">Partner With Us</Badge>
+        <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50 text-base">Partner With Us</Badge>
         <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl">
           Partnerships to help practices thrive
         </h1>
-        <div className="mt-3 h-1 w-40 bg-orange-500 rounded" aria-hidden />
-        <p className="mt-6 text-lg text-slate-700 max-w-3xl">
+        <div className="mt-3 h-1 w-100 bg-orange-500 rounded" aria-hidden />
+        <p className="mt-6 text-lg md:text-xl text-slate-700 max-w-3xl">
           We build tools — not services — but practices still need help executing. That’s where experts like you, who truly care about practices, come in. By combining your expertise with our product development, we can help practices win together.
         </p>
       </section>
@@ -88,23 +88,23 @@ export default function PartnersPage() {
       <section className="mx-auto max-w-6xl px-6 pb-10">
         <div className="grid gap-8 md:grid-cols-2 items-start">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold">How we work with partners</h2>
-            <p className="mt-4 text-slate-700">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">How we work with partners</h2>
+            <p className="mt-4 text-grey-700 text-lg">
               We build tools for practices and we invite you to share your data so we can build together. By combining your expertise with insights from other trusted partners, we create a collective resource more powerful than any one group alone. That makes your data more valuable to practices, strengthens the impact you deliver to your clients, and opens a new customer acquisition channel through our tools.
               <br />
               <br />
-              And we don't stop there. Our product development can also support your team directly, from custom dashboards for your clients to automations that save time and reduce manual work.
+              And we don&apos;t stop there. Our product development can also support your team directly, from custom dashboards for your clients to automations that save time and reduce manual work.
             </p>
           </div>
 
           {/* What we bring to your team - unified box */}
           <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
-            <h3 className="text-lg font-semibold text-gray-900 mb-8">What we bring to your team</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-8">What we bring to your team</h3>
 
             {/* Growth & Insights Section */}
             <div className="mb-8">
               <h4 className="text-base font-semibold text-gray-900 mb-4">Growth & Insights</h4>
-              <ul role="list" className="space-y-3 text-sm text-gray-600">
+              <ul role="list" className="space-y-3 text-base text-gray-600">
                 <li className="flex gap-x-3">
                   <CheckCircle className="h-6 w-5 flex-none text-green-600" />
                   A new customer acquisition channel
@@ -119,7 +119,7 @@ export default function PartnersPage() {
             {/* Custom Solutions Section */}
             <div>
               <h4 className="text-base font-semibold text-gray-900 mb-4">Custom Solutions</h4>
-              <ul role="list" className="space-y-3 text-sm text-gray-600">
+              <ul role="list" className="space-y-3 text-base text-gray-600">
                 <li className="flex gap-x-3">
                   <CheckCircle className="h-6 w-5 flex-none text-green-600" />
                   Custom dashboards tailored to your needs
@@ -136,8 +136,8 @@ export default function PartnersPage() {
 
       {/* EXPERTS WHO PARTNER WITH US */}
       {/* <section className="mx-auto max-w-6xl px-6 py-4">
-        <h2 className="text-2xl md:text-3xl font-bold">Experts we're looking to partner with</h2>
-        <p className="mt-3 text-slate-500">We're actively expanding to include more partner types as we grow.</p>
+        <h2 className="text-2xl md:text-3xl font-bold">Experts we&apos;re looking to partner with</h2>
+        <p className="mt-3 text-slate-500">We&apos;re actively expanding to include more partner types as we grow.</p>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
           <Card className="border-slate-200">
             <CardContent className="p-6">
@@ -156,7 +156,7 @@ export default function PartnersPage() {
       {/* PRICING */}
       <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Pricing</h2>
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-gray-900">Pricing</h2>
         </div>
 
         <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -167,11 +167,11 @@ export default function PartnersPage() {
               <span className="text-4xl font-semibold tracking-tight text-gray-900">Free</span>
             </p>
             <a href="#signup" className="mt-6 block w-full">
-              <Button className="w-full h-11 px-6">Get started</Button>
+              <Button className="w-full h-11 px-6 text-base cursor-pointer">Get started</Button>
             </a>
             <div className="mt-8 xl:mt-10">
-              <p className="text-sm text-gray-600">
-                Our mission is to provide insane value to practices. I believe strongly that we can build amazing tools that truly help practices thrive. I'm removing all hurdles in pursuit of this goal—there's no cost for partnering on tools for the general public.
+              <p className="text-base text-gray-600">
+                Our mission is to provide insane value to practices. I believe strongly that we can build amazing tools that truly help practices thrive. I&apos;m removing all hurdles in pursuit of this goal—there&apos;s no cost for partnering on tools for the general public.
               </p>
             </div>
           </div>
@@ -180,15 +180,15 @@ export default function PartnersPage() {
           <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
             <h3 className="text-lg font-semibold text-gray-900">Custom Partner Solutions</h3>
             <p className="mt-6 flex items-baseline gap-x-1">
-              <span className="text-4xl font-semibold tracking-tight text-gray-900">Custom</span>
-              <span className="text-sm font-semibold text-gray-600">pricing</span>
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">Custom pricing</span>
+              {/* <span className="text-sm font-semibold text-gray-600">pricing</span> */}
             </p>
             <a href="#signup" className="mt-6 block w-full">
-              <Button variant="outline" className="w-full h-11 px-6">Contact us</Button>
+              <Button variant="outline" className="w-full h-11 px-6 text-base cursor-pointer">Contact us</Button>
             </a>
             <div className="mt-8 xl:mt-10">
-              <p className="text-sm text-gray-600">
-                Need custom dashboards, automations, or integrations specific to your firm? Let's discuss pricing based on your exact needs and the value we'll create together.
+              <p className="text-base text-gray-600">
+                Need custom dashboards, automations, or integrations specific to your firm? Let&apos;s discuss pricing based on your exact needs and the value we&apos;ll create together.
               </p>
             </div>
           </div>
@@ -199,13 +199,13 @@ export default function PartnersPage() {
       <section id="signup" className="mx-auto max-w-6xl px-6 pt-5 pb-10 scroll-mt-20">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold">Become a partner</h2>
-            <p className="mt-3 text-slate-700">
-              Tell us about your firm and we'll follow up to explore fit.
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Become a partner</h2>
+            <p className="mt-3 text-grey-700 text-lg">
+              Tell us about your firm and we&apos;ll follow up to explore fit.
             </p>
-            <p className="mt-2 text-sm text-slate-500">
+            {/* <p className="mt-2 text-sm text-slate-500">
               Submissions go to a server‑side route you control. No credentials in the browser.
-            </p>
+            </p> */}
           </div>
           <Card className="border-slate-200">
             <CardContent className="p-6">
@@ -215,15 +215,15 @@ export default function PartnersPage() {
 
                 <Input name="name" placeholder="Full name" required />
                 <Input name="email" type="email" placeholder="Email" required />
-                <Input name="website" type="url" placeholder="Company website" />
-                <Textarea name="message" placeholder="Tell us more about yourself and what you're looking for" rows={4} required />
+                <Input name="website" type="text" placeholder="Company website" required/>
+                <Textarea name="message" placeholder="Tell us more about yourself and what you&apos;re looking for" rows={4} required />
 
-                <Button type="submit" className="w-full h-11" disabled={status === "loading"}>
+                <Button type="submit" className="w-full h-11 text-base cursor-pointer" disabled={status === "loading"}>
                   {status === "loading" ? "Submitting…" : "Request partnership intro"}
                 </Button>
 
                 {status === "success" && (
-                  <p className="text-green-700 text-sm">Thanks! We'll be in touch within 1–2 business days.</p>
+                  <p className="text-green-700 text-sm">Thanks! We&apos;ll be in touch within 1–2 business days.</p>
                 )}
                 {status === "error" && (
                   <p className="text-red-700 text-sm">{error}</p>
@@ -236,7 +236,7 @@ export default function PartnersPage() {
 
       {/* FAQ */}
       <section className="mx-auto max-w-6xl px-6 pb-14">
-        <h2 className="text-2xl md:text-3xl font-bold">FAQ</h2>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Frequently asked questions</h2>
         <Accordion type="single" collapsible className="mt-6">
           <AccordionItem value="data">
             <AccordionTrigger>Why do you need our data?</AccordionTrigger>

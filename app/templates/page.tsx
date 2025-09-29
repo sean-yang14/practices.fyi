@@ -78,34 +78,34 @@ const sections: SectionItem[] = [
         description:
           "A deep dive into how local SEO works for healthcare practices—for those who like to go deep.",
         href: "#",
-        cta: "access",
+        cta: "coming-soon",
       },
       {
         title: "Local SEO Summary Guide",
         description:
           "A shorter version with the big takeaways for those pressed for time.",
         href: "#",
-        cta: "access",
+        cta: "coming-soon",
       },
       {
         title: "Google Business Profile Checklist",
         description:
           "The to‑dos to have an optimized Google Business Profile.",
-        href: "#",
+        href: "https://docs.google.com/document/d/e/2PACX-1vRBPLjEFG7tKhZf1PXA3cAxAFrI-fQUGWFCTn15KBAptsXVzWtifHrxnIGhIo7KTHqoQg2D6R1Qlyg4/pub",
         cta: "download",
       },
       {
         title: "Local Directories Checklist",
         description:
           "The list of directories your practice should be listed on for visibility and stronger Local SEO.",
-        href: "#",
+        href: "https://docs.google.com/document/d/e/2PACX-1vQOLienQOqJF-vMRW4vlMAYMiIFUchtHwHZLQswXdz86PEMP25836yG4kVkEhYmO4S_yWaNRbVOB3Kl/pub",
         cta: "download",
       },
       {
         title: "Website Quality Checklist",
         description:
           "A quick way to check if your website is good enough—or if you should invest in updates or a rebuild.",
-        href: "#",
+        href: "https://docs.google.com/document/d/e/2PACX-1vTkToXZThepBR8309SbrWgwpMFrJexNtzXK8BRHDFu2qJkxH7Flezl9sh7ZyFD7DxjF_gB7A3zLt4Ha/pub",
         cta: "download",
       },
     ],
@@ -113,19 +113,53 @@ const sections: SectionItem[] = [
 ];
 
 // Components
-function ResourceCard({ item }: { item: ResourceItem }) {
-  const label = item.cta === "download" ? "Download now →" : "Access here →";
+function ResourceCard({ item, sectionId }: { item: ResourceItem; sectionId: string }) {
+  const isComingSoon = sectionId === "financial" || sectionId === "employee" || item.cta === "coming-soon";
+  const isLocalSeo = sectionId === "local-seo";
+
+  let label, buttonProps, isDisabled;
+
+  if (isComingSoon) {
+    label = "Coming soon";
+    buttonProps = {
+      variant: "secondary" as const,
+      className: "h-10 text-base cursor-not-allowed bg-gray-200 text-gray-600 hover:bg-gray-200",
+      disabled: true
+    };
+    isDisabled = true;
+  } else if (isLocalSeo) {
+    label = "Access here";
+    buttonProps = {
+      variant: "secondary" as const,
+      className: "h-10 text-base cursor-pointer bg-slate-900 text-white hover:bg-slate-800"
+    };
+    isDisabled = false;
+  } else {
+    label = item.cta === "download" ? "Download now →" : "Access here →";
+    buttonProps = {
+      variant: "secondary" as const,
+      className: "h-10 text-base cursor-pointer"
+    };
+    isDisabled = false;
+  }
+
   return (
     <Card className="border-slate-200 bg-slate-50 hover:bg-slate-100 transition-colors">
       <CardContent className="p-6 flex flex-col h-full">
         <div className="grow">
           <h3 className="font-semibold text-lg tracking-tight">{item.title}</h3>
-          <p className="mt-2 text-slate-700 text-sm leading-relaxed">{item.description}</p>
+          <p className="mt-2 text-grey-700 text-base leading-relaxed">{item.description}</p>
         </div>
         <div className="mt-5">
-          <Button asChild variant="secondary" className="h-10">
-            <a href={item.href} aria-label={`${label} — ${item.title}`}>{label}</a>
-          </Button>
+          {isDisabled ? (
+            <Button {...buttonProps}>
+              {label}
+            </Button>
+          ) : (
+            <Button asChild {...buttonProps}>
+              <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`${label} — ${item.title}`}>{label}</a>
+            </Button>
+          )}
         </div>
       </CardContent>
     </Card>
@@ -137,11 +171,11 @@ export default function TemplatesAndGuidesPage() {
     <main className="bg-white text-slate-900">
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
-        <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50">Free Practice Management Templates & Guides</Badge>
+        <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50 text-base">Free Practice Management Templates & Guides</Badge>
         <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl">
-          Welcome to your collection of practice management resources to grow your practice
+          Welcome to your collection of resources to grow your practice
         </h1>
-        <div className="mt-3 h-1 w-40 bg-orange-500 rounded" aria-hidden />
+        <div className="mt-3 h-1 w-100 bg-orange-500 rounded" aria-hidden />
         {/* Optional subhead can go here if desired */}
       </section>
 
@@ -149,7 +183,7 @@ export default function TemplatesAndGuidesPage() {
       <section className="mx-auto max-w-6xl px-6 pb-16">
         {sections.map((section) => (
           <div key={section.id} className="py-8">
-            <h2 className="text-2xl md:text-3xl font-bold">{section.title}</h2>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">{section.title}</h2>
             {/**
              * Add a short owner/manager‑facing explanation of what this section is for.
              * <p className="mt-2 max-w-3xl text-slate-600">
@@ -160,7 +194,7 @@ export default function TemplatesAndGuidesPage() {
 
             <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {section.resources.map((item) => (
-                <ResourceCard key={item.title} item={item} />
+                <ResourceCard key={item.title} item={item} sectionId={section.id} />
               ))}
             </div>
           </div>

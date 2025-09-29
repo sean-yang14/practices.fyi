@@ -61,7 +61,7 @@ export default function Home() {
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-left text-emerald-600">Practice Performance Report</h3>
                 <p className="text-grey-700 text-base text-left line-clamp-4">
-                  Running a practice is too complex to run blind. Our reports provides clear visibility into your practice's performance — so you can lead with confidence.
+                  Running a practice is too complex to run blind. Our reports provides clear visibility into your practice&apos;s performance — so you can lead with confidence.
                 </p>
               </div>
               <div className="ml-6 flex-shrink-0">
@@ -151,15 +151,15 @@ export default function Home() {
           <div className="px-6 py-16 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
             <div className="max-w-2xl">
               <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl mb-4">
-                Feeling stuck? You don't have to do it alone.
+                Feeling stuck? You don&apos;t have to do it alone.
               </h2>
               <p className="text-lg text-gray-700">
-                Sign up for a free consultation call -- available for a limited time. No BS, gatekeeping, or sales pitch. I'm just looking to offer a helping hand.
+                Sign up for a free consultation call -- available for a limited time. No BS, gatekeeping, or sales pitch. I&apos;m just looking to offer a helping hand.
               </p>
             </div>
             <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
               <a
-                href="#"
+                href="/practice-health-checkup"
                 className="rounded-4xl bg-orange-500 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
               >
                 Book Free Practice Checkup

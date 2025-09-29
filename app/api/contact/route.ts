@@ -5,11 +5,9 @@ import { z } from "zod";
 const schema = z.object({
   name: z.string().min(1),
   email: z.string().email(),
-  practice: z.string().min(1),
-  position: z.string().min(1),
-  city: z.string().min(1),
-  state: z.string().min(2).max(2),
-  message: z.string().min(1),
+  website: z.string().optional().default(""),
+  position: z.string().optional().default(""),
+  message: z.string().optional().default(""),
 });
 
 import { EMAIL_FROM, EMAIL_TO } from "@/lib/email";
@@ -22,16 +20,14 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid form" }, { status: 400 });
     }
 
-    const { name, email, practice, position, city, state, message } = parsed.data;
+    const { name, email, website, position, message } = parsed.data;
 
     // Log the submission for observability
     console.log("New Contact submission:", {
       name,
       email,
-      practice,
-      position,
-      city,
-      state,
+      website: website || "(none)",
+      position: position || "(none)",
       message: message || "(none)",
       source: "Contact Page",
       timestamp: new Date().toISOString(),
@@ -54,12 +50,11 @@ export async function POST(req: Request) {
           ``,
           `Name: ${name}`,
           `Email: ${email}`,
-          `Practice: ${practice}`,
-          `Position: ${position}`,
-          `City/State: ${city}, ${state}`,
+          `Website: ${website || "(none)"}`,
+          `Position: ${position || "(none)"}`,
           ``,
           `Message:`,
-          message,
+          message || "(none)",
           ``,
           `---`,
           `Submitted: ${new Date().toLocaleString()}`,

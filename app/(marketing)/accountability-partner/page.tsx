@@ -60,12 +60,12 @@ export default function AccountabilityPartnerPage() {
     <main className="bg-white text-slate-900">
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
-        <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50">Accountability</Badge>
-        <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl">
+        <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50 text-base">Accountability</Badge>
+        <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
           Accountability Partner
         </h1>
         <div className="mt-3 h-1 w-72 bg-orange-500 rounded" aria-hidden />
-        <p className="mt-6 text-lg text-slate-700 max-w-3xl">
+        <p className="mt-6 text-lg md:text-xl text-slate-700 max-w-3xl">
           We help you make real progress by keeping you accountable for executing on the few things that matter most. It’s not easy but it is simple, and it works.
         </p>
       </section>
@@ -74,18 +74,18 @@ export default function AccountabilityPartnerPage() {
       <section className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-7">
-            <h2 className="text-2xl md:text-3xl font-bold">Why this matters</h2>
-            <p className="mt-4 text-slate-700">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Why this matters</h2>
+            <p className="mt-4 text-grey-700 text-lg">
               It’s hard to juggle everything as a practice owner — you’re pulled in a hundred directions, and some days it feels like nothing is really getting done. You’re stuck on a hamster wheel, always moving but not moving forward.
             </p>
-            <p className="mt-3 text-slate-700">
+            <p className="mt-3 text-grey-700 text-lg">
               The key to breaking out of that cycle is simple: prioritize what matters most and follow through. That’s where we come in—we’re your accountability partner, helping you stay focused and execute on the goals that move your practice forward.
             </p>
           </div>
           <div className="md:col-span-5">
             <Card className="border-slate-200">
               <CardContent className="p-6">
-                <div className="space-y-3 text-slate-800">
+                <div className="space-y-3 text-grey-700 text-lg">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Weekly momentum through lightweight check‑ins.</span>
@@ -96,7 +96,7 @@ export default function AccountabilityPartnerPage() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Optional financial "stake" to sharpen commitment.</span>
+                    <span>Optional financial &quot;stake&quot; to sharpen commitment.</span>
                   </div>
                 </div>
               </CardContent>
@@ -107,7 +107,7 @@ export default function AccountabilityPartnerPage() {
 
       {/* KEY FEATURES */}
       <section className="mx-auto max-w-6xl px-6 py-8">
-        <h2 className="text-2xl md:text-3xl font-bold">What you get</h2>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">What you get</h2>
         <div className="mt-6 grid md:grid-cols-3 gap-6">
           {[
             {
@@ -142,7 +142,7 @@ export default function AccountabilityPartnerPage() {
                   <f.icon className="w-5 h-5 text-orange-500" />
                   <h3 className="font-semibold text-lg">{f.title}</h3>
                 </div>
-                <p className="text-slate-700">{f.desc}</p>
+                <p className="text-grey-700 text-base">{f.desc}</p>
               </CardContent>
             </Card>
           ))}
@@ -151,7 +151,7 @@ export default function AccountabilityPartnerPage() {
 
       {/* HOW IT WORKS */}
       <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-10 text-center scroll-mt-20">
-        <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">How it works</h2>
         <div className="mt-8 space-y-6">
           {[
             {
@@ -176,12 +176,12 @@ export default function AccountabilityPartnerPage() {
             },
           ].map((s) => (
             <div key={s.step} className="flex items-start gap-4 text-left max-w-2xl mx-auto">
-              <div className="h-8 w-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold flex-shrink-0">
+              <div className="h-8 w-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold flex-shrink-0 text-lg">
                 {s.step}
               </div>
               <div>
                 <h3 className="font-semibold text-lg">{s.title}</h3>
-                <p className="mt-1 text-slate-700">{s.desc}</p>
+                <p className="mt-1 text-grey-700">{s.desc}</p>
               </div>
             </div>
           ))}
@@ -191,7 +191,7 @@ export default function AccountabilityPartnerPage() {
       {/* PRICING */}
       <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-5xl font-bold tracking-tight text-gray-900">Pricing</h2>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Pricing</h2>
         </div>
 
         <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -202,9 +202,9 @@ export default function AccountabilityPartnerPage() {
               <span className="text-4xl font-semibold tracking-tight text-gray-900">Free</span>
             </p>
             <a href="#signup" className="mt-6 block w-full">
-              <Button className="w-full h-11 px-6">Get started</Button>
+              <Button className="w-full h-11 px-6 text-base cursor-pointer">Get started</Button>
             </a>
-            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+            <ul role="list" className="mt-8 space-y-3 text-base text-gray-600 xl:mt-10">
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
                 Define weekly or monthly non‑negotiables
@@ -232,9 +232,9 @@ export default function AccountabilityPartnerPage() {
               <span className="text-sm font-semibold text-gray-600">stake amount</span>
             </p>
             <a href="#signup" className="mt-6 block w-full">
-              <Button className="w-full h-11 px-6 bg-orange-500 hover:bg-orange-600">Get started</Button>
+              <Button className="w-full h-11 px-6 bg-orange-500 hover:bg-orange-600 text-base cursor-pointer">Get started</Button>
             </a>
-            <ul role="list" className="mt-8 space-y-3 text-sm text-gray-600 xl:mt-10">
+            <ul role="list" className="mt-8 space-y-3 text-base text-gray-600 xl:mt-10">
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
                 Put money behind your goals
@@ -254,7 +254,7 @@ export default function AccountabilityPartnerPage() {
         {/* Loss aversion explainer */}
         <div className="mt-12 max-w-3xl mx-auto rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
           <h3 className="text-lg font-semibold text-gray-900">Why the stake works: loss aversion</h3>
-          <p className="mt-4 text-sm text-gray-600">
+          <p className="mt-4 text-base text-gray-600">
             Behavioral science shows people are often more motivated to <strong>avoid losing something</strong> than to gain the same amount — this is called <em>loss aversion</em>. Studies suggest losses can feel about twice as powerful as gains. Putting money down toward a task makes the potential loss feel real, which sharpens commitment and follow‑through.
           </p>
         </div>
@@ -264,8 +264,8 @@ export default function AccountabilityPartnerPage() {
       <section id="signup" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold">Start your accountability sprint</h2>
-            <p className="mt-3 text-slate-700">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Start your accountability sprint</h2>
+            <p className="mt-3 text-grey-700 text-lg">
             Share your priorities and timeframe. We’ll help lock them in and keep you moving toward your   goals with the accountability you need to achieve them.
             </p>
             {/* <p className="mt-2 text-sm text-slate-500">Submissions are handled by a server‑side route you control. No credentials in the browser.</p> */}
@@ -294,7 +294,7 @@ export default function AccountabilityPartnerPage() {
                   <label htmlFor="consent">I consent to being contacted about this service.</label>
                 </div> */}
 
-                <Button type="submit" className="w-full h-11" disabled={status === "loading"}>
+                <Button type="submit" className="w-full h-11 text-base cursor-pointer" disabled={status === "loading"}>
                   {status === "loading" ? "Submitting…" : "Request my accountability partner"}
                 </Button>
 
@@ -312,7 +312,7 @@ export default function AccountabilityPartnerPage() {
 
       {/* FAQ */}
       <section className="mx-auto max-w-6xl px-6 pb-14">
-        <h2 className="text-2xl md:text-3xl font-bold">FAQ</h2>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Frequently asked questions</h2>
         <Accordion type="single" collapsible className="mt-6">
           <AccordionItem value="what">
             <AccordionTrigger>What exactly does an accountability partner do?</AccordionTrigger>

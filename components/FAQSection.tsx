@@ -20,7 +20,7 @@ export function FAQSection() {
         <AccordionItem value="practice-consultant">
           <AccordionTrigger className="text-lg">Are you a practice consultant?</AccordionTrigger>
           <AccordionContent className="text-base">
-            No, I’m not selling professional services of any kind here. In fact, I hope to partner with other great vendors who provide those essential services because practices shouldn’t try to do everything themselves. There's a lot of power in delegation! My real goal with Practices.fyi is to support owners by creating amazing tools at fair prices — that’s where my passion lies.
+            No, I&apos;m not selling professional services of any kind here. In fact, I hope to partner with other great vendors who provide those essential services because practices shouldn&apos;t try to do everything themselves. There&apos;s a lot of power in delegation! My real goal with Practices.fyi is to support owners by creating amazing tools at fair prices — that&apos;s where my passion lies.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="difference-between">

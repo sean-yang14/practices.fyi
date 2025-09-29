@@ -14,7 +14,7 @@ export function RotatingText() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % wordsWithColors.length)
-    }, 5000) // 5 seconds total
+    }, 3500) // 3.5 seconds total
 
     return () => clearInterval(interval)
   }, [wordsWithColors.length])
