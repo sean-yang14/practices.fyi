@@ -44,10 +44,10 @@ export default function ReputationManagementPage() {
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-14">
         <div className="max-w-3xl">
           <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100 text-base">Online Reviews</Badge>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
             Reputation Management
           </h1>
-          <div className="mt-3 h-1 w-100 bg-orange-500 rounded" aria-hidden />
+          <div className="mt-3 h-1 w-50 md:w-100 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
             Get more 5-star Google reviews automatically. Build trust with prospective patients and rank higher in search results.
           </p>

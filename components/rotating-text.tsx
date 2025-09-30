@@ -22,7 +22,7 @@ export function RotatingText() {
   return (
     <span className="relative inline-block">
       <span
-        className={`inline-block px-4 py-2 rounded-lg text-white font-bold transition-all duration-300 ${
+        className={`inline-block px-4 my-2 md:my-0 py-2 rounded-lg text-white font-bold transition-all duration-300 ${
           wordsWithColors[currentIndex].bgColor
         }`}
         style={{

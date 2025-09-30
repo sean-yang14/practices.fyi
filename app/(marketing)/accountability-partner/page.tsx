@@ -61,10 +61,10 @@ export default function AccountabilityPartnerPage() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
         <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50 text-base">Accountability</Badge>
-        <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+        <h1 className="mt-4 text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
           Accountability Partner
         </h1>
-        <div className="mt-3 h-1 w-72 bg-orange-500 rounded" aria-hidden />
+        <div className="mt-3 h-1 w-50 md:w-100 bg-orange-500 rounded" aria-hidden />
         <p className="mt-6 text-lg md:text-xl text-slate-700 max-w-3xl">
           We help you make real progress by keeping you accountable for executing on the few things that matter most. It’s not easy but it is simple, and it works.
         </p>

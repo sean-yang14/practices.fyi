@@ -66,10 +66,10 @@ export default function PartnersPage() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
         <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50 text-base">Partner With Us</Badge>
-        <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl">
+        <h1 className="mt-4 text-5xl md:text-6xl font-extrabold leading-tight tracking-tight max-w-5xl">
           Partnerships to help practices thrive
         </h1>
-        <div className="mt-3 h-1 w-100 bg-orange-500 rounded" aria-hidden />
+        <div className="mt-3 h-1 w-50 md:w-100 bg-orange-500 rounded" aria-hidden />
         <p className="mt-6 text-lg md:text-xl text-slate-700 max-w-3xl">
           We build tools — not services — but practices still need help executing. That’s where experts like you, who truly care about practices, come in. By combining your expertise with our product development, we can help practices win together.
         </p>

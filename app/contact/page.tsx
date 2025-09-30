@@ -39,10 +39,10 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
         <span className="inline-flex items-center rounded-full bg-orange-50 text-orange-900 px-3 py-1 text-base font-medium">Contact</span>
-        <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl">
+        <h1 className="mt-4 text-5xl md:text-6xl font-extrabold leading-tight tracking-tight max-w-4xl">
           Get in touch
         </h1>
-        <div className="mt-3 h-1 w-40 bg-orange-500 rounded" aria-hidden />
+        <div className="mt-3 h-1 w-50 md:w-75 bg-orange-500 rounded" aria-hidden />
       </section>
 
       {/* BODY */}

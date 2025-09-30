@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className="space-y-8 bg-primary-background">
       {/* Hero Section */}
-      <section className="text-center px-6 py-12 sm:py-16">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-black">
+      <section className="text-center px-6 py-12 sm:py-16 mt-[10vh]">
+        <h1 className="text-6xl font-extrabold tracking-tight mb-6 text-black">
           Tools to make <RotatingText /> easier.
         </h1>
         <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-10">

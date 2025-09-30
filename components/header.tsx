@@ -3,9 +3,13 @@
 import Link from "next/link"
 import * as Dialog from "@radix-ui/react-dialog"
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
+import * as Collapsible from "@radix-ui/react-collapsible"
 import { ChevronDown } from "lucide-react"
+import { useState } from "react"
 
 export function Header() {
+  const [productsOpen, setProductsOpen] = useState(false)
+
   return (
     <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-4">
       <nav className="backdrop-blur-md rounded-2xl px-8 py-4 flex items-center" style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
@@ -100,7 +104,7 @@ export function Header() {
         </div>
 
         {/* Mobile Menu (Sheet) */}
-        <div className="md:hidden">
+        <div className="md:hidden ml-auto relative">
           <Dialog.Root>
             <Dialog.Trigger
               className="text-white hover:opacity-70 p-2 rounded-md"
@@ -117,10 +121,9 @@ export function Header() {
               </svg>
             </Dialog.Trigger>
             <Dialog.Portal>
-              <Dialog.Overlay className="fixed inset-0 bg-black/30" />
-              <Dialog.Content className="fixed inset-y-0 right-0 w-72 max-w-[85vw] bg-white shadow-xl p-6 focus:outline-none">
+              <Dialog.Content className="fixed top-20 right-8 w-72 bg-white shadow-xl rounded-lg p-6 focus:outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 z-[60]">
                 <div className="flex items-center justify-between mb-6">
-                  <span className="text-lg font-semibold">Menu</span>
+                  <Dialog.Title className="text-lg font-semibold">Menu</Dialog.Title>
                   <Dialog.Close className="p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50" aria-label="Close menu">
                     <svg
                       className="h-6 w-6"
@@ -140,28 +143,35 @@ export function Header() {
                     </Link>
                   </Dialog.Close>
 
-                  {/* Products Section */}
-                  <div className="px-3 py-2 text-gray-900 font-medium">Products</div>
-                  <Dialog.Close asChild>
-                    <Link href="/reputation-management" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                      Reputation Management
-                    </Link>
-                  </Dialog.Close>
-                  <Dialog.Close asChild>
-                    <Link href="/practice-performance-report" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                      Practice Performance Report
-                    </Link>
-                  </Dialog.Close>
-                  <Dialog.Close asChild>
-                    <Link href="/practice-health-checkup" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                      Practice Health Checkup
-                    </Link>
-                  </Dialog.Close>
-                  <Dialog.Close asChild>
-                    <Link href="/accountability-partner" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                      Accountability Partner
-                    </Link>
-                  </Dialog.Close>
+                  {/* Products Section - Collapsible */}
+                  <Collapsible.Root open={productsOpen} onOpenChange={setProductsOpen}>
+                    <Collapsible.Trigger className="flex items-center justify-between w-full px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-gray-50">
+                      Products
+                      <ChevronDown className={`h-4 w-4 transition-transform ${productsOpen ? 'rotate-180' : ''}`} />
+                    </Collapsible.Trigger>
+                    <Collapsible.Content className="flex flex-col space-y-1 mt-1">
+                      <Dialog.Close asChild>
+                        <Link href="/reputation-management" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                          Reputation Management
+                        </Link>
+                      </Dialog.Close>
+                      <Dialog.Close asChild>
+                        <Link href="/practice-performance-report" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                          Practice Performance Report
+                        </Link>
+                      </Dialog.Close>
+                      <Dialog.Close asChild>
+                        <Link href="/practice-health-checkup" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                          Practice Health Checkup
+                        </Link>
+                      </Dialog.Close>
+                      <Dialog.Close asChild>
+                        <Link href="/accountability-partner" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                          Accountability Partner
+                        </Link>
+                      </Dialog.Close>
+                    </Collapsible.Content>
+                  </Collapsible.Root>
 
                   <Dialog.Close asChild>
                     <Link href="/templates" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">

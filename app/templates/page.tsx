@@ -172,10 +172,10 @@ export default function TemplatesAndGuidesPage() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
         <Badge className="bg-orange-50 text-orange-900 hover:bg-orange-50 text-base">Free Practice Management Templates & Guides</Badge>
-        <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl">
+        <h1 className="mt-4 text-5xl md:text-6xl font-extrabold leading-tight tracking-tight max-w-4xl">
           Welcome to your collection of resources to grow your practice
         </h1>
-        <div className="mt-3 h-1 w-100 bg-orange-500 rounded" aria-hidden />
+        <div className="mt-3 h-1 w-50 md:w-100 bg-orange-500 rounded" aria-hidden />
         {/* Optional subhead can go here if desired */}
       </section>
 
