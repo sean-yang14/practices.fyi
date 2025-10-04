@@ -77,12 +77,12 @@ export function Header() {
               </DropdownMenu.Portal>
             </DropdownMenu.Root>
 
-            <Link
+            {/* <Link
               href="/templates"
               className="text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap"
             >
               Templates & Guides
-            </Link>
+            </Link> */}
 
             <Link
               href="/partners"
@@ -173,11 +173,11 @@ export function Header() {
                     </Collapsible.Content>
                   </Collapsible.Root>
 
-                  <Dialog.Close asChild>
+                  {/* <Dialog.Close asChild>
                     <Link href="/templates" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                       Templates & Guides
                     </Link>
-                  </Dialog.Close>
+                  </Dialog.Close> */}
                   <Dialog.Close asChild>
                     <Link href="/partners" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                       Partners

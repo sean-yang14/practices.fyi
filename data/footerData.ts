@@ -10,16 +10,16 @@ export const footerSections = [
       // { id: 'employee-engagement', text: 'Employee Engagement', href: '/tools/employee-engagement' },
     ]
   },
-  {
-    id: 'resources',
-    title: 'Resources',
-    links: [
-      { id: 'templates', text: 'Templates & Guides', href: '/templates' },
-      // { id: 'guides', text: 'Guides', href: '/guides' },
-      // { id: 'case-studies', text: 'Case Studies', href: '/case-studies' },
-      // { id: 'templates', text: 'Templates', href: '/templates' },
-    ]
-  },
+  // {
+  //   id: 'resources',
+  //   title: 'Resources',
+  //   links: [
+  //     { id: 'templates', text: 'Templates & Guides', href: '/templates' },
+  //     // { id: 'guides', text: 'Guides', href: '/guides' },
+  //     // { id: 'case-studies', text: 'Case Studies', href: '/case-studies' },
+  //     // { id: 'templates', text: 'Templates', href: '/templates' },
+  //   ]
+  // },
   {
     id: 'support',
     title: 'Support',

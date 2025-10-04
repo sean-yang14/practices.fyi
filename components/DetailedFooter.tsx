@@ -26,7 +26,7 @@ export function DetailedFooter() {
           </h1>
         </div> */}
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:justify-between">
           {footerSections.map((section) => (
             <div key={section.id} className="space-y-4">
               <h3 className="text-lg font-semibold text-black">{section.title}</h3>
