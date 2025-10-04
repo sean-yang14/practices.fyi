@@ -68,11 +68,10 @@ export default function PracticeHealthCheckupPage() {
           <div className="md:col-span-6">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Why this matters</h2>
             <p className="mt-4 text-grey-700 text-lg">
-              Running a practice can feel isolating. When you&apos;re stuck or need a fresh perspective, data can be intimidating to parse alone.
-              Sometimes you just need someone to take an objective look and help you see what&apos;s really going on.
+            Running a practice can feel isolating. When you&apos;re stuck or need a fresh perspective, data can be overwhelming to interpret on your own. Sometimes you just need someone to take an objective look — to help you understand what your data is really showing and walk you through the next steps that matter most.
             </p>
             <p className="mt-4 text-grey-700 text-lg">
-              Think of this like a health checkup for your business — checking in on the key vitals so you can level set and know things are headed in the right direction.
+            Think of it like a health checkup for your business — reviewing your key vitals so you can level set, spot issues early, and make sure things are moving in the right direction.
             </p>
           </div>
           <div className="md:col-span-6">

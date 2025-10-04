@@ -70,7 +70,7 @@ export default function AccountabilityPartnerPage() {
         </p>
       </section>
 
-      {/* WHY IT&apos;S IMPORTANT */}
+      {/* WHY IT'S IMPORTANT */}
       <section className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-7">
@@ -127,7 +127,7 @@ export default function AccountabilityPartnerPage() {
             },
             {
               title: "Sounding board",
-              desc: "Gut‑check goals and trade‑offs with someone who&apos;s unemotional and on your side.",
+              desc: "Gut‑check goals and trade‑offs with someone who is on your side.",
               icon: Users,
             },
             {
@@ -162,7 +162,7 @@ export default function AccountabilityPartnerPage() {
             {
               step: "2",
               title: "List your non‑negotiables",
-              desc: "Share the 3 – 5 actions (it should never be more) that must get done. We&apos;ll help pressure‑test and refine them.",
+              desc: "Share the 3 – 5 actions (it should never be more) that must get done. We will help pressure‑test and refine them.",
             },
             {
               step: "3",
@@ -228,8 +228,8 @@ export default function AccountabilityPartnerPage() {
             <h3 className="text-lg font-semibold text-gray-900">Commitment Boost</h3>
             <p className="mt-4 text-sm text-gray-600">Optional add-on</p>
             <p className="mt-6 flex items-baseline gap-x-1">
-              <span className="text-4xl font-semibold tracking-tight text-gray-900">You choose</span>
-              <span className="text-sm font-semibold text-gray-600">stake amount</span>
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">You choose stake amount </span>
+              {/* <span className="text-lg font-semibold text-gray-600">stake amount</span> */}
             </p>
             <a href="#signup" className="mt-6 block w-full">
               <Button className="w-full h-11 px-6 bg-orange-500 hover:bg-orange-600 text-base cursor-pointer">Get started</Button>

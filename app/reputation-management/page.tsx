@@ -49,7 +49,7 @@ export default function ReputationManagementPage() {
           </h1>
           <div className="mt-3 h-1 w-50 md:w-100 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
-            Get more 5-star Google reviews automatically. Build trust with prospective patients and rank higher in search results.
+            Get more 5-star Google reviews. Build trust with prospective patients and rank higher in search results.
           </p>
           <div className="mt-8 flex gap-3">
             <a href="#signup" className="inline-flex">
@@ -74,7 +74,7 @@ export default function ReputationManagementPage() {
         </div>
       </section>
 
-      {/* WHY IT&apos;S IMPORTANT */}
+      {/* WHY IT'S IMPORTANT */}
       <section className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-6">
@@ -84,8 +84,7 @@ export default function ReputationManagementPage() {
               build trust with prospective patients who use reviews to decide whether to book an appointment.
             </p>
             <p className="mt-4 text-grey-700 text-lg">
-              We help you get more 5-star Google reviews automatically, so you can focus on providing great care while we
-              handle building your online reputation.
+              We help you get more 5-star Google reviews by automating review requests post-appointment and incentivizing your team to create great patient experiences.
             </p>
           </div>
           <div className="md:col-span-6">
@@ -119,10 +118,44 @@ export default function ReputationManagementPage() {
         </div>
       </section>
 
+      {/* WHY TRUST ME */}
+      <section className="mx-auto max-w-6xl rounded-2xl bg-white py-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">What makes us different</h2>
+          <p className="mt-4 text-grey-700 text-lg">
+          We know there are plenty of vendors and software platforms that promise to improve your reviews — and from a technology standpoint, we&apos;re doing much the same thing they are. But here&apos;s the truth: texting reminders alone don&apos;t get patients to leave reviews.
+            <br />
+            <br />
+            What does? Your team. It&apos;s the amazing experience they create every day, and the simple act of asking for a review, that makes those reminders actually work.
+            <br />
+            <br />
+            <strong>You&apos;re not paying for a texting service — you&apos;re investing in more reviews. Our entire focus is on aligning incentives to drive real action and rewarding the teams who make it happen.</strong>
+          </p>
+          {/* <div className="mt-8 grid md:grid-cols-2 gap-6 text-left">
+            <Card className="border-2 border-orange-400 shadow-lg shadow-orange-100">
+              <CardContent className="py-2 px-3">
+                <h3 className="font-semibold text-lg mb-2">Half the cost, same results</h3>
+                <p className="text-grey-700">
+                  Most reputation management companies charge $500+ per location. We charge $250 — not because we offer less, but because we know the actual cost of delivery and refuse to overcharge.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-2 border-emerald-400 shadow-lg shadow-emerald-100">
+              <CardContent className="py-2 px-3">
+                <h3 className="font-semibold text-lg mb-2">We reward your team directly</h3>
+                <p className="text-grey-700">
+                Hit your review targets and your team gets rewarded — at no cost to you. We pay it because we believe in aligning incentives with the people who create the experiences that matter.
+                </p>
+              </CardContent>
+            </Card>
+          </div> */}
+        </div>
+      </section>
+
       {/* KEY FEATURES */}
       <section className="mx-auto max-w-6xl px-6 py-10">
         <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Key features</h2>
-        <div className="mt-6 grid md:grid-cols-3 gap-6">
+        <div className="mt-6 grid md:grid-cols-2 gap-6">
           {[
             {
               title: "Automated review requests",
@@ -131,13 +164,8 @@ export default function ReputationManagementPage() {
             },
             {
               title: "Full playbook",
-              desc: "We share with you how to increase reviews. Texting is part of it, but it&apos;s only just a part of the complete strategy.",
+              desc: "We share with you how to increase reviews. Texting is part of it, but it is only just a part of the complete strategy.",
               icon: Target,
-            },
-            {
-              title: "Team rewards",
-              desc: "Set review targets and if your team hits them they become eligible to win rewards.",
-              icon: Users,
             },
           ].map((f, i) => (
             <Card key={i} className="border-slate-200">
@@ -151,37 +179,30 @@ export default function ReputationManagementPage() {
             </Card>
           ))}
         </div>
-      </section>
 
-      {/* WHY TRUST ME */}
-      <section className="mx-auto max-w-6xl rounded-2xl bg-white border-1 border-black py-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Why trust us with this?</h2>
-          <p className="mt-4 text-grey-700 text-lg">
-            We know exactly how other reputation management companies operate, which is why we&apos;re able to deliver the same results at about half the cost.
-            <br />
-            <br />
-            But cost isn’t our only differentiator — we also recognize and reward the people who make great patient reviews possible: your team. By tying incentives directly to the experiences they create, reputation management becomes more than a tool — it becomes a motivator that drives better outcomes.
-          </p>
-          <div className="mt-8 grid md:grid-cols-2 gap-6 text-left">
-            <Card className="border-2 border-orange-400 shadow-lg shadow-orange-100">
-              <CardContent className="py-2 px-3">
-                <h3 className="font-semibold text-lg mb-2">Fair pricing</h3>
-                <p className="text-grey-700">
-                  Our mission isn’t to be the cheapest — it’s to be fair. We understand the value this service brings and the work it takes, and we price it accordingly — not based on extracting the most from owners.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 border-emerald-400 shadow-lg shadow-emerald-100">
-              <CardContent className="py-2 px-3">
-                <h3 className="font-semibold text-lg mb-2">Team-first approach</h3>
-                <p className="text-grey-700">
-                We know it’s your team that creates great patient experiences — and great reviews follow. To make those reviews happen faster, we reward teams that hit review targets. The rewards come directly from us, at no extra cost to you.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+        {/* Team Rewards Highlight */}
+        <Card className="mt-8 border-2 border-emerald-400 shadow-lg shadow-emerald-100">
+          <CardContent className="p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <Users className="w-6 h-6 text-emerald-600" />
+              <h3 className="font-bold text-xl">Set review targets — and when your team hits them, they win.</h3>
+            </div>
+            <div className="space-y-4 text-grey-700 text-base">
+              {/* <p>
+                Motivate your team to deliver great patient experiences by setting clear review goals. When your practice meets its targets, your team becomes eligible for rewards — without any of the tax or payroll headaches that come with traditional bonuses.
+              </p> */}
+              <p>
+              Motivate your team to deliver great patient experiences by setting clear review goals. When your practice meets its targets, your team becomes eligible for rewards — funded and managed by us, not your payroll. That means your team gets recognized and celebrated without any of the tax or administrative hassles that come with traditional bonuses.
+              </p>
+              <p>
+                All rewards are pooled across participating practices, which means your team has access to bigger and more exciting prizes than any single practice could offer on its own.
+              </p>
+              <p className="font-medium text-grey-900">
+                You focus on building a great patient experience. We handle the rest — tracking, rewarding, and celebrating your team&apos;s success.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
       </section>
 
       {/* HOW IT WORKS */}
@@ -255,11 +276,11 @@ export default function ReputationManagementPage() {
               </li>
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
-                EHR/PM system connection
+                Review QR display for your office
               </li>
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
-                Custom messaging and timing
+                EHR/PM system connection
               </li>
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
@@ -337,6 +358,20 @@ export default function ReputationManagementPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <h2 className="text-2xl md:text-3xl font-bold">Frequently asked questions</h2>
         <Accordion type="single" collapsible className="mt-6">
+          <AccordionItem value="existing-software">
+            <AccordionTrigger>What if I already have software that texts patients for reviews?</AccordionTrigger>
+            <AccordionContent>
+              <p className="mb-3">
+                We&apos;re not selling you a texting service — we&apos;re focused on getting you more reviews. Texting helps as a reminder, but it&apos;s not the main driver. Many automated review solutions see response rates of just 1-2%.
+              </p>
+              <p className="mb-3">
+                What actually drives reviews? Your team creating amazing experiences and asking happy patients to share them. That&apos;s why our approach centers on incentivizing your team to deliver great care and make the ask — with texting as a supporting tool, not the whole strategy.
+              </p>
+              <p>
+                If you have a solution and aren&apos;t getting reviews as quickly as you want, we can help. Our focus is results, not just technology.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
           <AccordionItem value="how-it-works">
             <AccordionTrigger>How does the automated review system work?</AccordionTrigger>
             <AccordionContent>

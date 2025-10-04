@@ -13,26 +13,25 @@ export const FounderLetter: React.FC = () => {
       <article className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         <div className="space-y-6">
           <p className="text-lg text-gray-700">
-            Building your own healthcare practice is one of the hardest things you can choose to do.
-          </p>
-
-
-          <p className="text-lg text-gray-700 leading-relaxed">
-            The journey is lonely. There&apos;s a lack of accessible support, and there&apos;s an overwhelming number of vendors claiming they can help.
+            Building your own healthcare practice is one of the hardest — yet most rewarding — things you can do.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            The kicker... far too many of these vendors either overcharge or simply don&apos;t deliver on what they promise. <strong>I&apos;ve seen too many owners</strong>, including my friends, <strong>get taken advantage of and that drives me crazy. It&apos;s why I want to change things.</strong>
+            The journey can feel lonely, with limited support and too many moving parts to manage at once. 
+          </p>
+
+          <p className="text-lg text-gray-700 leading-relaxed">
+          That&apos;s why I started Practices.fyi — <strong>to be a partner that genuinely cares about you and to make success more accessible.</strong>
           </p>
         </div>
 
         <div className="space-y-6">
           <p className="text-lg text-gray-700 leading-relaxed">
-            I started Practices.fyi because <strong>I believe that practice owners and their teams deserve a partner that genuinely cares about them and their success.</strong> My goal is to provide useful tools for practices at a fair price and give more back to owners and their teams than any other company.
+            Our mission is simple: <strong>create tools that help practices thrive — while giving back to practice owners and their teams, more than any other company.</strong>
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-           I invite you to explore our tools and join me on this mission to make practice ownership easier and less lonely. We&apos;re honored to have you here and excited to be part of your journey.
+            I invite you to explore our tools and join me in creating a world where practice ownership is easier and less lonely. We&apos;re honored to have you here and excited to be part of your journey.
           </p>
 
           <div className="mt-6">
