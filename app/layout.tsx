@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Practices.fyi",
   description:
-    "Clean, professional layout with global header, footer, and Tailwind styling.",
+    "Providing tools that help healthcare practices thrive - while being the most genuine partner possible.",
 };
 
 export default function RootLayout({

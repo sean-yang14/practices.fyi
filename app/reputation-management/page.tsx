@@ -259,11 +259,46 @@ export default function ReputationManagementPage() {
           </p>
         </div>
 
-        <div className="mt-16 max-w-lg mx-auto">
+        <div className="mt-16 grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {/* Without Texting */}
           <div className="rounded-3xl p-8 ring-1 ring-grey-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
-            <h3 className="text-xl font-semibold text-grey-900">Reputation Management</h3>
+            <h3 className="text-xl font-semibold text-grey-900">Without Texting</h3>
             <p className="mt-6 flex items-baseline gap-x-1">
               <span className="text-4xl font-semibold tracking-tight text-grey-900">$250</span>
+              <span className="text-base font-semibold text-gray-600">per month per location</span>
+            </p>
+            <a href="#signup" className="mt-6 block w-full">
+              <Button className="w-full h-11 px-8 text-base">Get started</Button>
+            </a>
+            <ul role="list" className="mt-8 space-y-3 text-base text-grey-600 xl:mt-10">
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Review QR display for your office
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                EHR/PM system connection
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Review performance tracking
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Team rewards program
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                No implementation fee!
+              </li>
+            </ul>
+          </div>
+
+          {/* With Texting */}
+          <div className="rounded-3xl p-8 ring-1 ring-grey-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
+            <h3 className="text-xl font-semibold text-grey-900">With Texting</h3>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-semibold tracking-tight text-grey-900">$300</span>
               <span className="text-base font-semibold text-gray-600">per month per location</span>
             </p>
             <a href="#signup" className="mt-6 block w-full">
