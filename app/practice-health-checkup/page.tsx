@@ -49,7 +49,7 @@ export default function PracticeHealthCheckupPage() {
           </h1>
           <div className="mt-3 h-1 w-50 md:w-100 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
-            Get an objective perspective on your practice. Think of it as a second opinion — someone to walk through the numbers with you, highlight opportunities, and help you move forward with confidence.
+            Get an expert opinion on your practice&apos;s data — someone to walk through the numbers with you, highlight opportunities, and help you move forward with confidence.
           </p>
           <div className="mt-8 flex gap-3">
             <a href="#signup" className="inline-flex">
