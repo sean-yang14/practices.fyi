@@ -41,7 +41,7 @@ export default function Home() {
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-left text-orange-600">Reputation Management</h3>
                 <p className="text-grey-700 text-base text-left line-clamp-4">
-                  Get more 5-star Google reviews automatically. Build trust with prospective patients and rank higher in search results.
+                Get more 5-star Google reviews — not just by sending reminders, but by motivating your team through clear goals and meaningful rewards. We focus on outcomes, not just texts.
                 </p>
               </div>
               <div className="ml-6 flex-shrink-0">
@@ -102,7 +102,7 @@ export default function Home() {
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-left text-purple-600">Accountability Partner</h3>
                 <p className="text-grey-700 text-base text-left line-clamp-4">
-                  The ability to execute on what matters is the key to building your dream practice. You’re capable—but sometimes you need someone to help you stay on track. That’s where we come in.
+                  The ability to execute on what matters is the key to building your dream practice. You&apos;re capable — but sometimes you need someone to help you stay on track. That&apos;s where we come in.
                 </p>
               </div>
               <div className="ml-6 flex-shrink-0">
