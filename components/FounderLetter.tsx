@@ -21,13 +21,13 @@ export const FounderLetter: React.FC = () => {
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-          That&apos;s why I started Practices.fyi — <strong>to be a partner that genuinely cares about you and to make success more accessible.</strong>
+          That&apos;s why I started Practices.fyi — <strong>to be a partner that genuinely cares about you and to make success more accessible. That&apos;s our mission.</strong>
           </p>
         </div>
 
         <div className="space-y-6">
           <p className="text-lg text-gray-700 leading-relaxed">
-            Our mission is simple: <strong>create tools that help practices thrive — while giving back to practice owners and their teams, more than any other company.</strong>
+            How we do that is simple: <strong>create or share tools that help practices thrive — while giving back to practice owners and their teams, more than any other company.</strong>
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">

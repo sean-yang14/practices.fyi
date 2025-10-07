@@ -250,7 +250,7 @@ export default function PracticeHealthCheckupPage() {
           <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
             <h3 className="text-lg font-semibold text-gray-900">Practice Performance Report</h3>
             <p className="mt-6 flex items-baseline gap-x-1">
-              <span className="text-4xl font-semibold tracking-tight text-gray-900">$75</span>
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">$100</span>
               <span className="text-base font-semibold text-gray-600">per report</span>
             </p>
             <a href="#signup" className="mt-6 block w-full">

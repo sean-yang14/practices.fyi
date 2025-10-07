@@ -12,7 +12,7 @@ export default function Home() {
           Tools to make <RotatingText /> easier.
         </h1>
         <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-10">
-          Our mission is be the most genuine partner in helping you build your dream practice.
+          Our mission is make success more accessible to practice owners and we&apos;re going to do that by being the most genuine partner possible.
         </p>
         {/* <Link
           href="#services-section"
