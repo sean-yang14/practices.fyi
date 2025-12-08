@@ -48,11 +48,11 @@ export default function PracticeHealthCheckupPage() {
         <div className="max-w-4xl">
           <Badge className="mb-4 bg-orange-100 text-orange-900 hover:bg-orange-100 text-base">Practice Analytics</Badge>
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
-            Practice Performance Report
+            Practice Health Reporting
           </h1>
           <div className="mt-3 h-1 w-50 md:w-100 bg-orange-500 rounded" aria-hidden />
           <p className="mt-6 text-lg md:text-xl text-slate-700">
-            Unlock the power of your data with reports that turn complexity into clear, useful insights.
+            Unlock the power of your data with reports that turn complexity into clear, useful insights — so you can lead with confidence and make more money.
           </p>
           <div className="mt-8 flex gap-3">
             <a href="#signup" className="inline-flex">
@@ -87,20 +87,24 @@ export default function PracticeHealthCheckupPage() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Increase your revenue and profitability.</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Benchmarking so you know what &quot;good&quot; looks like.</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Early warning on revenue leaks and rising costs.</span>
+                    <span>Early warning on problems that are holding your practice back.</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Simple, owner‑friendly insights — not jargon.</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  {/* <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Someone watching your back every month.</span>
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>
@@ -168,18 +172,18 @@ export default function PracticeHealthCheckupPage() {
           {[
             {
               step: "1",
-              title: "Goal setting",
-              desc: "We learn your priorities and define the metrics that matter for your practice over a call or email.",
+              title: "Connect data",
+              desc: "We securely connect to the data sources you use to run your business — financial, marketing, and operational — and only to the systems you’re comfortable sharing.",
             },
             {
               step: "2",
-              title: "Connect data",
-              desc: "We securily connect to your financial, marketing, and operational systems.",
+              title: "Current state review",
+              desc: "We provide a comprehensive review of your current state — what's working, what's not, and where you can improve.",
             },
             {
               step: "3",
-              title: "Monthly report",
-              desc: "Every month, you’ll receive a clear, actionable report that highlights your key metrics, explains what they mean, and outlines next steps — like having your own data analyst.",
+              title: "Regular reporting",
+              desc: "Every month, you’ll receive a clear, actionable report that highlights your key metrics, explains what they mean, and outlines next steps — all aligned to the goals you have for your practice. We also include periodic lookbacks across longer timeframes so you can see the progress you’re making and where momentum is building.",
             },
           ].map((s) => (
             <div key={s.step} className="flex items-start gap-4 text-left max-w-2xl mx-auto">
@@ -239,58 +243,77 @@ export default function PracticeHealthCheckupPage() {
       {/* PRICING */}
       <section id="pricing" className="mx-auto max-w-6xl px-6 py-10 scroll-mt-20">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Straightforward pricing</h2>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Simple, fair pricing</h2>
           <p className="mt-6 max-w-xl text-pretty text-center text-lg font-medium text-grey-600 mx-auto">
-            Pay per report. Choose monthly or quarterly. No long contracts.
+            You pay monthly and can cancel anytime.
           </p>
         </div>
 
         <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Offering 1 */}
           <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
-            <h3 className="text-lg font-semibold text-gray-900">Practice Performance Report</h3>
+            <h3 className="text-lg font-semibold text-gray-900">Full Visibility Package</h3>
             <p className="mt-6 flex items-baseline gap-x-1">
-              <span className="text-4xl font-semibold tracking-tight text-gray-900">$100</span>
-              <span className="text-base font-semibold text-gray-600">per report</span>
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">$250</span>
+              <span className="text-base font-semibold text-gray-600">per month</span>
             </p>
-            <a href="#signup" className="mt-6 block w-full">
-              <Button className="w-full h-11 px-6 text-base cursor-pointer">Get started</Button>
-            </a>
+            <div className="mt-6 xl:mt-8">
+              <p className="text-base text-gray-600">
+              This foundational package helps you understand where your practice stands and track the common performance metrics over time. It does not include custom reporting or analysis. Great for most practices.
+                </p>
+              <a href="#signup" className="mt-6 block w-full">
+                <Button className="w-full h-11 px-6 text-base cursor-pointer">Get started</Button>
+              </a>
+            </div>
             <ul role="list" className="mt-8 space-y-3 text-base text-gray-600 xl:mt-10">
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
-                One easy price, straightforward structure
+                Practice diagnostic evaluating the current state of your practice
               </li>
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
-                Monthly or quarterly cadence
+                Monthly reporting
               </li>
               <li className="flex gap-x-3">
                 <CheckCircle className="h-6 w-5 flex-none text-green-600" />
-                Not locked into long contracts
-              </li>
-              <li className="flex gap-x-3">
-                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
-                Ad hoc reporting available — custom pricing based on complexity
+                Semiannual and annual lookbacks
               </li>
             </ul>
           </div>
 
           {/* Offering 2 */}
           <div className="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10 hover:ring-2 hover:ring-orange-200 transition-all duration-300">
-            <h3 className="text-lg font-semibold text-gray-900">One‑time Data Review</h3>
+            <h3 className="text-lg font-semibold text-gray-900">Supercharged Package</h3>
             <p className="mt-6 flex items-baseline gap-x-1">
-              <span className="text-4xl font-semibold tracking-tight text-gray-900">Free</span>
+              <span className="text-4xl font-semibold tracking-tight text-gray-900">$650</span>
+              <span className="text-base font-semibold text-gray-600">per month</span>
             </p>
             <div className="mt-6 xl:mt-8">
               <p className="text-base text-gray-600">
-                Not sure how impactful data can be for your practice? We&apos;ll review your data with you and talk through any
-                problems you&apos;re working on.
+                The Supercharged package includes everything in the Full Visibility package, plus custom reporting and analysis. It gives you a deeper layer of support that surfaces stronger financial returns and unlocks richer insights you can act on.
               </p>
-            <a href="/practice-health-checkup" className="mt-6 block w-full">
-              <Button variant="outline" className="w-full h-11 px-6 text-base cursor-pointer">Learn more</Button>
-            </a>
+              <a href="#signup" className="mt-6 block w-full">
+                <Button className="w-full h-11 px-6 text-base cursor-pointer">Get started</Button>
+              </a>
             </div>
+            <ul role="list" className="mt-8 space-y-3 text-base text-gray-600 xl:mt-10">
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Everything in the Full Visibility package
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Custom reporting and analysis
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Quarterly lookbacks in addition to the semiannual and annual lookbacks
+              </li>
+              <li className="flex gap-x-3">
+                <CheckCircle className="h-6 w-5 flex-none text-green-600" />
+                Monthly 1x1 calls
+              </li>
+            </ul>
           </div>
         </div>
       </section>

@@ -10,6 +10,28 @@ interface ServiceDetail {
 }
 
 const serviceDetails: Record<string, ServiceDetail> = {
+  "practice-health-reporting": {
+    title: "Practice Health Reporting",
+    headline: "See the full story behind your numbers.",
+    description: "A monthly, owner-ready report that brings your financial, marketing, and operational data into one clear view. Know what’s working, what’s lagging, and where to focus next.",
+    bullets: [
+      "Unified reporting across finance, marketing, and operations",
+      "Benchmarks and targets tailored to your practice",
+      "Actionable recommendations in plain language"
+    ],
+    price: "$250/month"
+  },
+  "referral-partner-networking": {
+    title: "Referral Partner Networking",
+    headline: "Grow with peers who already trust you.",
+    description: "Meet other healthcare practice owners, build genuine referral relationships, and join curated meetups that make introductions feel natural — starting in NYC and expanding with interest.",
+    offer: "Add your name to the interest list; we’ll share meetup details once we have a solid group in your area.",
+    bullets: [
+      "Curated introductions to complementary practices",
+      "Relaxed, low-pressure meetups focused on relationships",
+      "Shared playbooks to grow referrals together"
+    ]
+  },
   "practice-health-checkup": {
     title: "Practice Health Checkup",
     headline: "Understand your practice. Grow with data.",

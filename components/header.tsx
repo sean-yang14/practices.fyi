@@ -43,18 +43,27 @@ export function Header() {
                 >
                   <DropdownMenu.Item className="outline-none">
                     <Link
-                      href="/reputation-management"
+                      href="/practice-health-reporting"
                       className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
                     >
-                      Reputation Management
+                      Practice Health Reporting
                     </Link>
                   </DropdownMenu.Item>
                   <DropdownMenu.Item className="outline-none">
                     <Link
-                      href="/practice-performance-report"
+                      href="/referral-partner-networking"
                       className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
                     >
-                      Practice Performance Report
+                      Referral Partner Networking
+                    </Link>
+                  </DropdownMenu.Item>
+                  {/* Hidden products kept for later use */}
+                  {/* <DropdownMenu.Item className="outline-none">
+                    <Link
+                      href="/reputation-management"
+                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
+                    >
+                      Reputation Management
                     </Link>
                   </DropdownMenu.Item>
                   <DropdownMenu.Item className="outline-none">
@@ -72,7 +81,7 @@ export function Header() {
                     >
                       Accountability Partner
                     </Link>
-                  </DropdownMenu.Item>
+                  </DropdownMenu.Item> */}
                 </DropdownMenu.Content>
               </DropdownMenu.Portal>
             </DropdownMenu.Root>
@@ -151,13 +160,19 @@ export function Header() {
                     </Collapsible.Trigger>
                     <Collapsible.Content className="flex flex-col space-y-1 mt-1">
                       <Dialog.Close asChild>
-                        <Link href="/reputation-management" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                          Reputation Management
+                        <Link href="/practice-health-reporting" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                          Practice Health Reporting
                         </Link>
                       </Dialog.Close>
                       <Dialog.Close asChild>
-                        <Link href="/practice-performance-report" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                          Practice Performance Report
+                        <Link href="/referral-partner-networking" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                          Referral Partner Networking
+                        </Link>
+                      </Dialog.Close>
+                      {/* Hidden products kept for later use */}
+                      {/* <Dialog.Close asChild>
+                        <Link href="/reputation-management" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                          Reputation Management
                         </Link>
                       </Dialog.Close>
                       <Dialog.Close asChild>
@@ -169,7 +184,7 @@ export function Header() {
                         <Link href="/accountability-partner" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
                           Accountability Partner
                         </Link>
-                      </Dialog.Close>
+                      </Dialog.Close> */}
                     </Collapsible.Content>
                   </Collapsible.Root>
 
@@ -197,4 +212,3 @@ export function Header() {
     </header>
   )
 }
-

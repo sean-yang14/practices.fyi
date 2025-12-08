@@ -3,10 +3,12 @@ export const footerSections = [
     id: 'tools',
     title: 'Tools',
     links: [
-      { id: 'reputation-management', text: 'Reputation Management', href: '/reputation-management' },
-      { id: 'practice-performance-report', text: 'Practice Performance Report', href: '/practice-performance-report' },
-      { id: 'practice-health-checkup', text: 'Practice Health Checkup', href: '/practice-health-checkup' },
-      { id: 'accountability-partner', text: 'Accountability Partner', href: '/accountability-partner' },
+      { id: 'practice-health-reporting', text: 'Practice Health Reporting', href: '/practice-health-reporting' },
+      { id: 'referral-partner-networking', text: 'Referral Partner Networking', href: '/referral-partner-networking' },
+      // Hidden links kept for later
+      // { id: 'reputation-management', text: 'Reputation Management', href: '/reputation-management' },
+      // { id: 'practice-health-checkup', text: 'Practice Health Checkup', href: '/practice-health-checkup' },
+      // { id: 'accountability-partner', text: 'Accountability Partner', href: '/accountability-partner' },
       // { id: 'employee-engagement', text: 'Employee Engagement', href: '/tools/employee-engagement' },
     ]
   },
@@ -27,7 +29,6 @@ export const footerSections = [
       { id: 'contact', text: 'Contact Us', href: '/contact' },
       // { id: 'faq', text: 'FAQ', href: '/faq' },
       // { id: 'help', text: 'Help Center', href: '/help' },
-      { id: 'consultation', text: 'Free Consultation', href: '/practice-health-checkup' },
     ]
   }
 ];

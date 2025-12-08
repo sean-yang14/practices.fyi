@@ -33,33 +33,13 @@ export default function Home() {
           </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Reputation Management */}
+            {/* Practice Health Reporting */}
             <Link
-              href="/reputation-management"
-              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-orange-100 h-48 flex items-center"
-            >
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2 text-left text-orange-600">Reputation Management</h3>
-                <p className="text-grey-700 text-base text-left line-clamp-4">
-                Get more 5-star Google reviews — not just by sending reminders, but by motivating your team through clear goals and meaningful rewards. We focus on outcomes, not just texts.
-                </p>
-              </div>
-              <div className="ml-6 flex-shrink-0">
-                <div className="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center">
-                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            {/* Practice Performance Report */}
-            <Link
-              href="/practice-performance-report"
+              href="/practice-health-reporting"
               className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-100 h-48 flex items-center"
             >
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2 text-left text-emerald-600">Practice Performance Report</h3>
+                <h3 className="text-xl font-semibold mb-2 text-left text-emerald-600">Practice Health Reporting</h3>
                 <p className="text-grey-700 text-base text-left line-clamp-4">
                   Running a practice is too complex to run blind. Our reports provides clear visibility into your practice&apos;s performance — so you can lead with confidence.
                 </p>
@@ -73,7 +53,46 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Practice Health Checkup */}
+            {/* Referral Partner Networking (copied from Reputation Management) */}
+            <Link
+              href="/referral-partner-networking"
+              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-orange-100 h-48 flex items-center"
+            >
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-left text-orange-600">Referral Partner Networking</h3>
+                <p className="text-grey-700 text-base text-left line-clamp-4">
+                Meet practice owners across different healthcare specialties in a low-pressure setting, and build referral relationships that bring in more of your ideal patients.
+                </p>
+              </div>
+              <div className="ml-6 flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center">
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* Hidden product cards kept for later use */}
+            {/*
+            <Link
+              href="/reputation-management"
+              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-orange-100 h-48 flex items-center"
+            >
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-left text-orange-600">Reputation Management</h3>
+                <p className="text-grey-700 text-base text-left line-clamp-4">
+                  Get more 5-star Google reviews — not just by sending reminders, but by motivating your team through clear goals and meaningful rewards. We focus on outcomes, not just texts.
+                </p>
+              </div>
+              <div className="ml-6 flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center">
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                  </svg>
+                </div>
+              </div>
+            </Link>
             <Link
               href="/practice-health-checkup"
               className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-blue-100 h-48 flex items-center"
@@ -92,9 +111,6 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-
-
-            {/* Accountability Partner */}
             <Link
               href="/accountability-partner"
               className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-purple-100 h-48 flex items-center"
@@ -113,6 +129,7 @@ export default function Home() {
                 </div>
               </div>
             </Link>
+            */}
 
           </div>
         </div>
@@ -151,10 +168,10 @@ export default function Home() {
           <div className="px-6 py-16 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
             <div className="max-w-2xl">
               <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl mb-4">
-                Feeling stuck? You don&apos;t have to do it alone.
+                Feeling overwhelmed? You don&apos;t have to do it alone.
               </h2>
               <p className="text-lg text-gray-700">
-                Sign up for a free consultation call -- available for a limited time. No BS, gatekeeping, or sales pitch. I&apos;m just looking to offer a helping hand.
+              A free walk through how to make your life easier as a practice owner — whether that&apos;s through one of our products or another solution that fits your needs. No pressure and no gatekeeping. Just a real conversation about what would help you most.
               </p>
             </div>
             <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
@@ -162,7 +179,7 @@ export default function Home() {
                 href="/practice-health-checkup"
                 className="rounded-4xl bg-orange-500 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
               >
-                Book Free Practice Checkup
+                Let&apos;s Connect
               </a>
             </div>
           </div>
@@ -170,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* Instagram CTA Section */}
-      <section className="px-6 w-full">
+      {/* <section className="px-6 w-full">
         <div className="mx-auto max-w-7xl rounded-2xl border border-slate-200 bg-slate-900 text-white">
           <div className="p-8 md:p-12 flex flex-col items-center text-center gap-4">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
@@ -196,7 +213,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <FAQSection />

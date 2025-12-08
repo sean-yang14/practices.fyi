@@ -2,14 +2,14 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Practice Health Checkup",
-    slug: "practice-health-checkup",
-    description: "A monthly report combining financial, operational, and marketing data to give you an honest assessment of your practice. Identify trends, track performance, and get actionable insights without hiring expensive consultants."
+    title: "Practice Health Reporting",
+    slug: "practice-health-reporting",
+    description: "A monthly reporting service combining financial, operational, and marketing data into an owner-ready view so you can lead with confidence."
   },
   {
-    title: "Reputation Management",
-    slug: "reputation-management",
-    description: "Review management service focused on Google reviews to fuel growth. Includes an innovative team rewards program: 50% of fees pooled toward giveaways for practices hitting stretch goals."
+    title: "Referral Partner Networking",
+    slug: "referral-partner-networking",
+    description: "Meet other healthcare practice owners, build genuine referral relationships, and join curated meetups starting in NYC."
   },
   {
     title: "Templates & Guides",
@@ -21,6 +21,17 @@ const services = [
     slug: "team-engagement",
     description: "Affordable ways to retain great people. Start with employee gifts via the Snappy platform triggered by achievements, and look ahead to better benefits through collective bargaining."
   }
+  // Hidden services preserved for later
+  // {
+  //   title: "Practice Health Checkup",
+  //   slug: "practice-health-checkup",
+  //   description: "A monthly report combining financial, operational, and marketing data to give you an honest assessment of your practice. Identify trends, track performance, and get actionable insights without hiring expensive consultants."
+  // },
+  // {
+  //   title: "Reputation Management",
+  //   slug: "reputation-management",
+  //   description: "Review management service focused on Google reviews to fuel growth. Includes an innovative team rewards program: 50% of fees pooled toward giveaways for practices hitting stretch goals."
+  // },
 ];
 
 export default function ServicesPage() {
