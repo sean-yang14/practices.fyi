@@ -163,7 +163,7 @@ export default function Home() {
       <FounderLetter />
 
       {/* Free Consultation CTA */}
-      <section className="px-6 w-full">
+      {/* <section className="px-6 w-full">
         <div className="mx-auto max-w-7xl rounded-2xl bg-white border-1 border-black">
           <div className="px-6 py-16 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
             <div className="max-w-2xl">
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Instagram CTA Section */}
       {/* <section className="px-6 w-full">
