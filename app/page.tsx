@@ -12,7 +12,7 @@ export default function Home() {
           If you&apos;re a practice owner...Stop flying blind.<br /> Start running your business like the best CEOs.
         </h1>
         <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-10">
-        The best CEOs use data because you can’t make things better if you don’t measure them. We show you, in a clear and simple way, how your practice is doing and what to focus on to achieve financial success and get time back.
+        The best CEOs use data because you can&apos;t make things better if you don&apos;t measure them. We show you, in a clear and simple way, how your practice is doing and what to focus on to achieve financial success and get time back.
         </p>
         <Link
           href="/contact"
@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="mt-4 text-gray-700">
-                "&ldquo;As a first-time practice owner, I felt overwhelmed. Practices.fyi helped me clearly see what was working, what wasn&apos;t, and how to move forward with confidence. It made my long-term vision feel achievable.&rdquo;"
+                &ldquo;As a first-time practice owner, I felt overwhelmed. Practices.fyi helped me clearly see what was working, what wasn&apos;t, and how to move forward with confidence. It made my long-term vision feel achievable.&rdquo;
               </p>
             </div>
 
@@ -126,7 +126,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="mt-4 text-gray-700">
-                "&ldquo;Being an owner is hard, especially since I don&apos;t come from a business background. I often doubted myself. The monthly reports from Practices.fyi helped me make sense of my practice and feel confident in my decisions.&rdquo;"
+                &ldquo;Being an owner is hard, especially since I don&apos;t come from a business background. I often doubted myself. The monthly reports from Practices.fyi helped me make sense of my practice and feel confident in my decisions.&rdquo;
               </p>
             </div>
 
@@ -147,7 +147,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="mt-4 text-gray-700">
-                "&ldquo;I&apos;m not a numbers person, but Practices.fyi made my practice easy to understand. I finally know how things are actually going instead of guessing.&rdquo;"
+                &ldquo;I&apos;m not a numbers person, but Practices.fyi made my practice easy to understand. I finally know how things are actually going instead of guessing.&rdquo;
               </p>
             </div>
           </div>
