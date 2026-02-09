@@ -26,7 +26,7 @@ export function FAQSection() {
         <AccordionItem value="consultant">
           <AccordionTrigger className="text-lg">Are you a consultant?</AccordionTrigger>
           <AccordionContent className="text-base">
-          That&apos;s not how we think about our role. We act as a core part of your practice, like your front desk or practice manager. Our job is to help you clearly understand how your practice is doing. We highlight what matters most so you can take action. We help you see what&apos;s happening, where to focus, and work with you to understand why. Other partners, like consultants or fractional CFOs, are great at handling the detailed “how.”
+          That&apos;s not how we think about our role. We act as a core part of your practice, like your front desk or practice manager. Our job is to help you clearly understand how your practice is doing. We highlight what matters most so you can take action. We help you see what&apos;s happening, where to focus, and work with you to understand why. Other partners, like consultants or fractional CFOs, are great at handling the detailed &ldquo;how.&rdquo;
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="service-partners">
