@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   title: "Practices.fyi",
   description:
     "Providing tools that help healthcare practices thrive - while being the most genuine partner possible.",
+  metadataBase: new URL("https://practices.fyi"),
+  openGraph: {
+    title: "Practices.fyi",
+    description:
+      "Providing tools that help healthcare practices thrive - while being the most genuine partner possible.",
+    images: ["/photos/company-logo.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Practices.fyi",
+    description:
+      "Providing tools that help healthcare practices thrive - while being the most genuine partner possible.",
+    images: ["/photos/company-logo.png"],
+  },
 };
 
 export default function RootLayout({
