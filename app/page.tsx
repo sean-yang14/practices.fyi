@@ -1,7 +1,7 @@
 import Link from "next/link"
-import { RotatingText } from "@/components/rotating-text"
 import { FounderLetter } from "@/components/FounderLetter"
 import { FAQSection } from "@/components/FAQSection"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -9,17 +9,149 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center px-6 py-12 sm:py-16 mt-[10vh]">
         <h1 className="text-6xl font-extrabold tracking-tight mb-6 text-black">
-          Tools to make <RotatingText /> easier.
+          If you&apos;re a practice owner...Stop flying blind.<br /> Start running your business like the best CEOs.
         </h1>
         <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-10">
-          Our mission is make success more accessible to practice owners and we&apos;re going to do that by being the most genuine partner possible.
+        The best CEOs use data because you can’t make things better if you don’t measure them. We show you, in a clear and simple way, how your practice is doing and what to focus on to achieve financial success and get time back.
         </p>
-        {/* <Link
-          href="#services-section"
-          className="inline-flex items-center rounded-md bg-teal-600 px-6 py-3 text-white font-medium shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
+        <Link
+          href="/contact"
+          className="inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
         >
-          Explore Tools
-        </Link> */}
+          Get started
+        </Link>
+      </section>
+
+      {/* Customer Results Section */}
+      <section className="px-6 py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900">Customer Results</h2>
+            {/* <p className="mt-3 text-lg text-gray-700">
+              Clear wins from teams who replaced guesswork with real metrics.
+            </p> */}
+          </div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            {/* Box 1: Dentistry */}
+            <div className="rounded-3xl bg-white p-6 ring-1 ring-gray-200">
+              <div className="flex justify-between items-start mb-4">
+                <span className="rounded-full bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1">Dentistry</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Production</h3>
+              <p className="text-gray-700">Grew production by 20% by setting and tracking provider goals.</p>
+            </div>
+
+            {/* Box 2: Primary Care */}
+            <div className="rounded-3xl bg-white p-6 ring-1 ring-gray-200">
+              <div className="flex justify-between items-start mb-4">
+                <span className="rounded-full bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1">Primary Care</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Marketing Spend</h3>
+              <p className="text-gray-700">
+              Cut wasted marketing spend and saved $15,000, with no drop in new patients.
+              </p>
+            </div>
+
+            {/* Box 3: Mental Health Therapist */}
+            <div className="rounded-3xl bg-white p-6 ring-1 ring-gray-200">
+              <div className="flex justify-between items-start mb-4">
+                <span className="rounded-full bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1">Mental Health Therapist</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Cash Flow</h3>
+              <p className="text-gray-700">Created peace of mind. Tripled cash reserves by improving cash flow.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dotted Line */}
+      <div className="border-t border-dashed border-gray-300 mt-12 mb-12 mx-auto max-w-6xl"></div>
+
+      {/* Quote Section */}
+      <section className="px-6 py-10 text-center">
+        <div className="max-w-4xl mx-auto text-black text-3xl font-bold italic leading-tight">
+          <p>Blind decisions are expensive.</p>
+          <p>Stop paying that tax.</p>
+        </div>
+      </section>
+
+      {/* Dotted Line */}
+      <div className="border-t border-dashed border-gray-300 my-12 mx-auto max-w-6xl"></div>
+
+      {/* Testimonials Section */}
+      <section className="px-6 pt-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900">Testimonials</h2>
+            {/* <p className="mt-3 text-lg text-gray-700">
+              Real feedback from owners building more confident, data-driven practices.
+            </p> */}
+          </div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            {/* Testimonial 1 */}
+            <div className="rounded-3xl bg-white p-6 ring-1 ring-gray-200">
+              <div className="flex items-center gap-3">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full ring-1 ring-gray-200">
+                  <Image
+                    src="/headshots/harris.png"
+                    alt="dr. harris"
+                    fill
+                    className="object-cover object-[50%_10%]"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Dr. Harris</p>
+                  <p className="text-sm text-gray-600">General Dentistry</p>
+                </div>
+              </div>
+              <p className="mt-4 text-gray-700">
+                "As a first-time practice owner, I felt overwhelmed. Practices.fyi helped me clearly see what was working, what wasn&apos;t, and how to move forward with confidence. It made my long-term vision feel achievable."
+              </p>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="rounded-3xl bg-white p-6 ring-1 ring-gray-200">
+              <div className="flex items-center gap-3">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full ring-1 ring-gray-200">
+                  <Image
+                    src="/headshots/charlene.png"
+                    alt="Dr. Charlene Hollins"
+                    fill
+                    className="object-cover object-[50%_20%]"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Dr. Hollins</p>
+                  <p className="text-sm text-gray-600">Primary Care</p>
+                </div>
+              </div>
+              <p className="mt-4 text-gray-700">
+                "Being an owner is hard, especially since I don&apos; come from a business background. I often doubted myself. The monthly reports from Practices.fyi helped me make sense of my practice and feel confident in my decisions."
+              </p>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="rounded-3xl bg-white p-6 ring-1 ring-gray-200">
+              <div className="flex items-center gap-3">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full ring-1 ring-gray-200">
+                  <Image
+                    src="/headshots/yimo.png"
+                    alt="Jennifer McMenamin"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Jennifer, LCSW</p>
+                  <p className="text-sm text-gray-600">Mental Health</p>
+                </div>
+              </div>
+              <p className="mt-4 text-gray-700">
+                "I&apos;m not a numbers person, but Practices.fyi made my practice easy to understand. I finally know how things are actually going instead of guessing."
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Tools Overview */}
@@ -33,45 +165,9 @@ export default function Home() {
           </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Practice Health Reporting */}
-            <Link
-              href="/practice-health-reporting"
-              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-100 h-48 flex items-center"
-            >
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2 text-left text-emerald-600">Practice Health Reporting</h3>
-                <p className="text-grey-700 text-base text-left line-clamp-4">
-                  Running a practice is too complex to run blind. Our reports provides clear visibility into your practice&apos;s performance — so you can lead with confidence.
-                </p>
-              </div>
-              <div className="ml-6 flex-shrink-0">
-                <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center">
-                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                  </svg>
-                </div>
-              </div>
-            </Link>
 
-            {/* Referral Partner Networking (copied from Reputation Management) */}
-            <Link
-              href="/referral-partner-networking"
-              className="group block relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-slate-300 p-6 text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-orange-100 h-48 flex items-center"
-            >
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2 text-left text-orange-600">Referral Partner Networking</h3>
-                <p className="text-grey-700 text-base text-left line-clamp-4">
-                Meet practice owners across different healthcare specialties in a low-pressure setting, and build referral relationships that bring in more of your ideal patients.
-                </p>
-              </div>
-              <div className="ml-6 flex-shrink-0">
-                <div className="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center">
-                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                  </svg>
-                </div>
-              </div>
-            </Link>
+
+
 
             {/* Hidden product cards kept for later use */}
             {/*
@@ -162,6 +258,364 @@ export default function Home() {
       {/* Founder Letter */}
       <FounderLetter />
 
+      {/* Mission and What Makes Us Different Sections */}
+      <section className="px-6 py-16">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Our Mission Box */}
+          <div className="relative bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between h-72">
+            <div className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-95 brightness-70 contrast-110 saturate-90 z-0">
+              <Image
+                src="/photos/mountain.jpg"
+                alt="Our Mission"
+                fill
+                className="rounded-2xl object-cover object-[50%_35%]"
+              />
+            </div>
+            <h3 className="relative z-10 text-2xl font-bold text-white mb-2">Our Mission</h3>
+            <p className="relative z-10 mt-auto text-lg text-white font-medium pb-5">
+              To ensure every practice owner has the data support they need to build their dream practice.
+            </p>
+          </div>
+
+          {/* What Makes Us Different Box */}
+          <div className="relative bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between h-72">
+            <div className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-95 brightness-70 contrast-110 saturate-90 z-0">
+              <Image
+                src="/photos/stumps.jpg"
+                alt="What Makes Us Different"
+                fill
+                className="rounded-2xl object-cover object-[50%_50%]"
+              />
+            </div>
+            <h3 className="relative z-10 text-2xl font-bold text-white mb-2">Experience that Matters</h3>
+            <p className="relative z-10 text-lg font-semibold text-white mt-auto">
+            Our team has decades of experience working with data at the highest level. We know how to look at the whole practice and how each part works together. We&apos;ve led teams across finance, operations, marketing, and analytics at top companies. In recent years, we&apos;ve used that experience to help healthcare practices directly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Reporting Redefined */}
+      <section className="px-6 py-16">
+        <div className="max-w-6xl mx-auto">
+          <div>
+            {/* <p className="text-sm font-semibold uppercase tracking-widest text-orange-600">Reporting Redefined</p> */}
+            {/* <h2 className="mt-3 text-3xl font-bold text-gray-900">Reporting Redefined. <br /> What Sets Us Apart.</h2> */}
+            <h2 className="mt-3 text-3xl font-bold text-gray-900">What Sets Us Apart</h2>
+            {/* <p className="mt-4 text-lg text-gray-700">
+              We build a complete, connected data system so you can make confident decisions without guesswork.
+            </p> */}
+          </div>
+          {(() => {
+            const cards = [
+              {
+                number: "01",
+                title: "Full Practice View",
+                description:
+                  "We connect your financials, operations, and marketing to see your entire practice in one clear view. We understand how each part affects the others because everything is connected. This full practice view shows what drives results and exactly where to focus next.",
+                image: "/photos/cards.png",
+                imageWidth: 620,
+                imageHeight: 561,
+                alt: "Full Practice View",
+              },
+              {
+                number: "02",
+                title: "Expert Analysis + Guidance",
+                description:
+                  "We don’t hand you spreadsheets or charts and expect you to figure them out. We analyze the data and clearly tell you what it means and what to do next. This removes the guesswork so you can focus on being a great CEO, not learning how to be a data analyst.",
+                image: "/photos/guide.png",
+                imageWidth: 617,
+                imageHeight: 489,
+                alt: "Expert analysis",
+              },
+              {
+                number: "03",
+                title: "Build Data Systems",
+                description:
+                  "Useful data doesn’t happen by accident. We build the systems behind the scenes, clean the data, and set up the right tracking so you see the full picture of what’s really happening. We also teach your team what to record, so your numbers are accurate and your data stays reliable over time.",
+                image: "/photos/marketing.png",
+                imageWidth: 607,
+                imageHeight: 463,
+                alt: "Build your data system",
+              },
+              {
+                number: "04",
+                title: "Genuine Partnership",
+                description:
+                  "We aim to be the most genuine partner you’ve ever worked with. We care deeply about your success and treat your practice with the respect it deserves. We started this company to help owners love what they do, and financial success is a big part of that. You’ll feel our passion in how we show up and support you every step of the way.",
+                image: "/window.svg",
+                alt: "Genuine partner",
+                showImage: false,
+              },
+            ]
+            const topRow = cards.slice(0, 3)
+            const bottomCard = cards[3]
+            const renderCard = (card: (typeof cards)[number], index: number) => {
+              const isImageTop = index % 2 === 0
+              const showImage = card.showImage !== false
+              return (
+                <div
+                  key={card.number}
+                  className="flex h-full flex-col rounded-3xl bg-white p-6 ring-1 ring-gray-200"
+                >
+                  {isImageTop && showImage ? (
+                    <div className="w-full overflow-hidden rounded-2xl bg-orange-50 p-2">
+                      <Image
+                        src={card.image}
+                        alt={card.alt}
+                        width={card.imageWidth}
+                        height={card.imageHeight}
+                        sizes="(min-width: 1024px) 20rem, (min-width: 640px) 45vw, 100vw"
+                        className="h-auto w-full object-contain"
+                      />
+                    </div>
+                  ) : null}
+                  <div className={isImageTop ? "mt-5" : ""}>
+                    <div className="flex items-center gap-3">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-orange-50 text-orange-600 text-sm font-semibold">
+                        {card.number}
+                      </span>
+                      <h3 className="text-xl font-semibold text-gray-900">{card.title}</h3>
+                    </div>
+                    <p className="mt-4 text-gray-700">{card.description}</p>
+                  </div>
+                  {!isImageTop && showImage ? (
+                    <div className="mt-5 w-full overflow-hidden rounded-2xl bg-orange-50 p-2">
+                      <Image
+                        src={card.image}
+                        alt={card.alt}
+                        width={card.imageWidth}
+                        height={card.imageHeight}
+                        sizes="(min-width: 1024px) 20rem, (min-width: 640px) 45vw, 100vw"
+                        className="h-auto w-full object-contain"
+                      />
+                    </div>
+                  ) : null}
+                </div>
+              )
+            }
+
+            return (
+              <div className="mt-10 space-y-6">
+                <div className="grid auto-rows-fr grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {topRow.map((card, index) => renderCard(card, index))}
+                </div>
+                <div>{renderCard(bottomCard, 3)}</div>
+              </div>
+            )
+          })()}
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="px-6 py-16">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900">Pricing</h2>
+          {/* <p className="mt-3 text-lg text-gray-700">
+            Simple, transparent plans that scale with your practice.
+          </p> */}
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            {/* Tier 1: The minimum */}
+            <div className="relative flex flex-col rounded-3xl ring-1 ring-gray-200 p-6 lg:p-8 hover:ring-2 hover:ring-orange-200 hover:shadow-lg hover:shadow-orange-100 transition-all">
+              <h3 className="text-2xl font-bold text-gray-900">The Minimum Package</h3>
+              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$150</div>
+              <p className="text-base text-gray-500">per location / month</p>
+              <p className="text-base text-gray-500">+ implementation fee</p>
+              <p className="mt-3 text-lg font-medium text-gray-900">The minimum metrics you need to be tracking as a CEO.</p>
+              <Link
+                href="/contact"
+                className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
+              >
+                Get started
+              </Link>
+              <table className="mt-6 w-full text-base text-gray-700">
+                <tbody className="divide-y divide-gray-100">
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Implementation fee</div>
+                      <div className="mt-1 text-gray-600">One time fee of $500</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Monthly reports</div>
+                      <div className="mt-1 text-gray-600">
+                        Reports on the most important numbers for your practice across core functions. Includes operations,
+                        finance, and marketing
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Quarterly reports</div>
+                      <div className="mt-1 text-gray-600">
+                        <span className="block">- Provider financial performance</span>
+                        <span className="block">- Vendor performance</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Custom analysis</div>
+                      <div className="mt-1 text-gray-600">N/A</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Customer Support</div>
+                      <div className="mt-1 text-gray-600">Email support when you have questions or need help</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Tier 2: Performance */}
+            <div className="relative flex flex-col rounded-3xl ring-1 ring-gray-200 p-6 lg:p-8 hover:ring-2 hover:ring-orange-200 hover:shadow-lg hover:shadow-orange-100 transition-all">
+              <h3 className="text-2xl font-bold text-gray-900">Performance</h3>
+              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$499</div>
+              <p className="text-base text-gray-500">per location / month</p>
+              <p className="text-base text-gray-500">+ implementation fee</p>
+              <p className="mt-3 text-lg font-medium text-gray-900">
+              For owners who want deeper insight and hands-on support to perform at a higher level.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
+              >
+                Get started
+              </Link>
+              <table className="mt-6 w-full text-base text-gray-700">
+                <tbody className="divide-y divide-gray-100">
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Implementation fee</div>
+                      <div className="mt-1 text-gray-600">One time fee of $500</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Monthly reports</div>
+                      <div className="mt-1 text-gray-600">
+                        Same as the Minimum Package plus
+                        <br />- Provider financial performance
+                        <br />- Vendor performance
+                        <br />- Project specific tracking
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Quarterly reports</div>
+                      <div className="mt-1 text-gray-600">
+                        <span className="block">- Full practice snapshot</span>
+                        <span className="block">- Vendor financial return-on-investment</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Custom analysis</div>
+                      <div className="mt-1 text-gray-600">Yes, but limited in scope</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Customer Support</div>
+                      <div className="mt-1 text-gray-600">
+                        <span className="block">- Monthly calls</span>
+                        <span className="block">- Email</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Tier 3: Custom */}
+            <div className="relative flex flex-col rounded-3xl ring-1 ring-gray-200 p-6 lg:p-8 hover:ring-2 hover:ring-orange-200 hover:shadow-lg hover:shadow-orange-100 transition-all">
+              <h3 className="text-2xl font-bold text-gray-900">For Everything Else</h3>
+              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">Custom</div>
+              {/* <p className="text-base text-gray-500">Project-based pricing</p> */}
+              {/* <p className="text-base text-gray-500">Scope dependent</p> */}
+              <p className="mt-3 text-lg font-medium text-gray-900">
+              Running a practice comes with many needs, and data can help in different ways. To solve your specific problems, pricing is based on your needs and the size of the project.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
+              >
+                Get started
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Money Back Guarantee Section */}
+      <section className="px-6 pb-16">
+        <div className="mx-auto w-full max-w-6xl rounded-3xl bg-emerald-900 px-6 py-12 text-center text-white shadow-lg">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-3xl font-bold mb-4">Money Back Guarantee</h2>
+            <p className="text-lg text-emerald-50">
+              We&apos;re confident in what we&apos;ve created, and we&apos;re willing to put money behind it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Dotted Line */}
+      <div className="border-t border-dashed border-gray-300 my-12 mx-auto max-w-6xl"></div>
+
+      {/* Quote Section */}
+      <section className="px-6 py-10 text-center">
+        <div className="max-w-4xl mx-auto text-black text-3xl font-bold italic leading-tight">
+          <p>You can&apos;t improve what you don&apos;t measure.</p>
+          <p>Don&apos;t leave the success of your dream to guesswork.</p>
+        </div>
+      </section>
+
+      {/* Dotted Line */}
+      <div className="border-t border-dashed border-gray-300 my-12 mb-24 sm:mb-32 lg:mb-40 mx-auto max-w-6xl"></div>
+
+      {/* New Our Moonshot Section */}
+      <section className="px-6">
+        <div className="mx-auto w-full max-w-6xl rounded-3xl bg-black px-6 py-12 text-white shadow-lg sm:px-10 sm:py-14 lg:px-12 lg:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="md:order-2">
+              <p className="text-base font-semibold uppercase tracking-widest text-gray-400">Our Moonshot Benchmarking Project</p>
+              <h2 className="mt-3 text-4xl font-bold text-white tracking-tight">
+                Giving every owner the{" "}
+                <br /><span className="font-serif text-gray-100 tracking-tighter">answer key</span>
+              </h2>
+              <p className="text-lg text-gray-300 mt-4 mb-4">
+              Imagine running your practice with a clear roadmap. You know what goals to hit, what numbers matter, and what “good” really looks like. That clarity makes ownership less stressful and more confident.
+              </p>
+              <p className="text-lg text-gray-300 mt-4 mb-4">
+              Big groups like private equity firms and insurance companies already have this edge. They use data from thousands of practices to set clear targets, price services well, negotiate stronger rates, and choose the right vendors. Most practice owners don&apos;t get access to this and are left guessing.
+              </p>
+              <p className="text-lg text-gray-300 mt-4 mb-4">
+              My moonshot project changes that. It gives practice owners the same clear insight by showing what good looks like and how to reach it. This starts with benchmarking—learning from practices that have already done it.
+              </p>
+              <p className="text-lg text-gray-300 mt-4 mb-4">
+              With every practice and trusted service partner we work with, we open up knowledge instead of hiding it. Together, we can change healthcare.
+              </p>
+            </div>
+            <div className="md:order-1 flex justify-center">
+              <div className="bg-none p-2 transform -rotate-6 rounded-md shadow-lg">
+                <Image
+                  src="/photos/rocketship1.png"
+                  alt="Rocketship to the moon"
+                  width={300}
+                  height={300}
+                  className="rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Free Consultation CTA */}
       {/* <section className="px-6 w-full">
         <div className="mx-auto max-w-7xl rounded-2xl bg-white border-1 border-black">
@@ -214,6 +668,21 @@ export default function Home() {
           </div>
         </div>
       </section> */}
+
+      {/* CTA Before FAQ */}
+      <section className="px-6 py-16">
+        <div className="mx-auto max-w-6xl rounded-3xl px-6 py-12 text-center shadow-sm" style={{ backgroundColor: "#0F172A" }}>
+          <h2 className="mt-3 text-3xl font-bold text-white">Ready to stop building blindly?</h2>
+          <div className="mt-8 flex items-center justify-center gap-3">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
+            >
+              Book a quick call
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <FAQSection />

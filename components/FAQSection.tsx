@@ -5,34 +5,34 @@ export function FAQSection() {
     <section className="mx-auto max-w-6xl px-6 py-12">
       <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Frequently asked questions</h2>
       <Accordion type="single" collapsible className="mt-6">
-        <AccordionItem value="why-should-i-trust-you">
-          <AccordionTrigger className="text-lg">Why should I trust you?</AccordionTrigger>
+        <AccordionItem value="practice-types">
+          <AccordionTrigger className="text-lg">Do you work with my type of healthcare practice?</AccordionTrigger>
           <AccordionContent className="text-base">
-            I started my career as a CPA, then worked in finance before helping practices grow and optimize operations. Each of those is its own skillset — and combining them means I bring a unique perspective on both the numbers and the realities of running a practice. That mix helps me build tools that are truly impactful and every bit as strong as anything on the market.
+            Yes. We work with all healthcare practice owners and their teams. Data works the same across most healthcare practices. While each specialty has its own details, we can still provide value right away. We&apos;re confident in that, which is why we offer a money-back guarantee. As we work together, we continue improving your reports to better fit your specific type of practice.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="healthcare-practice-type">
-          <AccordionTrigger className="text-lg">Do I need to be a particular type of healthcare practice?</AccordionTrigger>
+        <AccordionItem value="money-back">
+          <AccordionTrigger className="text-lg">How does the money-back guarantee work?</AccordionTrigger>
           <AccordionContent className="text-base">
-            No. These tools are designed to help any healthcare practice — dental, therapy, medical, or otherwise — gain clarity, improve performance, and feel less alone in the journey.
+            We stand behind our work. When you sign up, you get the full setup and a full review of your practice, including your first monthly reports. After you receive that report, you decide if you want to keep working with us. If you don&apos;t, we&apos;ll give you your money back. No questions asked.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="practice-consultant">
-          <AccordionTrigger className="text-lg">Are you a practice consultant?</AccordionTrigger>
+        <AccordionItem value="best-for">
+          <AccordionTrigger className="text-lg">What kind of practice is this best for?</AccordionTrigger>
           <AccordionContent className="text-base">
-            No, I&apos;m not selling professional services of any kind here. In fact, I hope to partner with other great vendors who provide those essential services because practices shouldn&apos;t try to do everything themselves. There&apos;s a lot of power in delegation! My real goal with Practices.fyi is to support owners by creating amazing tools at fair prices — that&apos;s where my passion lies.
+            This is for practice owners who aren&apos;t data experts or want time back to focus on what only the CEO can do. What we do isn&apos;t rocket science, but it takes time and has complex components. If you enjoy data and already do this well, that&apos;s great. But most owners don&apos;t have time to pull data, clean it up, and filter through what really matters. That&apos;s why the best CEOs have teams to do this for them. We fill that role for your practice.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="difference-between">
-          <AccordionTrigger className="text-lg">How is the Practice Performance Report different from the free check-up?</AccordionTrigger>
+        <AccordionItem value="consultant">
+          <AccordionTrigger className="text-lg">Are you a consultant?</AccordionTrigger>
           <AccordionContent className="text-base">
-            The free check-up is a one-time snapshot to help you see where you stand. The Practice Performance Report is an ongoing tool that provides regular visibility into your practice, so you can track progress and make better decisions over time.
+          That&apos;s not how we think about our role. We act as a core part of your practice, like your front desk or practice manager. Our job is to help you clearly understand how your practice is doing. We highlight what matters most so you can take action. We help you see what&apos;s happening, where to focus, and work with you to understand why. Other partners, like consultants or fractional CFOs, are great at handling the detailed “how.”
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="what-are-you-building">
-          <AccordionTrigger className="text-lg">What else are you building?</AccordionTrigger>
+        <AccordionItem value="service-partners">
+          <AccordionTrigger className="text-lg">For potential partners (e.g., consultants, CPAs, CFOs)</AccordionTrigger>
           <AccordionContent className="text-base">
-            This is just the start. I’m building tools to make practice ownership easier and more affordable — so if there’s a specific problem you’d like solved, let me know. I’ll work on creating it, or if someone else has already built something great, I’ll gladly recommend it. The goal is simple: give practice owners access to amazing tools at fair prices.
+            We respect what you do and aren&apos;t trying to replace it. We focus on giving practice owners clarity by showing them what&apos;s happening and why. You focus on how to fix it. We believe we can work together to support practice owners and grow both of our businesses. We&apos;d love to connect.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

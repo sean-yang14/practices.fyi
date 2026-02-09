@@ -1,43 +1,50 @@
 import React from 'react';
+import Image from 'next/image';
 
 export const FounderLetter: React.FC = () => {
   return (
-    <section className="py-16 px-4 max-w-4xl mx-auto">
+    <section className="pt-8 pb-8 px-4 max-w-4xl mx-auto">
       <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-black tracking-tight leading-tight">
-          Building a practice is hard.<br />
-          <span className="block">I want to make it easier.</span>
+        <h1 className="text-3xl font-bold text-black tracking-tight leading-tight">
+          Founder Letter<br />
+          {/* <span className="block">I want to make it easier.</span> */}
         </h1>
       </header>
 
       <article className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         <div className="space-y-6">
           <p className="text-lg text-gray-700">
-            Building your own healthcare practice is one of the hardest — yet most rewarding — things you can do.
+          Building a financially successful practice is harder than ever. Being a great clinician isn’t enough anymore. To succeed today, you also have to be a great CEO.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            The journey can feel lonely, with limited support and too many moving parts to manage at once. 
+          Great CEOs rely on data. Data shows you how your practice is really doing. It helps you make better decisions, set impactful goals, and improve systems without being in the weeds every day. It&apos;s the key to building your dream practice and finally having a business that works for you, not because of you.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-          That&apos;s why I started Practices.fyi — <strong>to be a partner that genuinely cares about you and to make success more accessible. That&apos;s our mission.</strong>
+          Think about professional athletes. The best ones track everything: training, nutrition, sleep. They do this because guessing doesn&apos;t lead to consistent results or top-level performance. As a practice owner, you&apos;re a professional too. The same rule applies.
           </p>
         </div>
 
         <div className="space-y-6">
           <p className="text-lg text-gray-700 leading-relaxed">
-            How we do that is simple: <strong>create or share tools that help practices thrive — while giving back to practice owners and their teams, more than any other company.</strong>
+          But most practice owners don&apos;t even know their core business numbers. That&apos;s understandable. Data can feel overwhelming. It&apos;s hard to know what to track, how to track it, and how to turn it into action. With so many other responsibilities, there&apos;s rarely time to figure it all out. So owners end up guessing and flying blind.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            I invite you to explore our tools and join me in creating a world where practice ownership is easier and less lonely. We&apos;re honored to have you here and excited to be part of your journey.
+          At Practices.fyi, you get the kind of support an executive team would provide. We handle the data, show you what&apos;s working, what&apos;s not, and guide you on exactly what to do next. We don&apos;t hand you spreadsheets and walk away. Your time is better spent acting on insights, not trying to learn analytics.
+          </p>
+
+          <p className="text-lg text-gray-700 leading-relaxed">
+          We turn your data into clarity, direction, and confidence so you can build a practice you&apos;re proud of.
           </p>
 
           <div className="mt-6">
-            <img
+            <Image
               src="/signature_1.png"
               alt="Sean&apos;s signature"
+              width={240}
+              height={112}
               className="h-28 w-60 -ml-8 -mt-2 -mb-10"
             />
           </div>

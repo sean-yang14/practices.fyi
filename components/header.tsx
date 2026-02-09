@@ -2,104 +2,15 @@
 
 import Link from "next/link"
 import * as Dialog from "@radix-ui/react-dialog"
-import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
-import * as Collapsible from "@radix-ui/react-collapsible"
-import { ChevronDown } from "lucide-react"
-import { useState } from "react"
-
 export function Header() {
-  const [productsOpen, setProductsOpen] = useState(false)
-
   return (
     <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-4">
-      <nav className="backdrop-blur-md rounded-2xl px-8 py-4 flex items-center" style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
+      <nav className="backdrop-blur-md rounded-2xl px-8 py-4 flex items-center justify-between" style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
         {/* Left Section - Company Name */}
         <div className="flex items-center">
           <Link href="/" className="text-white text-xl font-bold whitespace-nowrap">
             Practices.fyi
           </Link>
-        </div>
-
-        {/* Center Section - Navigation Links */}
-        <div className="hidden md:flex items-center justify-center flex-1 mx-16">
-          <div className="flex items-center space-x-8">
-            <Link
-              href="/"
-              className="text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap"
-            >
-              Home
-            </Link>
-
-            {/* Products Dropdown */}
-            <DropdownMenu.Root>
-              <DropdownMenu.Trigger className="flex items-center text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap group">
-                Products
-                <ChevronDown className="ml-1 h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
-              </DropdownMenu.Trigger>
-              <DropdownMenu.Portal>
-                <DropdownMenu.Content
-                  className="min-w-[220px] bg-white rounded-lg shadow-lg p-2 z-50"
-                  sideOffset={5}
-                >
-                  <DropdownMenu.Item className="outline-none">
-                    <Link
-                      href="/practice-health-reporting"
-                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
-                    >
-                      Practice Health Reporting
-                    </Link>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Item className="outline-none">
-                    <Link
-                      href="/referral-partner-networking"
-                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
-                    >
-                      Referral Partner Networking
-                    </Link>
-                  </DropdownMenu.Item>
-                  {/* Hidden products kept for later use */}
-                  {/* <DropdownMenu.Item className="outline-none">
-                    <Link
-                      href="/reputation-management"
-                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
-                    >
-                      Reputation Management
-                    </Link>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Item className="outline-none">
-                    <Link
-                      href="/practice-health-checkup"
-                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
-                    >
-                      Practice Health Checkup
-                    </Link>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Item className="outline-none">
-                    <Link
-                      href="/accountability-partner"
-                      className="block px-3 py-2 text-slate-700 hover:bg-slate-100 rounded-md transition-colors whitespace-nowrap"
-                    >
-                      Accountability Partner
-                    </Link>
-                  </DropdownMenu.Item> */}
-                </DropdownMenu.Content>
-              </DropdownMenu.Portal>
-            </DropdownMenu.Root>
-
-            {/* <Link
-              href="/templates"
-              className="text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap"
-            >
-              Templates & Guides
-            </Link> */}
-
-            <Link
-              href="/partners"
-              className="text-white hover:opacity-70 transition-colors duration-200 font-medium whitespace-nowrap"
-            >
-              Partners
-            </Link>
-          </div>
         </div>
 
         {/* Right Section - Contact Button */}
@@ -146,58 +57,6 @@ export function Header() {
                   </Dialog.Close>
                 </div>
                 <nav className="flex flex-col space-y-2">
-                  <Dialog.Close asChild>
-                    <Link href="/" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                      Home
-                    </Link>
-                  </Dialog.Close>
-
-                  {/* Products Section - Collapsible */}
-                  <Collapsible.Root open={productsOpen} onOpenChange={setProductsOpen}>
-                    <Collapsible.Trigger className="flex items-center justify-between w-full px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-gray-50">
-                      Products
-                      <ChevronDown className={`h-4 w-4 transition-transform ${productsOpen ? 'rotate-180' : ''}`} />
-                    </Collapsible.Trigger>
-                    <Collapsible.Content className="flex flex-col space-y-1 mt-1">
-                      <Dialog.Close asChild>
-                        <Link href="/practice-health-reporting" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                          Practice Health Reporting
-                        </Link>
-                      </Dialog.Close>
-                      <Dialog.Close asChild>
-                        <Link href="/referral-partner-networking" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                          Referral Partner Networking
-                        </Link>
-                      </Dialog.Close>
-                      {/* Hidden products kept for later use */}
-                      {/* <Dialog.Close asChild>
-                        <Link href="/reputation-management" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                          Reputation Management
-                        </Link>
-                      </Dialog.Close>
-                      <Dialog.Close asChild>
-                        <Link href="/practice-health-checkup" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                          Practice Health Checkup
-                        </Link>
-                      </Dialog.Close>
-                      <Dialog.Close asChild>
-                        <Link href="/accountability-partner" className="px-6 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
-                          Accountability Partner
-                        </Link>
-                      </Dialog.Close> */}
-                    </Collapsible.Content>
-                  </Collapsible.Root>
-
-                  {/* <Dialog.Close asChild>
-                    <Link href="/templates" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                      Templates & Guides
-                    </Link>
-                  </Dialog.Close> */}
-                  <Dialog.Close asChild>
-                    <Link href="/partners" className="px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                      Partners
-                    </Link>
-                  </Dialog.Close>
                   <Dialog.Close asChild>
                     <Link href="/contact" className="px-3 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600">
                       Contact
