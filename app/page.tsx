@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="mt-4 text-gray-700">
-                "As a first-time practice owner, I felt overwhelmed. Practices.fyi helped me clearly see what was working, what wasn&apos;t, and how to move forward with confidence. It made my long-term vision feel achievable."
+                "&ldquo;As a first-time practice owner, I felt overwhelmed. Practices.fyi helped me clearly see what was working, what wasn&apos;t, and how to move forward with confidence. It made my long-term vision feel achievable.&rdquo;"
               </p>
             </div>
 
@@ -126,7 +126,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="mt-4 text-gray-700">
-                "Being an owner is hard, especially since I don&apos; come from a business background. I often doubted myself. The monthly reports from Practices.fyi helped me make sense of my practice and feel confident in my decisions."
+                "&ldquo;Being an owner is hard, especially since I don&apos;t come from a business background. I often doubted myself. The monthly reports from Practices.fyi helped me make sense of my practice and feel confident in my decisions.&rdquo;"
               </p>
             </div>
 
@@ -147,7 +147,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="mt-4 text-gray-700">
-                "I&apos;m not a numbers person, but Practices.fyi made my practice easy to understand. I finally know how things are actually going instead of guessing."
+                "&ldquo;I&apos;m not a numbers person, but Practices.fyi made my practice easy to understand. I finally know how things are actually going instead of guessing.&rdquo;"
               </p>
             </div>
           </div>
