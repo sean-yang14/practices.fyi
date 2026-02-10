@@ -377,7 +377,7 @@ export default function Home() {
                       </span>
                       <h3 className="text-xl font-semibold text-gray-900">{card.title}</h3>
                     </div>
-                    <p className="mt-4 text-gray-700">{card.description}</p>
+                    <p className="mt-4 text-base text-gray-700">{card.description}</p>
                   </div>
                   {!isImageTop && showImage ? (
                     <div className="mt-5 w-full overflow-hidden rounded-2xl bg-orange-50 p-2">
@@ -704,7 +704,7 @@ export default function Home() {
           <h2 className="mt-3 text-3xl font-bold text-white">Ready to stop building blindly?</h2>
           <div className="mt-8 flex items-center justify-center gap-3">
             <Link
-              href="/contact"
+              href="/get-started"
               className="inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
             >
               Book a quick call
