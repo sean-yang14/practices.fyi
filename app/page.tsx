@@ -15,7 +15,7 @@ export default function Home() {
         The best CEOs use data because you can&apos;t make things better if you don&apos;t measure them. We show you, in a clear and simple way, how your practice is doing and what to focus on to achieve financial success and get time back.
         </p>
         <Link
-          href="/contact"
+          href="/get-started"
           className="inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
         >
           Get started
@@ -407,6 +407,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* New Our Moonshot Section */}
+      <section className="px-6">
+        <div className="mx-auto w-full max-w-6xl rounded-3xl bg-black px-6 py-12 text-white shadow-lg sm:px-10 sm:py-14 lg:px-12 lg:py-16 my-14 sm:my-18 lg:my-24 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="md:order-2">
+              <p className="text-base font-semibold uppercase tracking-widest text-gray-400">Our Moonshot Benchmarking Project</p>
+              <h2 className="mt-3 text-4xl font-bold text-white tracking-tight">
+                Giving every owner the{" "}
+                <br /><span className="font-serif text-gray-100 tracking-tighter">answer key</span>
+              </h2>
+              <p className="text-lg text-gray-300 mt-4 mb-4">
+              Imagine running your practice with a clear roadmap. You know what goals to hit, what numbers matter, and what “good” really looks like. That clarity makes ownership less stressful and more confident.
+              </p>
+              <p className="text-lg text-gray-300 mt-4 mb-4">
+              Big groups like private equity firms and insurance companies already have this edge. They use data from thousands of practices to set clear targets, price services well, negotiate stronger rates, and choose the right vendors. Most practice owners don&apos;t get access to this and are left guessing.
+              </p>
+              <p className="text-lg text-gray-300 mt-4 mb-4">
+              My moonshot project changes that. It gives practice owners the same clear insight by showing what good looks like and how to reach it. This starts with benchmarking—learning from practices that have already done it.
+              </p>
+              <p className="text-lg text-gray-300 mt-4 mb-4">
+              With every practice and trusted service partner we work with, we open up knowledge instead of hiding it. Together, we can change healthcare.
+              </p>
+            </div>
+            <div className="md:order-1 flex justify-center">
+              <div className="bg-none p-2 transform -rotate-6 rounded-md shadow-lg">
+                <Image
+                  src="/photos/rocketship1.png"
+                  alt="Rocketship to the moon"
+                  width={300}
+                  height={300}
+                  className="rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section className="px-6 py-16">
         <div className="max-w-6xl mx-auto text-center">
@@ -421,9 +459,9 @@ export default function Home() {
               <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$150</div>
               <p className="text-base text-gray-500">per location / month</p>
               <p className="text-base text-gray-500">+ implementation fee</p>
-              <p className="mt-3 text-lg font-medium text-gray-900">The minimum metrics you need to be tracking as a CEO.</p>
+              <p className="mt-3 text-lg font-medium text-gray-900">The minimum metrics you need to be tracking as a CEO. The primary focus is hitting your financial goals.</p>
               <Link
-                href="/contact"
+                href={{ pathname: "/get-started", query: { offering: "The Minimum Package" } }}
                 className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
               >
                 Get started
@@ -462,8 +500,8 @@ export default function Home() {
                   </tr>
                   <tr>
                     <td className="py-3">
-                      <div className="font-medium text-gray-900">Customer Support</div>
-                      <div className="mt-1 text-gray-600">Email support when you have questions or need help</div>
+                      <div className="font-medium text-gray-900">Customer support</div>
+                      <div className="mt-1 text-gray-600">Email</div>
                     </td>
                   </tr>
                 </tbody>
@@ -480,7 +518,7 @@ export default function Home() {
               For owners who want deeper insight and hands-on support to perform at a higher level.
               </p>
               <Link
-                href="/contact"
+                href={{ pathname: "/get-started", query: { offering: "Performance" } }}
                 className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
               >
                 Get started
@@ -521,7 +559,7 @@ export default function Home() {
                   </tr>
                   <tr>
                     <td className="py-3">
-                      <div className="font-medium text-gray-900">Customer Support</div>
+                      <div className="font-medium text-gray-900">Customer support</div>
                       <div className="mt-1 text-gray-600">
                         <span className="block">- Monthly calls</span>
                         <span className="block">- Email</span>
@@ -533,20 +571,49 @@ export default function Home() {
             </div>
 
             {/* Tier 3: Custom */}
-            <div className="relative flex flex-col rounded-3xl ring-1 ring-gray-200 p-6 lg:p-8 hover:ring-2 hover:ring-orange-200 hover:shadow-lg hover:shadow-orange-100 transition-all">
-              <h3 className="text-2xl font-bold text-gray-900">For Everything Else</h3>
-              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">Custom</div>
-              {/* <p className="text-base text-gray-500">Project-based pricing</p> */}
+            <div className="relative flex flex-col rounded-3xl ring-1 ring-gray-800 p-6 pt-10 lg:p-8 lg:pt-12 hover:ring-2 hover:ring-orange-200 hover:shadow-lg hover:shadow-orange-100 transition-all">
+              <span className="absolute left-5 top-0 -translate-y-1/2 inline-flex items-center rounded-full border border-gray-700 bg-gray-900 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gray-100">
+                Limited time offer
+              </span>
+              <h3 className="text-2xl font-bold text-gray-900">Health Checkup</h3>
+              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$50</div>
+              <p className="text-base text-gray-500">one time fee</p>
               {/* <p className="text-base text-gray-500">Scope dependent</p> */}
               <p className="mt-3 text-lg font-medium text-gray-900">
-              Running a practice comes with many needs, and data can help in different ways. To solve your specific problems, pricing is based on your needs and the size of the project.
+              Like your annual primary care visit, this is a one time review of your practice. We look at your numbers to see what&apos;s healthy, what needs attention, and where you can improve.
               </p>
               <Link
-                href="/contact"
+                href={{ pathname: "/get-started", query: { offering: "Health Checkup" } }}
                 className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
               >
                 Get started
               </Link>
+              <table className="mt-6 w-full text-base text-gray-700">
+                <tbody className="divide-y divide-gray-100">
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Data reviewed</div>
+                      <div className="mt-1 text-gray-600">
+                        <span className="block">- Financial statements</span>
+                        <span className="block">- Operational data (EHR / practice management system)</span>
+                        <span className="block">- Provider performance</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Usage details</div>
+                      <div className="mt-1 text-gray-600">You can get two checkups per calendar year</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Customer support</div>
+                      <div className="mt-1 text-gray-600">Email</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -576,45 +643,7 @@ export default function Home() {
       </section>
 
       {/* Dotted Line */}
-      <div className="border-t border-dashed border-gray-300 my-12 mb-24 sm:mb-32 lg:mb-40 mx-auto max-w-6xl"></div>
-
-      {/* New Our Moonshot Section */}
-      <section className="px-6">
-        <div className="mx-auto w-full max-w-6xl rounded-3xl bg-black px-6 py-12 text-white shadow-lg sm:px-10 sm:py-14 lg:px-12 lg:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="md:order-2">
-              <p className="text-base font-semibold uppercase tracking-widest text-gray-400">Our Moonshot Benchmarking Project</p>
-              <h2 className="mt-3 text-4xl font-bold text-white tracking-tight">
-                Giving every owner the{" "}
-                <br /><span className="font-serif text-gray-100 tracking-tighter">answer key</span>
-              </h2>
-              <p className="text-lg text-gray-300 mt-4 mb-4">
-              Imagine running your practice with a clear roadmap. You know what goals to hit, what numbers matter, and what “good” really looks like. That clarity makes ownership less stressful and more confident.
-              </p>
-              <p className="text-lg text-gray-300 mt-4 mb-4">
-              Big groups like private equity firms and insurance companies already have this edge. They use data from thousands of practices to set clear targets, price services well, negotiate stronger rates, and choose the right vendors. Most practice owners don&apos;t get access to this and are left guessing.
-              </p>
-              <p className="text-lg text-gray-300 mt-4 mb-4">
-              My moonshot project changes that. It gives practice owners the same clear insight by showing what good looks like and how to reach it. This starts with benchmarking—learning from practices that have already done it.
-              </p>
-              <p className="text-lg text-gray-300 mt-4 mb-4">
-              With every practice and trusted service partner we work with, we open up knowledge instead of hiding it. Together, we can change healthcare.
-              </p>
-            </div>
-            <div className="md:order-1 flex justify-center">
-              <div className="bg-none p-2 transform -rotate-6 rounded-md shadow-lg">
-                <Image
-                  src="/photos/rocketship1.png"
-                  alt="Rocketship to the moon"
-                  width={300}
-                  height={300}
-                  className="rounded-md"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="border-t border-dashed border-gray-300 my-12 mx-auto max-w-6xl"></div>
 
       {/* Free Consultation CTA */}
       {/* <section className="px-6 w-full">

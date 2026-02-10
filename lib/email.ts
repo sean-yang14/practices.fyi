@@ -1,4 +1,4 @@
-export const EMAIL_TO = process.env.EMAIL_TO || "sean@practices.fyi";
+export const EMAIL_TO = "sean@practices.fyi";
 
 // Defaults to your requested domain; override via env for flexibility
 const DEFAULT_FROM_ADDRESS = "no-reply@practices.fyi";

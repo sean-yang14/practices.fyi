@@ -38,20 +38,18 @@ export default function ContactPage() {
     <main className="bg-white text-slate-900">
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
-        <span className="inline-flex items-center rounded-full bg-orange-50 text-orange-900 px-3 py-1 text-base font-medium">Contact</span>
-        <h1 className="mt-4 text-5xl md:text-6xl font-extrabold leading-tight tracking-tight max-w-4xl">
-          Get in touch
-        </h1>
-        <div className="mt-3 h-1 w-50 md:w-75 bg-orange-500 rounded" aria-hidden />
+        <div className="h-2" aria-hidden />
       </section>
 
       {/* BODY */}
       <section className="mx-auto max-w-6xl px-6 pb-16">
         <div className="grid gap-8 md:grid-cols-2">
           {/* LEFT: Company Info */}
-          <div className="rounded-2xl border border-slate-200 p-8 bg-white">
-            <h2 className="text-2xl font-semibold">Practices.fyi</h2>
-            <p className="mt-2 text-grey-700 text-lg">We&apos;d love to hear from you.</p>
+          <div className="rounded-2xl p-8 bg-white">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight max-w-4xl">
+              Get in touch
+            </h1>
+            <p className="mt-4 text-grey-700 text-lg">Leave us your message and we&apos;ll get back to you ASAP</p>
             <div className="mt-6 text-slate-800">
               <div className="text-sm uppercase text-slate-500">Email</div>
               <div className="mt-1 text-lg font-medium select-all">info@practices.fyi</div>
@@ -91,24 +89,13 @@ export default function ContactPage() {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="website" className="block text-sm font-medium text-slate-700">Practice / Company website</label>
+                  <label htmlFor="website" className="block text-sm font-medium text-slate-700">Website</label>
                   <input
                     id="website"
                     name="website"
                     className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 shadow-sm placeholder-slate-400 focus:border-slate-400 focus:ring-slate-400"
                     type="text"
                     autoComplete="url"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="position" className="block text-sm font-medium text-slate-700">Position</label>
-                  <input
-                    id="position"
-                    name="position"
-                    placeholder="Owner"
-                    className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 shadow-sm placeholder-slate-400 focus:border-slate-400 focus:ring-slate-400"
-                    type="text"
-                    autoComplete="organization-title"
                   />
                 </div>
               </div>

@@ -20,13 +20,13 @@ export function FAQSection() {
         <AccordionItem value="best-for">
           <AccordionTrigger className="text-lg">What kind of practice is this best for?</AccordionTrigger>
           <AccordionContent className="text-base">
-            This is for practice owners who aren&apos;t data experts or want time back to focus on what only the CEO can do. What we do isn&apos;t rocket science, but it takes time and has complex components. If you enjoy data and already do this well, that&apos;s great. But most owners don&apos;t have time to pull data, clean it up, and filter through what really matters. That&apos;s why the best CEOs have teams to do this for them. We fill that role for your practice.
+            This is for practice owners who aren&apos;t data experts or want time back to focus on tasks that can&apos;t be delegated. What we do isn&apos;t rocket science, but it takes time and has complex components. If you enjoy data and already do this well, that&apos;s great. But most owners don&apos;t have time to pull data, clean it up, and filter through what really matters. That&apos;s why the best CEOs have teams to do this for them. We fill that role for your practice.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="consultant">
           <AccordionTrigger className="text-lg">Are you a consultant?</AccordionTrigger>
           <AccordionContent className="text-base">
-          That&apos;s not how we think about our role. We act as a core part of your practice, like your front desk or practice manager. Our job is to help you clearly understand how your practice is doing. We highlight what matters most so you can take action. We help you see what&apos;s happening, where to focus, and work with you to understand why. Other partners, like consultants or fractional CFOs, are great at handling the detailed &ldquo;how.&rdquo;
+          That&apos;s not how we think about our role. We want to be the equivalent of the fitness wearable for your business. Our job is to help you clearly understand how your practice is doing. We highlight what matters most so you can take action. We help you see what&apos;s happening, where to focus, and point out how you can get there. Other partners, like consultants or fractional CFOs, are great at executing the detailed &ldquo;how.&rdquo;
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="service-partners">

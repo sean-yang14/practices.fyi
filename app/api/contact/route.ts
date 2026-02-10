@@ -1,14 +1,23 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
-// Validate expected contact form fields
-const schema = z.object({
-  name: z.string().min(1),
-  email: z.string().email(),
-  website: z.string().optional().default(""),
-  position: z.string().optional().default(""),
-  message: z.string().optional().default(""),
-});
+// Validate expected contact/get-started form fields
+const schema = z
+  .object({
+    name: z.string().min(1).optional().default(""),
+    firstName: z.string().min(1).optional().default(""),
+    lastName: z.string().min(1).optional().default(""),
+    email: z.string().email(),
+    website: z.string().optional().default(""),
+    position: z.string().optional().default(""),
+    offering: z.string().optional().default(""),
+    message: z.string().optional().default(""),
+    source: z.string().optional().default("Contact Page"),
+  })
+  .refine((data) => data.name || (data.firstName && data.lastName), {
+    message: "Name is required",
+    path: ["name"],
+  });
 
 import { EMAIL_FROM, EMAIL_TO } from "@/lib/email";
 
@@ -20,16 +29,18 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid form" }, { status: 400 });
     }
 
-    const { name, email, website, position, message } = parsed.data;
+    const { name, firstName, lastName, email, website, position, offering, message, source } = parsed.data;
+    const displayName = name || `${firstName} ${lastName}`.trim();
 
     // Log the submission for observability
     console.log("New Contact submission:", {
-      name,
+      name: displayName || "(none)",
       email,
       website: website || "(none)",
       position: position || "(none)",
+      offering: offering || "(none)",
       message: message || "(none)",
-      source: "Contact Page",
+      source,
       timestamp: new Date().toISOString(),
     });
 
@@ -42,16 +53,17 @@ export async function POST(req: Request) {
         // Use verified sender (configure EMAIL_FROM / domain in Resend)
         from: EMAIL_FROM,
         to: [EMAIL_TO],
-        subject: "📬 New Contact Form Submission",
+        subject: "📬 New Form Submission",
         replyTo: email,
         text: [
-          `NEW CONTACT FORM SUBMISSION`,
-          `Source: Contact Page`,
+          `NEW FORM SUBMISSION`,
+          `Source: ${source}`,
           ``,
-          `Name: ${name}`,
+          `Name: ${displayName || "(none)"}`,
           `Email: ${email}`,
           `Website: ${website || "(none)"}`,
           `Position: ${position || "(none)"}`,
+          `Offering: ${offering || "(none)"}`,
           ``,
           `Message:`,
           message || "(none)",

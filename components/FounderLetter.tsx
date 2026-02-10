@@ -14,7 +14,7 @@ export const FounderLetter: React.FC = () => {
       <article className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         <div className="space-y-6">
           <p className="text-lg text-gray-700">
-          Building a financially successful practice is harder than ever. Being a great clinician isn’t enough anymore. To succeed today, you also have to be a great CEO.
+          Building a financially successful practice is harder than ever. Being a great clinician isn&apos;t enough anymore. To succeed today, you also have to be a great CEO.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">

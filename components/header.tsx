@@ -13,11 +13,17 @@ export function Header() {
           </Link>
         </div>
 
-        {/* Right Section - Contact Button */}
-        <div className="hidden md:flex items-center">
+        {/* Right Section - Actions */}
+        <div className="hidden md:flex items-center gap-3">
+          <Link
+            href="/get-started"
+            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium whitespace-nowrap"
+          >
+            Get started
+          </Link>
           <Link
             href="/contact"
-            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium whitespace-nowrap"
+            className="bg-white text-black px-6 py-2 rounded-full transition-colors duration-200 font-medium whitespace-nowrap hover:bg-gray-100"
           >
             Contact
           </Link>
@@ -58,7 +64,12 @@ export function Header() {
                 </div>
                 <nav className="flex flex-col space-y-2">
                   <Dialog.Close asChild>
-                    <Link href="/contact" className="px-3 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600">
+                    <Link href="/get-started" className="px-3 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600">
+                      Get started
+                    </Link>
+                  </Dialog.Close>
+                  <Dialog.Close asChild>
+                    <Link href="/contact" className="px-3 py-2 rounded-md bg-white text-black hover:bg-gray-100 border border-gray-200">
                       Contact
                     </Link>
                   </Dialog.Close>
