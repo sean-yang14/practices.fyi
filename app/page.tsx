@@ -9,7 +9,11 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center px-6 py-12 sm:py-16 mt-[10vh]">
         <h1 className="text-6xl font-extrabold tracking-tight mb-6 text-black">
-          If you&apos;re a practice owner...Stop flying blind.<br /> Start running your business like the best CEOs.
+          Stop flying blind. Start running your
+          <span className="hidden lg:inline">
+            <br />
+          </span>{" "}
+          business like the best CEOs.
         </h1>
         <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-10">
         The best CEOs use data because you can&apos;t make things better if you don&apos;t measure them. We show you, in a clear and simple way, how your practice is doing and what to focus on to achieve financial success and get time back.
@@ -37,7 +41,7 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <span className="rounded-full bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1">Dentistry</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Production</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Production Increase</h3>
               <p className="text-gray-700">Grew production by 20% by setting and tracking provider goals.</p>
             </div>
 
@@ -46,7 +50,7 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <span className="rounded-full bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1">Primary Care</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Marketing Spend</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Marketing Cost Savings</h3>
               <p className="text-gray-700">
               Cut wasted marketing spend and saved $15,000, with no drop in new patients.
               </p>
@@ -57,7 +61,7 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <span className="rounded-full bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1">Mental Health Therapist</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Cash Flow</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Improved Cash Flow</h3>
               <p className="text-gray-700">Created peace of mind. Tripled cash reserves by improving cash flow.</p>
             </div>
           </div>
@@ -456,10 +460,10 @@ export default function Home() {
             {/* Tier 1: The minimum */}
             <div className="relative flex flex-col rounded-3xl ring-1 ring-gray-200 p-6 lg:p-8 hover:ring-2 hover:ring-orange-200 hover:shadow-lg hover:shadow-orange-100 transition-all">
               <h3 className="text-2xl font-bold text-gray-900">The Minimum Package</h3>
-              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$150</div>
+              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$99</div>
               <p className="text-base text-gray-500">per location / month</p>
               <p className="text-base text-gray-500">+ implementation fee</p>
-              <p className="mt-3 text-lg font-medium text-gray-900">The minimum metrics you need to be tracking as a CEO. The primary focus is hitting your financial goals.</p>
+              <p className="mt-3 text-lg font-medium text-gray-900">The minimum metrics you need to be tracking as a CEO. The primary focus is hitting your financial goals. Think of this as the fitness tracker for your practice.</p>
               <Link
                 href={{ pathname: "/get-started", query: { offering: "The Minimum Package" } }}
                 className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
@@ -500,8 +504,11 @@ export default function Home() {
                   </tr>
                   <tr>
                     <td className="py-3">
-                      <div className="font-medium text-gray-900">Customer support</div>
-                      <div className="mt-1 text-gray-600">Email</div>
+                      <div className="font-medium text-gray-900">Ongoing customer support</div>
+                      <div className="mt-1 text-gray-600">
+                        <span className="block">- Limited calls</span>
+                        <span className="block">- Email</span>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -515,7 +522,7 @@ export default function Home() {
               <p className="text-base text-gray-500">per location / month</p>
               <p className="text-base text-gray-500">+ implementation fee</p>
               <p className="mt-3 text-lg font-medium text-gray-900">
-              For owners who want deeper insight and hands-on support to perform at a higher level.
+              For owners who want deeper insight and hands-on support to perform at a higher level. Everything you get in the Minimum Package is included as well. 
               </p>
               <Link
                 href={{ pathname: "/get-started", query: { offering: "Performance" } }}
@@ -576,7 +583,7 @@ export default function Home() {
                 Limited time offer
               </span>
               <h3 className="text-2xl font-bold text-gray-900">Health Checkup</h3>
-              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$50</div>
+              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$200</div>
               <p className="text-base text-gray-500">one time fee</p>
               {/* <p className="text-base text-gray-500">Scope dependent</p> */}
               <p className="mt-3 text-lg font-medium text-gray-900">
@@ -608,8 +615,8 @@ export default function Home() {
                   </tr>
                   <tr>
                     <td className="py-3">
-                      <div className="font-medium text-gray-900">Customer support</div>
-                      <div className="mt-1 text-gray-600">Email</div>
+                      <div className="font-medium text-gray-900">Ongoing customer support</div>
+                      <div className="mt-1 text-gray-600">N/A but includes a call to review findings and guidance.</div>
                     </td>
                   </tr>
                 </tbody>
