@@ -13,7 +13,7 @@ export default function Home() {
           <span className="hidden lg:inline">
             <br />
           </span>{" "}
-          business like the best CEOs.
+          healthcare practice like the best CEOs.
         </h1>
         <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-10">
         The best CEOs use data because you can&apos;t make things better if you don&apos;t measure them. We show you, in a clear and simple way, how your practice is doing and what to focus on to achieve financial success and get time back.
@@ -463,7 +463,7 @@ export default function Home() {
               <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$99</div>
               <p className="text-base text-gray-500">per location / month</p>
               <p className="text-base text-gray-500">+ implementation fee</p>
-              <p className="mt-3 text-lg font-medium text-gray-900">The minimum metrics you need to be tracking as a CEO. The primary focus is hitting your financial goals. Think of this as the fitness tracker for your practice.</p>
+              <p className="mt-3 text-lg font-medium text-gray-900">The minimum metrics across your entire business that you need to be tracking as a CEO. Think of this as the fitness tracker for your practice.</p>
               <Link
                 href={{ pathname: "/get-started", query: { offering: "The Minimum Package" } }}
                 className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
@@ -475,14 +475,14 @@ export default function Home() {
                   <tr>
                     <td className="py-3">
                       <div className="font-medium text-gray-900">Implementation fee</div>
-                      <div className="mt-1 text-gray-600">One time fee of $500</div>
+                      <div className="mt-1 text-gray-600">One time fee of $500 to create your data system</div>
                     </td>
                   </tr>
                   <tr>
                     <td className="py-3">
                       <div className="font-medium text-gray-900">Monthly reports</div>
                       <div className="mt-1 text-gray-600">
-                        Reports on the most important numbers for your practice across core functions. Includes operations,
+                        Reports on the most important numbers for your practice across core functions. Includes operations (i.e., EHR/Practice Managment Software data),
                         finance, and marketing
                       </div>
                     </td>
@@ -491,8 +491,7 @@ export default function Home() {
                     <td className="py-3">
                       <div className="font-medium text-gray-900">Quarterly reports</div>
                       <div className="mt-1 text-gray-600">
-                        <span className="block">- Provider financial performance</span>
-                        <span className="block">- Vendor performance</span>
+                        <span className="block">Provider financial performance</span>
                       </div>
                     </td>
                   </tr>
@@ -506,8 +505,8 @@ export default function Home() {
                     <td className="py-3">
                       <div className="font-medium text-gray-900">Ongoing customer support</div>
                       <div className="mt-1 text-gray-600">
-                        <span className="block">- Limited calls</span>
-                        <span className="block">- Email</span>
+                        {/* <span className="block">- Limited calls</span> */}
+                        <span className="block">Email only</span>
                       </div>
                     </td>
                   </tr>
@@ -522,7 +521,7 @@ export default function Home() {
               <p className="text-base text-gray-500">per location / month</p>
               <p className="text-base text-gray-500">+ implementation fee</p>
               <p className="mt-3 text-lg font-medium text-gray-900">
-              For owners who want deeper insight and hands-on support to perform at a higher level. Everything you get in the Minimum Package is included as well. 
+              For owners who want a deeper look at their practice and want to use their time, money, and team in smarter ways. This plan helps you get better results so your practice can perform at a higher level.
               </p>
               <Link
                 href={{ pathname: "/get-started", query: { offering: "Performance" } }}
@@ -535,7 +534,7 @@ export default function Home() {
                   <tr>
                     <td className="py-3">
                       <div className="font-medium text-gray-900">Implementation fee</div>
-                      <div className="mt-1 text-gray-600">One time fee of $500</div>
+                      <div className="mt-1 text-gray-600">One time fee of $500 to create your data system</div>
                     </td>
                   </tr>
                   <tr>
@@ -566,7 +565,7 @@ export default function Home() {
                   </tr>
                   <tr>
                     <td className="py-3">
-                      <div className="font-medium text-gray-900">Customer support</div>
+                      <div className="font-medium text-gray-900">Ongoing customer support</div>
                       <div className="mt-1 text-gray-600">
                         <span className="block">- Monthly calls</span>
                         <span className="block">- Email</span>
@@ -577,20 +576,18 @@ export default function Home() {
               </table>
             </div>
 
-            {/* Tier 3: Custom */}
-            <div className="relative flex flex-col rounded-3xl ring-1 ring-gray-800 p-6 pt-10 lg:p-8 lg:pt-12 hover:ring-2 hover:ring-orange-200 hover:shadow-lg hover:shadow-orange-100 transition-all">
-              <span className="absolute left-5 top-0 -translate-y-1/2 inline-flex items-center rounded-full border border-gray-700 bg-gray-900 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gray-100">
-                Limited time offer
-              </span>
-              <h3 className="text-2xl font-bold text-gray-900">Health Checkup</h3>
-              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$200</div>
-              <p className="text-base text-gray-500">one time fee</p>
-              {/* <p className="text-base text-gray-500">Scope dependent</p> */}
+            {/* Tier 3: Excellence */}
+            <div className="relative flex flex-col rounded-3xl ring-1 ring-gray-200 p-6 lg:p-8 hover:ring-2 hover:ring-orange-200 hover:shadow-lg hover:shadow-orange-100 transition-all">
+
+              <h3 className="text-2xl font-bold text-gray-900">Excellence</h3>
+              <div className="mt-3 text-5xl font-bold tracking-tight text-gray-900">$1,499</div>
+              <p className="text-base text-gray-500">per month for 1st location. Custom pricing for additional locations</p>
+              {/* <p className="text-base text-gray-500">Custom pricing for multi-location practices</p> */}
               <p className="mt-3 text-lg font-medium text-gray-900">
-              Like your annual primary care visit, this is a one time review of your practice. We look at your numbers to see what&apos;s healthy, what needs attention, and where you can improve.
+              For owners who are looking to truly master their practice. This plan offers comprehensive support and deep insights, using data to transform your entire practice into a model of efficiency and profitability. Think of us as your management team.
               </p>
               <Link
-                href={{ pathname: "/get-started", query: { offering: "Health Checkup" } }}
+                href={{ pathname: "/get-started", query: { offering: "Excellence" } }}
                 className="mt-6 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-900 hover:border-orange-200 hover:text-orange-600 transition-colors"
               >
                 Get started
@@ -599,24 +596,34 @@ export default function Home() {
                 <tbody className="divide-y divide-gray-100">
                   <tr>
                     <td className="py-3">
-                      <div className="font-medium text-gray-900">Data reviewed</div>
+                      <div className="font-medium text-gray-900">Implementation fee</div>
+                      <div className="mt-1 text-gray-600">N/A</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3">
+                      <div className="font-medium text-gray-900">Reports</div>
                       <div className="mt-1 text-gray-600">
-                        <span className="block">- Financial statements</span>
-                        <span className="block">- Operational data (EHR / practice management system)</span>
-                        <span className="block">- Provider performance</span>
+                      Everything in the Performance Plan, plus anything else your business needs, including:
+                        <br />- Billing audit
+                        <br />- Budget creation
+                        <br />- Embezzlement financial audit
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td className="py-3">
-                      <div className="font-medium text-gray-900">Usage details</div>
-                      <div className="mt-1 text-gray-600">You can get two checkups per calendar year</div>
+                      <div className="font-medium text-gray-900">Custom analysis</div>
+                      <div className="mt-1 text-gray-600">Whatever data analyis is needed for the business, we can do.</div>
                     </td>
                   </tr>
                   <tr>
                     <td className="py-3">
                       <div className="font-medium text-gray-900">Ongoing customer support</div>
-                      <div className="mt-1 text-gray-600">N/A but includes a call to review findings and guidance.</div>
+                      <div className="mt-1 text-gray-600">
+                        <span className="block">- Bi-weekly calls</span>
+                        <span className="block">- Priority email support</span>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
